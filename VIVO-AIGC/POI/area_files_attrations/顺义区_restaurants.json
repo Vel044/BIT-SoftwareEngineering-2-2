@@ -1,0 +1,34 @@
+[
+    {
+        "name": "北京国际鲜花港",
+        "location": {
+            "lat": 40.187688,
+            "lng": 116.803564
+        },
+        "address": "北京市顺义区杨镇鲜花港南路9号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "顺义区",
+        "street_id": "0ed20a15533384e957bffffc",
+        "telephone": "(010)61417123",
+        "detail": 1,
+        "uid": "0ed20a15533384e957bffffc",
+        "type": "scope"
+    },
+    {
+        "name": "顺义奥林匹克水上公园",
+        "location": {
+            "lat": 40.179555,
+            "lng": 116.698838
+        },
+        "address": "北京市顺义区白马路19号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "顺义区",
+        "street_id": "",
+        "telephone": "(010)89482008",
+        "detail": 1,
+        "uid": "70825efb79688f6c354aaea5",
+        "type": "scope"
+    }
+]

@@ -1,0 +1,940 @@
+[
+    {
+        "name": "潇湘府(上地店)",
+        "location": {
+            "lat": 40.049976,
+            "lng": 116.308363
+        },
+        "address": "东北旺路联创大厦",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "09185c56d24f7e44f1193763",
+        "telephone": "(010)82897358,(010)82897458",
+        "detail": 1,
+        "uid": "09185c56d24f7e44f1193763",
+        "type": "cater"
+    },
+    {
+        "name": "玉树园餐厅(紫荆公寓店)",
+        "location": {
+            "lat": 40.017456,
+            "lng": 116.338508
+        },
+        "address": "清华园街道清华大学紫荆公寓18-19号楼之间(近清华东北门)",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "",
+        "detail": 1,
+        "uid": "05087b60f89a12cf5abbbc0e",
+        "type": "cater"
+    },
+    {
+        "name": "淮扬府(安定门店)",
+        "location": {
+            "lat": 39.960206,
+            "lng": 116.414984
+        },
+        "address": "安定门外大街198号（地坛西门北侧）",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "9f97b1c59cd7c61fb74f54b8",
+        "telephone": "(010)64265858,(010)64265959",
+        "detail": 1,
+        "uid": "9f97b1c59cd7c61fb74f54b8",
+        "type": "cater"
+    },
+    {
+        "name": "壹零捌道(车公庄店)",
+        "location": {
+            "lat": 39.939373,
+            "lng": 116.351021
+        },
+        "address": "展览馆路14号（中俊酒店旁）",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "7881c35e2bac15f4e50738c7",
+        "telephone": "(010)68335678",
+        "detail": 1,
+        "uid": "7881c35e2bac15f4e50738c7",
+        "type": "cater"
+    },
+    {
+        "name": "海底捞火锅(王府井银泰in88店)",
+        "location": {
+            "lat": 39.922861,
+            "lng": 116.418036
+        },
+        "address": "北京市东城区王府井大街88号银泰in88三层311号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "6525820538403a8515c90575",
+        "detail": 1,
+        "uid": "6525820538403a8515c90575",
+        "type": "cater"
+    },
+    {
+        "name": "四川饭店(新街口店)",
+        "location": {
+            "lat": 39.951945,
+            "lng": 116.377884
+        },
+        "address": "新街口街道新街口北大街3号新街高和大厦南侧(北二环积水潭桥向南200米)",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "44207646e0f54c72dfee8be8",
+        "detail": 1,
+        "uid": "44207646e0f54c72dfee8be8",
+        "type": "cater"
+    },
+    {
+        "name": "紫光园(团结湖店)",
+        "location": {
+            "lat": 39.930341,
+            "lng": 116.473865
+        },
+        "address": "团结湖路48号（团结湖公园东门对面南侧）",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "d24e48eb047653adaeee7a8e",
+        "telephone": "(010)85989661",
+        "detail": 1,
+        "uid": "d24e48eb047653adaeee7a8e",
+        "type": "cater"
+    },
+    {
+        "name": "柴氏风味斋(甘家口店)",
+        "location": {
+            "lat": 39.932268,
+            "lng": 116.3375
+        },
+        "address": "甘家口北街甘家口21号楼1层底商",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "2e00c5ddeb297b05d6851f9b",
+        "detail": 1,
+        "uid": "2e00c5ddeb297b05d6851f9b",
+        "type": "cater"
+    },
+    {
+        "name": "绿院餐厅(北沙滩店)",
+        "location": {
+            "lat": 40.010724,
+            "lng": 116.381845
+        },
+        "address": "林萃路北沙滩1号院沿街商铺甲20-5号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "e82e7c80dc38fcd6cf06a4a4",
+        "telephone": "(010)64873082,15811511560",
+        "detail": 1,
+        "uid": "e82e7c80dc38fcd6cf06a4a4",
+        "type": "cater"
+    },
+    {
+        "name": "南门涮肉(后海店)",
+        "location": {
+            "lat": 39.944389,
+            "lng": 116.40024
+        },
+        "address": "什刹海街道南官房胡同1号（银锭桥南）",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "a74481d6632f495ff403b896",
+        "telephone": "(010)83227033",
+        "detail": 1,
+        "uid": "a74481d6632f495ff403b896",
+        "type": "未知类别"
+    },
+    {
+        "name": "绿茶餐厅(望京新世界店)",
+        "location": {
+            "lat": 39.99287,
+            "lng": 116.486339
+        },
+        "address": "广顺南大街16号院望京新世界3层",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "79cceb3683b722901e580007",
+        "telephone": "(010)88997388",
+        "detail": 1,
+        "uid": "79cceb3683b722901e580007",
+        "type": "cater"
+    },
+    {
+        "name": "星期五餐厅(金融街店)",
+        "location": {
+            "lat": 39.922701,
+            "lng": 116.368846
+        },
+        "address": "金城坊街9-2号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "beabdbf48dc2b5817169d38c",
+        "detail": 1,
+        "uid": "beabdbf48dc2b5817169d38c",
+        "type": "cater"
+    },
+    {
+        "name": "巴依老爷新疆美食(潘家园店)",
+        "location": {
+            "lat": 39.879616,
+            "lng": 116.468384
+        },
+        "address": "东三环路松榆西里45号楼一层底商",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "",
+        "telephone": "13717744454",
+        "detail": 1,
+        "uid": "6bbd6e83ecf940d45e17c36a",
+        "type": "cater"
+    },
+    {
+        "name": "铃木食堂(丽都店)",
+        "location": {
+            "lat": 39.982546,
+            "lng": 116.489429
+        },
+        "address": "将台路与芳园西路交叉口西行100米路南",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "",
+        "detail": 1,
+        "uid": "179828a3db81f518ad31e584",
+        "type": "cater"
+    },
+    {
+        "name": "胡大饭馆(簋街三店)",
+        "location": {
+            "lat": 39.947032,
+            "lng": 116.424029
+        },
+        "address": "东直门内大街284号（雍和宫正南500米）",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "0dc3d82da6be477574e5b693",
+        "telephone": "(010)64066628",
+        "detail": 1,
+        "uid": "0dc3d82da6be477574e5b693",
+        "type": "cater"
+    },
+    {
+        "name": "温鼎府·海鲜火锅(前门23号院店)",
+        "location": {
+            "lat": 39.907509,
+            "lng": 116.407474
+        },
+        "address": "前门东大街前门23号院内（正阳门东10米）",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "6fbebf98e8b558f3c5effb91",
+        "telephone": "18511277666",
+        "detail": 1,
+        "uid": "6fbebf98e8b558f3c5effb91",
+        "type": "cater"
+    },
+    {
+        "name": "北平楼烤鸭·京菜(牡丹园店)",
+        "location": {
+            "lat": 39.985419,
+            "lng": 116.376751
+        },
+        "address": "花园路街道牡丹园西里16号楼1-2层（牡丹园地铁站F口步行200米）",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "850815e17469178242e19281",
+        "telephone": "(010)82082197",
+        "detail": 1,
+        "uid": "850815e17469178242e19281",
+        "type": "未知类别"
+    },
+    {
+        "name": "荣小馆(大望路店)",
+        "location": {
+            "lat": 39.903187,
+            "lng": 116.483474
+        },
+        "address": "百子湾南二路与西大望路交叉路口西北角",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "",
+        "telephone": "18210593518",
+        "detail": 1,
+        "uid": "c99d035c711df157ce04ef93",
+        "type": "cater"
+    },
+    {
+        "name": "全聚德(奥运村店)",
+        "location": {
+            "lat": 40.010577,
+            "lng": 116.413779
+        },
+        "address": "安立路慧忠北里309号楼1-3层",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "3a0fbba85ea4ed589fe3218c",
+        "telephone": "(010)64801685,(010)64801686",
+        "detail": 1,
+        "uid": "3a0fbba85ea4ed589fe3218c",
+        "type": "cater"
+    },
+    {
+        "name": "大书房咖啡(中传国交店)",
+        "location": {
+            "lat": 39.918246,
+            "lng": 116.560348
+        },
+        "address": "定福庄中传新国交中心1层（老西门正对面）",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "ecdb9c5f256645b917948ec4",
+        "telephone": "13522000213",
+        "detail": 1,
+        "uid": "ecdb9c5f256645b917948ec4",
+        "type": "未知类别"
+    },
+    {
+        "name": "红蕃茄楚膳(鸟巢店)",
+        "location": {
+            "lat": 39.999467,
+            "lng": 116.406891
+        },
+        "address": "北辰东路18号格兰云天大酒店1层",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "4ea3f2f1afa92ab3afcb66a5",
+        "telephone": "(010)84984068",
+        "detail": 1,
+        "uid": "4ea3f2f1afa92ab3afcb66a5",
+        "type": "cater"
+    },
+    {
+        "name": "聚宝源(牛街总店)",
+        "location": {
+            "lat": 39.892639,
+            "lng": 116.369849
+        },
+        "address": "牛街5-2号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "37d60a46c16c38791e1d1155",
+        "telephone": "(010)83545602",
+        "detail": 1,
+        "uid": "37d60a46c16c38791e1d1155",
+        "type": "cater"
+    },
+    {
+        "name": "白家大院(苏州街店)",
+        "location": {
+            "lat": 39.985839,
+            "lng": 116.311358
+        },
+        "address": "苏州街29号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "",
+        "telephone": "4000908621-07194",
+        "detail": 1,
+        "uid": "34059f9752f1644d70455b87",
+        "type": "cater"
+    },
+    {
+        "name": "四季民福(南礼士路店)",
+        "location": {
+            "lat": 39.925408,
+            "lng": 116.360062
+        },
+        "address": "南礼士路44号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "7a3b3201773cb15beee4a572",
+        "detail": 1,
+        "uid": "7a3b3201773cb15beee4a572",
+        "type": "cater"
+    },
+    {
+        "name": "虾吃虾涮(十里堡店)",
+        "location": {
+            "lat": 39.920887,
+            "lng": 116.513926
+        },
+        "address": "朝阳路十里堡新城市广场东侧道口南行50米(近盒马鲜生)",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "0401ac0949ccec0b71455bcd",
+        "telephone": "13810009333",
+        "detail": 1,
+        "uid": "0401ac0949ccec0b71455bcd",
+        "type": "cater"
+    },
+    {
+        "name": "川骄海鲜自助(亚运村店)",
+        "location": {
+            "lat": 40.01174,
+            "lng": 116.410317
+        },
+        "address": "大屯北路北京凯艺酒店二层",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "",
+        "telephone": "(010)63333358,(010)63333368",
+        "detail": 1,
+        "uid": "226d5b3773f62db240024546",
+        "type": "cater"
+    },
+    {
+        "name": "全聚德(和平门店)",
+        "location": {
+            "lat": 39.905585,
+            "lng": 116.391437
+        },
+        "address": "前门西大街14号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "79cceb3678185b901f58009d",
+        "telephone": "(010)83193100,(010)83193101,(010)83193251",
+        "detail": 1,
+        "uid": "79cceb3678185b901f58009d",
+        "type": "未知类别"
+    },
+    {
+        "name": "南门涮肉(朝阳路店)",
+        "location": {
+            "lat": 39.922241,
+            "lng": 116.540686
+        },
+        "address": "朝阳路兴隆公园北门",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "",
+        "telephone": "(010)85760188",
+        "detail": 1,
+        "uid": "2ad32cc39c99b0969d95de4b",
+        "type": "cater"
+    },
+    {
+        "name": "巴音浩日娲酒楼(万丰路总店)",
+        "location": {
+            "lat": 39.879577,
+            "lng": 116.300419
+        },
+        "address": "万丰路310号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "丰台区",
+        "street_id": "c16534055966e160ab175aca",
+        "telephone": "(010)66138888",
+        "detail": 1,
+        "uid": "c16534055966e160ab175aca",
+        "type": "cater"
+    },
+    {
+        "name": "bluefrog蓝蛙(国贸商城店)",
+        "location": {
+            "lat": 39.917881,
+            "lng": 116.467354
+        },
+        "address": "建国门外大街1号国贸商城北区六层NL6005",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "",
+        "detail": 1,
+        "uid": "dd4521a6a15e8294adb22aa9",
+        "type": "cater"
+    },
+    {
+        "name": "呷哺呷哺(西单大悦城店)",
+        "location": {
+            "lat": 39.916861,
+            "lng": 116.379807
+        },
+        "address": "西单北大街131号西单大悦城地下二层",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "33fac183848022d11e1d11d3",
+        "telephone": "4008177878",
+        "detail": 1,
+        "uid": "33fac183848022d11e1d11d3",
+        "type": "cater"
+    },
+    {
+        "name": "云天滇味餐厅",
+        "location": {
+            "lat": 39.892017,
+            "lng": 116.362903
+        },
+        "address": "白广路二条甲3号云天酒店",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "8e4a31349f2db5726ca3ccdb",
+        "telephone": "(010)63555952",
+        "detail": 1,
+        "uid": "8e4a31349f2db5726ca3ccdb",
+        "type": "cater"
+    },
+    {
+        "name": "南京大牌档(崇文门国瑞店)",
+        "location": {
+            "lat": 39.905136,
+            "lng": 116.425944
+        },
+        "address": "崇文门外大街18号国瑞购物中心3层",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "bb83abb573fffc5ac72ba1db",
+        "telephone": "(010)87555777",
+        "detail": 1,
+        "uid": "bb83abb573fffc5ac72ba1db",
+        "type": "cater"
+    },
+    {
+        "name": "玫瑰花园自助烤肉(金源店)",
+        "location": {
+            "lat": 39.966713,
+            "lng": 116.294478
+        },
+        "address": "西顶路世纪金源二期居然之家3层",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "c19f8ed9505871d9badf8f08",
+        "detail": 1,
+        "uid": "c19f8ed9505871d9badf8f08",
+        "type": "cater"
+    },
+    {
+        "name": "八先生涮肉房(望京诚盈中心店)",
+        "location": {
+            "lat": 40.027051,
+            "lng": 116.47221
+        },
+        "address": "来广营西路望京诚盈中心4号楼3层（来广营地铁站A口出）",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "",
+        "telephone": "(010)86201849",
+        "detail": 1,
+        "uid": "1de6ec1950b333ed7702694d",
+        "type": "未知类别"
+    },
+    {
+        "name": "呷哺呷哺(公益桥华联店)",
+        "location": {
+            "lat": 39.840429,
+            "lng": 116.375634
+        },
+        "address": "南四环中路城南嘉园14号楼华联公益西桥购物中心4层",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "丰台区",
+        "street_id": "cc788fde6959d99388fc0667",
+        "telephone": "4008177878",
+        "detail": 1,
+        "uid": "cc788fde6959d99388fc0667",
+        "type": "未知类别"
+    },
+    {
+        "name": "神仙粥方潮汕砂锅粥(北大店)",
+        "location": {
+            "lat": 39.992045,
+            "lng": 116.316963
+        },
+        "address": "海淀路19-1号中成大厦1层西小厅",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "772efb4faa6bd12014c8f647",
+        "detail": 1,
+        "uid": "772efb4faa6bd12014c8f647",
+        "type": "cater"
+    },
+    {
+        "name": "京门老爆三(万年花城店)",
+        "location": {
+            "lat": 39.854433,
+            "lng": 116.327674
+        },
+        "address": "万年花城育芳园10号（首经贸地铁站E口步行350米）",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "丰台区",
+        "street_id": "022806a6c0484ce9b13c816a",
+        "telephone": "(010)83617872",
+        "detail": 1,
+        "uid": "022806a6c0484ce9b13c816a",
+        "type": "cater"
+    },
+    {
+        "name": "和记小馆(白浮泉店)",
+        "location": {
+            "lat": 40.206132,
+            "lng": 116.255298
+        },
+        "address": "白浮泉路48号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "昌平区",
+        "street_id": "d19802de7fd532274054d702",
+        "telephone": "13241106510",
+        "detail": 1,
+        "uid": "d19802de7fd532274054d702",
+        "type": "未知类别"
+    },
+    {
+        "name": "宣南居(六里桥店)",
+        "location": {
+            "lat": 39.887995,
+            "lng": 116.325513
+        },
+        "address": "太平桥路华源四里一号楼",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "丰台区",
+        "street_id": "4329d0df7466c75f96f08cc4",
+        "telephone": "(010)63380833",
+        "detail": 1,
+        "uid": "4329d0df7466c75f96f08cc4",
+        "type": "cater"
+    },
+    {
+        "name": "眉州东坡(团结湖店)",
+        "location": {
+            "lat": 39.935792,
+            "lng": 116.477276
+        },
+        "address": "团结湖",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "89fd4ea303826d5ee5e96544",
+        "detail": 1,
+        "uid": "89fd4ea303826d5ee5e96544",
+        "type": "未知类别"
+    },
+    {
+        "name": "太婆天府山珍酒楼(亚运村店)",
+        "location": {
+            "lat": 40.004782,
+            "lng": 116.408877
+        },
+        "address": "慧忠北路231号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "5ce2637d87802748ae31e572",
+        "telephone": "(010)64969836",
+        "detail": 1,
+        "uid": "5ce2637d87802748ae31e572",
+        "type": "未知类别"
+    },
+    {
+        "name": "九十九顶毡房(阜石路店)",
+        "location": {
+            "lat": 39.929327,
+            "lng": 116.227768
+        },
+        "address": "阜石路198号（晋元桥东南角、近锦绣大地商务）",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "",
+        "detail": 1,
+        "uid": "a02276e9d3af42d6d72ce24c",
+        "type": "cater"
+    },
+    {
+        "name": "新侨饭店·春晓餐厅",
+        "location": {
+            "lat": 39.907905,
+            "lng": 116.423267
+        },
+        "address": "崇文门西大街1号新侨饭店内西侧餐厅（酒店内一层左侧）",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "5f59b0a093534ecaede4a5ba",
+        "detail": 1,
+        "uid": "5f59b0a093534ecaede4a5ba",
+        "type": "未知类别"
+    },
+    {
+        "name": "椿庐ChunLounge(远洋国际店)",
+        "location": {
+            "lat": 39.921109,
+            "lng": 116.498179
+        },
+        "address": "东四环中路远洋国际中心A座一、二层",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "12b2d4d8a371da9595ca0702",
+        "detail": 1,
+        "uid": "12b2d4d8a371da9595ca0702",
+        "type": "cater"
+    },
+    {
+        "name": "外婆家(新光界店)",
+        "location": {
+            "lat": 39.872269,
+            "lng": 116.311081
+        },
+        "address": "丰台北路18号院金唐新光界F4层",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "丰台区",
+        "street_id": "100f21b831fa02f9b64f5431",
+        "detail": 1,
+        "uid": "100f21b831fa02f9b64f5431",
+        "type": "cater"
+    },
+    {
+        "name": "丹江渔村(四季青店)",
+        "location": {
+            "lat": 39.943909,
+            "lng": 116.26321
+        },
+        "address": "旱河路田丰公司葡萄观光园内",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "",
+        "detail": 1,
+        "uid": "e17328cffda44c815a3ac881",
+        "type": "未知类别"
+    },
+    {
+        "name": "麦当劳(定泗路得来速店)",
+        "location": {
+            "lat": 40.123174,
+            "lng": 116.420288
+        },
+        "address": "定泗路上路北（宝迪酒店西侧）",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "昌平区",
+        "street_id": "d146b388217d2fc77402697b",
+        "telephone": "4009200205",
+        "detail": 1,
+        "uid": "d146b388217d2fc77402697b",
+        "type": "未知类别"
+    },
+    {
+        "name": "唯真Coco·椰子鸡火锅(亚运村店)",
+        "location": {
+            "lat": 40.012503,
+            "lng": 116.419962
+        },
+        "address": "大屯街道亚运村大屯北路金泉美食宫一层东侧(好利来西侧)",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "1e65768c4ddb83b7a4c756c3",
+        "detail": 1,
+        "uid": "1e65768c4ddb83b7a4c756c3",
+        "type": "cater"
+    },
+    {
+        "name": "韩罗苑韩式烤肉(沙河店)",
+        "location": {
+            "lat": 40.158733,
+            "lng": 116.29145
+        },
+        "address": "南丰路沙河地铁站北300米（兆丰家园东区底商）",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "昌平区",
+        "street_id": "841cc6ccedd72276704b8744",
+        "telephone": "(010)80705340",
+        "detail": 1,
+        "uid": "841cc6ccedd72276704b8744",
+        "type": "未知类别"
+    },
+    {
+        "name": "大红果烤鸭·新派融合菜(新中街店)",
+        "location": {
+            "lat": 40.387761,
+            "lng": 116.85754
+        },
+        "address": "新中街13号1幢1至3层",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "密云区",
+        "street_id": "53cebd502bd75d782b02e1b9",
+        "telephone": "13691103453",
+        "detail": 1,
+        "uid": "53cebd502bd75d782b02e1b9",
+        "type": "未知类别"
+    },
+    {
+        "name": "将太无二·北美传奇寿司(金泉广场店)",
+        "location": {
+            "lat": 40.012248,
+            "lng": 116.417928
+        },
+        "address": "大屯北路金泉美食宫1层321-14号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "fd13a3f217b5e7e3b1077d5d",
+        "detail": 1,
+        "uid": "fd13a3f217b5e7e3b1077d5d",
+        "type": "未知类别"
+    },
+    {
+        "name": "隆顺斋四季涮肉(左家庄店)",
+        "location": {
+            "lat": 39.964271,
+            "lng": 116.446466
+        },
+        "address": "左家庄西街左家庄北里3号（力鸿花园西门）",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "2671778eada20b15ab175afb",
+        "telephone": "(010)64617356",
+        "detail": 1,
+        "uid": "2671778eada20b15ab175afb",
+        "type": "cater"
+    },
+    {
+        "name": "荷花泰菜(国贸商城店)",
+        "location": {
+            "lat": 39.918065,
+            "lng": 116.467412
+        },
+        "address": "建国门外大街1号国贸商城北区五层NL5011",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "",
+        "detail": 1,
+        "uid": "79a78924a0f5a9e28415416d",
+        "type": "cater"
+    },
+    {
+        "name": "北京小王府私家菜馆(光华东路店)",
+        "location": {
+            "lat": 39.918263,
+            "lng": 116.462999
+        },
+        "address": "北京市朝阳区建外街道光华路1号光华东里2号楼",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "",
+        "detail": 1,
+        "uid": "881a28e7bc6bf55ef942b262",
+        "type": "cater"
+    },
+    {
+        "name": "到家尝北京菜(西坝河店)",
+        "location": {
+            "lat": 39.971089,
+            "lng": 116.442246
+        },
+        "address": "光熙门北里20号楼",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "24d05508620c53b6138824bb",
+        "telephone": "(010)64221078",
+        "detail": 1,
+        "uid": "24d05508620c53b6138824bb",
+        "type": "cater"
+    },
+    {
+        "name": "金手勺东北菜(大兴黄村店)",
+        "location": {
+            "lat": 39.73712,
+            "lng": 116.335128
+        },
+        "address": "黄村西大街68号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "大兴区",
+        "street_id": "75d0881a95b932543a04b15e",
+        "telephone": "(010)69237148",
+        "detail": 1,
+        "uid": "75d0881a95b932543a04b15e",
+        "type": "未知类别"
+    },
+    {
+        "name": "祝氏第一锅羊蝎子火锅(天通苑店)",
+        "location": {
+            "lat": 40.073979,
+            "lng": 116.417206
+        },
+        "address": "天通苑西一区37号楼8门",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "昌平区",
+        "street_id": "f9fd60627abf7c060e0e6bb5",
+        "telephone": "15801610266",
+        "detail": 1,
+        "uid": "f9fd60627abf7c060e0e6bb5",
+        "type": "未知类别"
+    },
+    {
+        "name": "新淮扬村(崇文门店)",
+        "location": {
+            "lat": 39.906671,
+            "lng": 116.424099
+        },
+        "address": "崇文门西大街2号崇文门饭店5层",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "",
+        "detail": 1,
+        "uid": "0ed20a154089938e57bfff57",
+        "type": "cater"
+    },
+    {
+        "name": "我们一起去成都串串香(经贸大学店)",
+        "location": {
+            "lat": 39.988503,
+            "lng": 116.43779
+        },
+        "address": "太阳宫地区文学馆路34号(近对外经贸大学东门)",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "31f576aba0f2729078f796d0",
+        "detail": 1,
+        "uid": "31f576aba0f2729078f796d0",
+        "type": "cater"
+    }
+]

@@ -1,0 +1,23 @@
+{
+    "taskID": "19980113-03-002 699",
+    "0": {
+        "id": "19980113-03-002-011",
+        "indexFront": 29,
+        "indexBehind": 34
+    },
+    "1": {
+        "id": "19980113-03-002-011",
+        "indexFront": 36,
+        "indexBehind": 39
+    },
+    "pronoun": {
+        "id": "19980113-03-002-011",
+        "indexFront": 44,
+        "indexBehind": 44
+    },
+    "antecedentNum": 2,
+    "contributor": [
+        "Èî³þÍî",
+        "¸ßÒ»º­"
+    ]
+}

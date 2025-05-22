@@ -1,0 +1,34 @@
+{
+    "taskID": "19980105-05-007 148",
+    "0": {
+        "id": "19980105-05-007-003",
+        "indexFront": 41,
+        "indexBehind": 42
+    },
+    "1": {
+        "id": "19980105-05-007-003",
+        "indexFront": 44,
+        "indexBehind": 45
+    },
+    "2": {
+        "id": "19980105-05-007-003",
+        "indexFront": 52,
+        "indexBehind": 52
+    },
+    "3": {
+        "id": "19980105-05-007-003",
+        "indexFront": 54,
+        "indexBehind": 54
+    },
+    "pronoun": {
+        "id": "19980105-05-007-003",
+        "indexFront": 65,
+        "indexBehind": 65
+    },
+    "antecedentNum": 4,
+    "contributor": [
+        "张兆熙",
+        "张骞",
+        "方卜正阳"
+    ]
+}

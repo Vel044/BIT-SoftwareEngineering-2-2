@@ -1,0 +1,424 @@
+unit Unit2;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, DB, ADODB, Grids, DBGrids;
+
+type
+  TConsumerMenuForm = class(TForm)
+    HelloConsumerLabel: TLabel;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    DBGrid1: TDBGrid;
+    ADOQuery1: TADOQuery;
+    DataSource1: TDataSource;
+    SearchProductsButton: TButton;
+    Label4: TLabel;
+    Label7: TLabel;
+    ProductIDEdit: TEdit;
+    StockEdit: TEdit;
+    AddAddressEdit: TEdit;
+    AddAddressButton: TButton;
+    Label5: TLabel;
+    AddressIDEdit: TEdit;
+    Label6: TLabel;
+    PurchaseProductButton: TButton;
+    AddressComboBox: TComboBox;
+    Label8: TLabel;
+    OrderIDEdit: TEdit;
+    Label9: TLabel;
+    SearchOrderButton: TButton;
+    Label10: TLabel;
+    PayButton: TButton;
+    Label11: TLabel;
+    PaymentIDEdit: TEdit;
+    Label12: TLabel;
+    OrderIDEdit2: TEdit;
+    PaymentMethodComboBox: TComboBox;
+    Label13: TLabel;
+    Label14: TLabel;
+    OrderIDEdit3: TEdit;
+    ReceiveOrderButton: TButton;
+    procedure SearchProductsButtonClick(Sender: TObject);
+    procedure AddAddressButtonClick(Sender: TObject);
+    procedure PurchaseProductButtonClick(Sender: TObject);
+    procedure SearchOrderButtonClick(Sender: TObject);
+
+    procedure PayButtonClick(Sender: TObject);
+    procedure ReceiveOrderButtonClick(Sender: TObject);
+
+  private
+    { Private declarations }
+    FUserID: string;
+  public
+    { Public declarations }
+    constructor Create(AOwner: TComponent; const UserID: string); reintroduce;
+  end;
+
+var
+  ConsumerMenuForm: TConsumerMenuForm;
+
+implementation
+
+uses
+  Unit1;  // 确保使用 LoginForm
+
+{$R *.dfm}
+
+constructor TConsumerMenuForm.Create(AOwner: TComponent; const UserID: string);
+var
+  AddressQuery: TADOQuery;
+  SQLText: string;
+begin
+  inherited Create(AOwner);
+  FUserID := UserID;
+  HelloConsumerLabel.Caption := 'Hello, Consumer ' + FUserID;  // 设置 HelloConsumerLabel 的文本
+
+  // Create and execute a query to get the addresses for the user
+  AddressQuery := TADOQuery.Create(nil);
+  try
+    AddressQuery.Connection := ADOQuery1.Connection;
+    SQLText := Format(
+      'SELECT AddressID, Address FROM Addresses WHERE ConsumerID = %s',
+      [QuotedStr(FUserID)]
+    );
+    AddressQuery.SQL.Text := SQLText;
+    AddressQuery.Open;
+
+    // Populate AddressComboBox with AddressID and Address
+    AddressComboBox.Clear;
+    while not AddressQuery.Eof do
+    begin
+      AddressComboBox.Items.Add(
+        Format('%d - %s', [AddressQuery.FieldByName('AddressID').AsInteger, AddressQuery.FieldByName('Address').AsString])
+      );
+      AddressQuery.Next;
+    end;
+  finally
+    AddressQuery.Free;
+  end;
+end;
+
+
+procedure TConsumerMenuForm.SearchProductsButtonClick(Sender: TObject);
+begin
+  // 查询所有产品及其对应的商家信息
+  ADOQuery1.Close;
+  ADOQuery1.SQL.Text := 
+    'SELECT P.ProductID, P.ProductName, P.Price, P.Stock, M.MerchantID ' +
+    'FROM Products P ' +
+    'JOIN Merchants M ON P.MerchantID = M.MerchantID';
+  ADOQuery1.Open;
+
+  // 将查询结果绑定到 DBGrid
+  DBGrid1.DataSource := DataSource1;
+  DataSource1.DataSet := ADOQuery1;
+
+  // 设置列宽
+  DBGrid1.Columns[0].Width := 50;   // ProductID 列宽度
+  DBGrid1.Columns[1].Width := 150;  // ProductName 列宽度
+  DBGrid1.Columns[2].Width := 100;  // Price 列宽度
+  DBGrid1.Columns[3].Width := 80;   // Stock 列宽度
+  DBGrid1.Columns[4].Width := 100;  // MerchantName 列宽度
+end;
+
+
+
+procedure TConsumerMenuForm.AddAddressButtonClick(Sender: TObject);
+var
+  AddressID: Integer;
+  NewAddress: string;
+  NewAddressQuery: TADOQuery;
+  CheckAddressIDQuery: TADOQuery;
+begin
+  // 获取地址ID和新地址
+  if not TryStrToInt(AddressIDEdit.Text, AddressID) then
+  begin
+    ShowMessage('Invalid Address ID.');
+    Exit;
+  end;
+
+  NewAddress := AddAddressEdit.Text;
+
+  // 检查地址是否为空
+  if Trim(NewAddress) = '' then
+  begin
+    ShowMessage('Address cannot be empty.');
+    Exit;
+  end;
+
+  // 检查地址ID是否已存在
+  CheckAddressIDQuery := TADOQuery.Create(nil);
+  try
+    CheckAddressIDQuery.Connection := ADOQuery1.Connection;
+    CheckAddressIDQuery.SQL.Text :=
+      Format('SELECT COUNT(*) FROM Addresses WHERE AddressID = %d', [AddressID]);
+    CheckAddressIDQuery.Open;
+    if CheckAddressIDQuery.Fields[0].AsInteger > 0 then
+    begin
+      ShowMessage('Address ID already exists. Please choose a different Address ID.');
+      Exit;
+    end;
+  finally
+    CheckAddressIDQuery.Free;
+  end;
+
+  // 插入新地址到数据库
+  NewAddressQuery := TADOQuery.Create(nil);
+  try
+    NewAddressQuery.Connection := ADOQuery1.Connection;
+    NewAddressQuery.SQL.Text := Format(
+      'INSERT INTO Addresses (AddressID, ConsumerID, Address) VALUES (%d, %s, %s)',
+      [AddressID, QuotedStr(FUserID), QuotedStr(NewAddress)]
+    );
+    NewAddressQuery.ExecSQL;
+    ShowMessage('Address added successfully.');
+  finally
+    NewAddressQuery.Free;
+  end;
+
+  // 清空输入框
+  AddressIDEdit.Clear;
+  AddAddressEdit.Clear;
+end;
+
+procedure TConsumerMenuForm.PurchaseProductButtonClick(Sender: TObject);
+var
+  CreateOrdersTableQuery: TADOQuery;
+  UpdateProductStockQuery: TADOQuery;
+  CheckOrderIDQuery: TADOQuery;
+  SQLText: string;
+  ProductID, Quantity, OrderID, AvailableStock: Integer;
+  TotalAmount: Currency;
+  Status: string;
+begin
+  // 读取文本框中的订单ID、产品ID和购买数量
+  if (not TryStrToInt(OrderIDEdit.Text, OrderID)) or
+     (not TryStrToInt(ProductIDEdit.Text, ProductID)) or
+     (not TryStrToInt(StockEdit.Text, Quantity)) then
+  begin
+    ShowMessage('订单ID、产品ID或购买数量输入无效。');
+    Exit;
+  end;
+
+  // 将购买数量写入 Quantity 中
+  Quantity := StrToInt(StockEdit.Text);
+
+  // 检查订单ID是否存在冲突
+  CheckOrderIDQuery := TADOQuery.Create(nil);
+  try
+    CheckOrderIDQuery.Connection := ADOQuery1.Connection;
+    CheckOrderIDQuery.SQL.Text :=
+      Format('SELECT COUNT(*) FROM Orders WHERE OrderID = %d', [OrderID]);
+    CheckOrderIDQuery.Open;
+    if CheckOrderIDQuery.Fields[0].AsInteger > 0 then
+    begin
+      ShowMessage('订单ID已存在，请输入其他订单ID。');
+      Exit;
+    end;
+  finally
+    CheckOrderIDQuery.Free;
+  end;
+
+  // 基于产品价格和购买数量计算总金额（假设 Products 表中存在 Price 字段）
+  ADOQuery1.Close;
+  ADOQuery1.SQL.Text :=
+    Format('SELECT Price FROM Products WHERE ProductID = %d', [ProductID]);
+  ADOQuery1.Open;
+  if ADOQuery1.IsEmpty then
+  begin
+    ShowMessage('未找到产品。');
+    Exit;
+  end;
+  TotalAmount := ADOQuery1.FieldByName('Price').AsCurrency * Quantity;
+
+  // 检查库存是否足够
+  if Quantity > AvailableStock then
+  begin
+    ShowMessage('库存不足，无法购买。');
+    Exit;
+  end;
+
+  // 设置新订单的状态为“待支付”
+  Status := '待支付';
+
+  // 创建查询以将订单插入 Orders 表中
+  CreateOrdersTableQuery := TADOQuery.Create(nil);
+  try
+    CreateOrdersTableQuery.Connection := ADOQuery1.Connection;
+    SQLText := Format(
+      'INSERT INTO Orders (OrderID, ConsumerID, ProductID, Quantity, TotalAmount, Status) ' +
+      'VALUES (%d, %s, %d, %d, %.2f, %s)',
+      [OrderID, QuotedStr(FUserID), ProductID, Quantity, TotalAmount, QuotedStr(Status)]
+    );
+    CreateOrdersTableQuery.SQL.Text := SQLText;
+    CreateOrdersTableQuery.ExecSQL;
+    ShowMessage('订单成功下达。');
+  finally
+    CreateOrdersTableQuery.Free;
+  end;
+
+  // 更新产品库存
+  UpdateProductStockQuery := TADOQuery.Create(nil);
+  try
+    UpdateProductStockQuery.Connection := ADOQuery1.Connection;
+    SQLText := Format(
+      'UPDATE Products SET Stock = Stock - %d WHERE ProductID = %d',
+      [Quantity, ProductID]
+    );
+    UpdateProductStockQuery.SQL.Text := SQLText;
+    UpdateProductStockQuery.ExecSQL;
+  finally
+    UpdateProductStockQuery.Free;
+  end;
+end;
+
+
+
+procedure TConsumerMenuForm.SearchOrderButtonClick(Sender: TObject);
+begin
+  // 查询该用户的所有订单
+  ADOQuery1.Close;
+  ADOQuery1.SQL.Text := Format(
+    'SELECT OrderID, ProductID, Quantity, TotalAmount, Status ' +
+    'FROM Orders ' +
+    'WHERE ConsumerID = %s',
+    [QuotedStr(FUserID)]
+  );
+  ADOQuery1.Open;
+
+  // 将查询结果绑定到 DBGrid
+  DBGrid1.DataSource := DataSource1;
+  DataSource1.DataSet := ADOQuery1;
+
+  // 设置列宽（可根据需要调整）
+  DBGrid1.Columns[0].Width := 50;  // OrderID 列宽度
+  DBGrid1.Columns[1].Width := 50;  // ProductID 列宽度
+  DBGrid1.Columns[2].Width := 50;  // Quantity 列宽度
+  DBGrid1.Columns[3].Width := 100; // TotalAmount 列宽度
+  DBGrid1.Columns[4].Width := 100; // Status 列宽度
+end;
+
+
+
+procedure TConsumerMenuForm.PayButtonClick(Sender: TObject);
+var
+  PaymentID, OrderID: Integer;
+  PaymentMethod: string;
+  Amount: Currency;
+  PaymentQuery, UpdateOrderStatusQuery, CheckOrderStatusQuery: TADOQuery;
+begin
+  // 读取文本框中的支付ID和订单ID
+  if (not TryStrToInt(PaymentIDEdit.Text, PaymentID)) or
+     (not TryStrToInt(OrderIDEdit2.Text, OrderID)) then
+  begin
+    ShowMessage('支付ID或订单ID输入无效。');
+    Exit;
+  end;
+
+  // 读取支付方式
+  PaymentMethod := PaymentMethodComboBox.Text;
+
+  // 检查订单状态是否为“待支付”
+  CheckOrderStatusQuery := TADOQuery.Create(nil);
+  try
+    CheckOrderStatusQuery.Connection := ADOQuery1.Connection;
+    CheckOrderStatusQuery.SQL.Text :=
+      Format('SELECT Status, TotalAmount FROM Orders WHERE OrderID = %d', [OrderID]);
+    CheckOrderStatusQuery.Open;
+    if CheckOrderStatusQuery.IsEmpty then
+    begin
+      ShowMessage('订单未找到。');
+      Exit;
+    end;
+    if CheckOrderStatusQuery.FieldByName('Status').AsString <> '待支付' then
+    begin
+      ShowMessage('该订单不可支付。');
+      Exit;
+    end;
+    // 获取订单金额
+    Amount := CheckOrderStatusQuery.FieldByName('TotalAmount').AsCurrency;
+  finally
+    CheckOrderStatusQuery.Free;
+  end;
+
+  // 插入支付记录到 Payments 表
+  PaymentQuery := TADOQuery.Create(nil);
+  try
+    PaymentQuery.Connection := ADOQuery1.Connection;
+    PaymentQuery.SQL.Text := Format(
+      'INSERT INTO Payments (PaymentID, OrderID, Amount, PaymentMethod) VALUES (%d, %d, %.2f, %s)',
+      [PaymentID, OrderID, Amount, QuotedStr(PaymentMethod)]
+    );
+    PaymentQuery.ExecSQL;
+    ShowMessage('支付成功。');
+  finally
+    PaymentQuery.Free;
+  end;
+
+  // 更新订单状态为“待发货”
+  UpdateOrderStatusQuery := TADOQuery.Create(nil);
+  try
+    UpdateOrderStatusQuery.Connection := ADOQuery1.Connection;
+    UpdateOrderStatusQuery.SQL.Text := Format(
+      'UPDATE Orders SET Status = %s WHERE OrderID = %d',
+      [QuotedStr('待发货'), OrderID]
+    );
+    UpdateOrderStatusQuery.ExecSQL;
+  finally
+    UpdateOrderStatusQuery.Free;
+  end;
+
+  // 清空输入框
+  PaymentIDEdit.Clear;
+  OrderIDEdit2.Clear;
+  PaymentMethodComboBox.ItemIndex := -1;
+end;
+
+procedure TConsumerMenuForm.ReceiveOrderButtonClick(Sender: TObject);
+var
+  OrderID: Integer;
+begin
+  // 读取订单号
+  if not TryStrToInt(OrderIDEdit3.Text, OrderID) then
+  begin
+    ShowMessage('Invalid Order ID.');
+    Exit;
+  end;
+
+  // 检查订单是否为“已发货”
+  ADOQuery1.Close;
+  ADOQuery1.SQL.Text := Format(
+    'SELECT Status FROM Orders WHERE OrderID = %d',
+    [OrderID]
+  );
+  ADOQuery1.Open;
+  if ADOQuery1.IsEmpty then
+  begin
+    ShowMessage('Order not found.');
+    Exit;
+  end;
+  
+  if ADOQuery1.FieldByName('Status').AsString <> '已发货' then
+  begin
+    ShowMessage('Only orders with status "Delivered" can be received.');
+    Exit;
+  end;
+
+  // 更新订单状态为“已收货”
+  ADOQuery1.Close;
+  ADOQuery1.SQL.Text := Format(
+    'UPDATE Orders SET Status = %s WHERE OrderID = %d',
+    [QuotedStr('已收货'), OrderID]
+  );
+  ADOQuery1.ExecSQL;
+
+  ShowMessage('Order has been marked as "Received".');
+end;
+
+
+end.
+

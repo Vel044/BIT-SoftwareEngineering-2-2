@@ -1,0 +1,19 @@
+{
+    "taskID": "19980126-01-001 175",
+    "0": {
+        "id": "19980126-01-001-006",
+        "indexFront": 0,
+        "indexBehind": 2
+    },
+    "pronoun": {
+        "id": "19980126-01-001-006",
+        "indexFront": 9,
+        "indexBehind": 9
+    },
+    "antecedentNum": 1,
+    "contributor": [
+        "王紫若",
+        "吴思睿",
+        "李新宇"
+    ]
+}

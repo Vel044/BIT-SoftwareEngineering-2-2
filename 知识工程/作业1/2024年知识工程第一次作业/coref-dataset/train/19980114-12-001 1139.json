@@ -1,0 +1,18 @@
+{
+    "taskID": "19980114-12-001 1139",
+    "0": {
+        "id": "19980114-12-001-018",
+        "indexFront": 93,
+        "indexBehind": 94
+    },
+    "pronoun": {
+        "id": "19980114-12-001-018",
+        "indexFront": 107,
+        "indexBehind": 107
+    },
+    "antecedentNum": 1,
+    "contributor": [
+        "邹子艺",
+        "林方裕"
+    ]
+}

@@ -1,0 +1,97 @@
+[
+    {
+        "name": "圣莲山风景区",
+        "location": {
+            "lat": 39.847532,
+            "lng": 115.737588
+        },
+        "address": "北京市房山区史家营乡柳林水村",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "房山区",
+        "street_id": "",
+        "telephone": "4008087179",
+        "detail": 1,
+        "uid": "593850fb2d22fe5ddf1e52c7",
+        "type": "scope"
+    },
+    {
+        "name": "十渡风景区",
+        "location": {
+            "lat": 39.644403,
+            "lng": 115.606398
+        },
+        "address": "北京市房山区十渡镇九渡大街9号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "房山区",
+        "street_id": "64ff3be1653dd1bb90114cc4",
+        "telephone": "15501045682,4001060790",
+        "detail": 1,
+        "uid": "64ff3be1653dd1bb90114cc4",
+        "type": "scope"
+    },
+    {
+        "name": "窦店清真寺",
+        "location": {
+            "lat": 39.644176,
+            "lng": 116.072338
+        },
+        "address": "北京市房山区窦店镇大窦路库尔家星级宾馆南50米",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "房山区",
+        "telephone": "(010)80303608",
+        "detail": 1,
+        "uid": "7f0a230a3cc95e9e3be4a68d",
+        "type": "scope"
+    },
+    {
+        "name": "张坊宋辽古战道",
+        "location": {
+            "lat": 39.576967,
+            "lng": 115.720894
+        },
+        "address": "北京市房山区涞宝路(小博士幼儿园西南侧约100米)",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "房山区",
+        "street_id": "083a55fa3fd71379246e98c5",
+        "telephone": "(010)61331451",
+        "detail": 1,
+        "uid": "083a55fa3fd71379246e98c5",
+        "type": "scope"
+    },
+    {
+        "name": "石花洞风景名胜区",
+        "location": {
+            "lat": 39.803892,
+            "lng": 115.949587
+        },
+        "address": "北京市房山区河北镇南车营村111号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "房山区",
+        "street_id": "",
+        "telephone": "(010)60312243",
+        "detail": 1,
+        "uid": "bda430068962fdacfa0cadbc",
+        "type": "scope"
+    },
+    {
+        "name": "周口店北京人遗址博物馆",
+        "location": {
+            "lat": 39.693589,
+            "lng": 115.943241
+        },
+        "address": "周口店大街1号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "房山区",
+        "street_id": "",
+        "telephone": "(010)69301010,010-69301278",
+        "detail": 1,
+        "uid": "70854d1b7a737860601c6753",
+        "type": "scope"
+    }
+]

@@ -1,0 +1,34 @@
+{
+    "taskID": "19980112-03-002 1122",
+    "0": {
+        "id": "19980112-03-002-010",
+        "indexFront": 28,
+        "indexBehind": 28
+    },
+    "1": {
+        "id": "19980112-03-002-010",
+        "indexFront": 30,
+        "indexBehind": 32
+    },
+    "2": {
+        "id": "19980112-03-002-010",
+        "indexFront": 34,
+        "indexBehind": 36
+    },
+    "3": {
+        "id": "19980112-03-002-010",
+        "indexFront": 38,
+        "indexBehind": 41
+    },
+    "pronoun": {
+        "id": "19980112-03-002-010",
+        "indexFront": 48,
+        "indexBehind": 48
+    },
+    "antecedentNum": 4,
+    "contributor": [
+        "ÂÀê»Ñô",
+        "´÷²®Ñó",
+        "ËÎî£å·"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "taskID": "19980105-03-002 1022",
+    "0": {
+        "id": "19980105-03-002-018",
+        "indexFront": 32,
+        "indexBehind": 32
+    },
+    "pronoun": {
+        "id": "19980105-03-002-018",
+        "indexFront": 44,
+        "indexBehind": 44
+    },
+    "antecedentNum": 1,
+    "contributor": [
+        "李世龙",
+        "张兆熙",
+        "张骞"
+    ]
+}

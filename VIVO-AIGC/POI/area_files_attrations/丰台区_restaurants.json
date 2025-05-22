@@ -1,0 +1,174 @@
+[
+    {
+        "name": "世界公园",
+        "location": {
+            "lat": 39.816781,
+            "lng": 116.294039
+        },
+        "address": "北京市丰台区丰葆路158号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "丰台区",
+        "street_id": "",
+        "telephone": "(010)83613344",
+        "detail": 1,
+        "uid": "0174a8e582b9cd8fbea2407b",
+        "type": "scope"
+    },
+    {
+        "name": "北京园博园",
+        "location": {
+            "lat": 39.881733,
+            "lng": 116.197194
+        },
+        "address": "北京市丰台区射击场路15号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "丰台区",
+        "street_id": "",
+        "telephone": "(010)63915561",
+        "detail": 1,
+        "uid": "14076deea795edf402294f07",
+        "type": "scope"
+    },
+    {
+        "name": "北宫国家森林公园",
+        "location": {
+            "lat": 39.871839,
+            "lng": 116.12471
+        },
+        "address": "北京市丰台区长辛店镇大灰厂东路55号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "丰台区",
+        "street_id": "f60a15ed8f5278ecbb17e704",
+        "telephone": "(010)83840830",
+        "detail": 1,
+        "uid": "f60a15ed8f5278ecbb17e704",
+        "type": "scope"
+    },
+    {
+        "name": "卢沟桥",
+        "location": {
+            "lat": 39.856402,
+            "lng": 116.228723
+        },
+        "address": "北京市丰台区宛平城西门马路对面",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "丰台区",
+        "street_id": "",
+        "telephone": "(010)83896510",
+        "detail": 1,
+        "uid": "eac1f65976ce2486fbdc857a",
+        "type": "scope"
+    },
+    {
+        "name": "北京汽车博物馆",
+        "location": {
+            "lat": 39.834959,
+            "lng": 116.308469
+        },
+        "address": "北京市丰台区南四环西路126号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "丰台区",
+        "street_id": "35d6b4d391445bb1e81e97f3",
+        "detail": 1,
+        "uid": "35d6b4d391445bb1e81e97f3",
+        "type": "scope"
+    },
+    {
+        "name": "中国人民抗日战争纪念馆",
+        "location": {
+            "lat": 39.857753,
+            "lng": 116.232474
+        },
+        "address": "北京市丰台区卢沟桥宛平城内街101号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "丰台区",
+        "street_id": "5ec201faf05332672eb90851",
+        "telephone": "(010)63777088,(010)63777188,010-63054992",
+        "detail": 1,
+        "uid": "5ec201faf05332672eb90851",
+        "type": "scope"
+    },
+    {
+        "name": "北京南宫旅游景区",
+        "location": {
+            "lat": 39.800347,
+            "lng": 116.159334
+        },
+        "address": "北京市丰台区王佐镇南宫南路1号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "丰台区",
+        "street_id": "83c8d282d2f54cd386420e64",
+        "detail": 1,
+        "uid": "83c8d282d2f54cd386420e64",
+        "type": "scope"
+    },
+    {
+        "name": "南宫温泉水世界",
+        "location": {
+            "lat": 39.812414,
+            "lng": 116.15983
+        },
+        "address": "北京市丰台区福宫路39号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "丰台区",
+        "street_id": "a5097bfaca97a77af03cba4d",
+        "telephone": "(010)83315565,(010)83316030,(010)83318308",
+        "detail": 1,
+        "uid": "a5097bfaca97a77af03cba4d",
+        "type": "scope"
+    },
+    {
+        "name": "北京世界花卉大观园",
+        "location": {
+            "lat": 39.840957,
+            "lng": 116.359769
+        },
+        "address": "北京市丰台区南四环中路235号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "丰台区",
+        "street_id": "",
+        "detail": 1,
+        "uid": "baae3dde2007d4ada6da399e",
+        "type": "scope"
+    },
+    {
+        "name": "中国园林博物馆",
+        "location": {
+            "lat": 39.885338,
+            "lng": 116.183773
+        },
+        "address": "北京市丰台区射击场路15号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "丰台区",
+        "street_id": "0c88dcfbbe2bfcd74054d776",
+        "telephone": "(010)63706746,(010)63915017,(010)63915025",
+        "detail": 1,
+        "uid": "0c88dcfbbe2bfcd74054d776",
+        "type": "scope"
+    },
+    {
+        "name": "五洲植物乐园",
+        "location": {
+            "lat": 39.799892,
+            "lng": 116.160952
+        },
+        "address": "北京市丰台区王佐镇南宫南路1号南宫旅游景区内",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "丰台区",
+        "street_id": "fc6e4514dfd809fbebe582dc",
+        "detail": 1,
+        "uid": "fc6e4514dfd809fbebe582dc",
+        "type": "scope"
+    }
+]

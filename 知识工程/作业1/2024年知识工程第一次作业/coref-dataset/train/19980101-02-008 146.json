@@ -1,0 +1,43 @@
+{
+    "taskID": "19980101-02-008 146",
+    "0": {
+        "id": "19980101-02-008-004",
+        "indexFront": 5,
+        "indexBehind": 18
+    },
+    "1": {
+        "id": "19980101-02-008-004",
+        "indexFront": 20,
+        "indexBehind": 21
+    },
+    "2": {
+        "id": "19980101-02-008-004",
+        "indexFront": 23,
+        "indexBehind": 24
+    },
+    "3": {
+        "id": "19980101-02-008-004",
+        "indexFront": 26,
+        "indexBehind": 27
+    },
+    "4": {
+        "id": "19980101-02-008-004",
+        "indexFront": 29,
+        "indexBehind": 37
+    },
+    "5": {
+        "id": "19980101-02-008-004",
+        "indexFront": 39,
+        "indexBehind": 45
+    },
+    "pronoun": {
+        "id": "19980101-02-008-004",
+        "indexFront": 50,
+        "indexBehind": 50
+    },
+    "antecedentNum": 6,
+    "contributor": [
+        "ÀÔ”Ó–˘",
+        "’‘»Ÿ∫≤"
+    ]
+}

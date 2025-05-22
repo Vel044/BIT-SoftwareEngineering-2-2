@@ -1,0 +1,49 @@
+[
+    {
+        "name": "北京野生动物园",
+        "location": {
+            "lat": 39.502905,
+            "lng": 116.341913
+        },
+        "address": "北京市大兴区榆垡镇万亩森林",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "大兴区",
+        "street_id": "e85e2527b6f7615395f08cf8",
+        "detail": 1,
+        "uid": "e85e2527b6f7615395f08cf8",
+        "type": "scope"
+    },
+    {
+        "name": "南海子公园",
+        "location": {
+            "lat": 39.779661,
+            "lng": 116.475291
+        },
+        "address": "北京市大兴区黄亦路16号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "大兴区",
+        "street_id": "",
+        "telephone": "(010)52386316,010-69271375,010-69271456",
+        "detail": 1,
+        "uid": "f1f5cac51d653e8137b06ce4",
+        "type": "scope"
+    },
+    {
+        "name": "北京呀路古热带植物园",
+        "location": {
+            "lat": 39.664748,
+            "lng": 116.600178
+        },
+        "address": "北京市大兴区长子营镇104国道与朱大路口交叉口东北角",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "大兴区",
+        "street_id": "",
+        "telephone": "(010)80218180,(010)80219731",
+        "detail": 1,
+        "uid": "919f4b738ec47e25f7231002",
+        "type": "scope"
+    }
+]

@@ -1,0 +1,19 @@
+{
+    "taskID": "19980105-08-008 969",
+    "0": {
+        "id": "19980105-08-008-019",
+        "indexFront": 13,
+        "indexBehind": 15
+    },
+    "pronoun": {
+        "id": "19980105-08-008-020",
+        "indexFront": 3,
+        "indexBehind": 3
+    },
+    "antecedentNum": 1,
+    "contributor": [
+        "单赢宇",
+        "方卜正阳",
+        "邢家瑞"
+    ]
+}

@@ -1,0 +1,81 @@
+[
+    {
+        "name": "北京平谷金海湖风景区",
+        "location": {
+            "lat": 40.187348,
+            "lng": 117.310896
+        },
+        "address": "北京市平谷区金海湖镇坝前广场路1号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "平谷区",
+        "street_id": "",
+        "telephone": "(010)69991356",
+        "detail": 1,
+        "uid": "ff4933daf92894fa631c67ba",
+        "type": "scope"
+    },
+    {
+        "name": "京东石林峡景区",
+        "location": {
+            "lat": 40.268794,
+            "lng": 117.24851
+        },
+        "address": "北京市平谷区黄松峪乡雕窝村73号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "平谷区",
+        "street_id": "ef8195229cd670868bdb7311",
+        "detail": 1,
+        "uid": "ef8195229cd670868bdb7311",
+        "type": "scope"
+    },
+    {
+        "name": "京东大溶洞旅游区",
+        "location": {
+            "lat": 40.232876,
+            "lng": 117.253178
+        },
+        "address": "北京市平谷区黄松峪乡黑豆峪村",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "平谷区",
+        "street_id": "044ab76b0afb4508abf72914",
+        "telephone": "(010)60971708",
+        "detail": 1,
+        "uid": "044ab76b0afb4508abf72914",
+        "type": "scope"
+    },
+    {
+        "name": "碧霞元君祠",
+        "location": {
+            "lat": 40.279344,
+            "lng": 116.988201
+        },
+        "address": "北京市平谷区刘家店乡北吉山村西北山",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "平谷区",
+        "street_id": "",
+        "telephone": "(010)61972535",
+        "detail": 1,
+        "uid": "fede955c02ea07a49d9d6835",
+        "type": "scope"
+    },
+    {
+        "name": "北京渔阳国际滑雪场",
+        "location": {
+            "lat": 40.084865,
+            "lng": 117.153508
+        },
+        "address": "北京市平谷区大旺务中路688号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "平谷区",
+        "street_id": "",
+        "telephone": "010-69908080",
+        "detail": 1,
+        "uid": "b9e5d0b8b305b4a580a12e82",
+        "type": "scope"
+    }
+]

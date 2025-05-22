@@ -1,0 +1,437 @@
+<!DOCTYPE html><html><head>
+      <title>评分表完成项</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="实现的评分项说明">实现的评分项说明 </h1>
+<h2 id="目录">目录 </h2>
+<ul>
+<li><a href="#%E5%AE%9E%E7%8E%B0%E7%9A%84%E8%AF%84%E5%88%86%E9%A1%B9%E8%AF%B4%E6%98%8E">实现的评分项说明</a>
+<ul>
+<li><a href="#%E7%9B%AE%E5%BD%95">目录</a></li>
+<li><a href="#%E8%AF%A5%E9%A1%B9%E7%9B%AE%E5%AE%8C%E6%88%90%E4%BA%86%E5%85%A8%E9%83%A8%E7%9A%84%E4%BB%BB%E5%8A%A1">该项目完成了全部的任务</a>
+<ul>
+<li><a href="#1-%E4%BD%BF%E7%94%A8gauss%E6%95%B0%E6%8D%AE%E5%BA%93%E8%87%B3%E5%B0%91%E5%85%AD%E5%BC%A0%E8%A1%A8%E5%90%ABer%E5%9B%BE%E8%8C%83%E5%BC%8F%E8%AF%81%E6%98%8E%E6%8F%90%E4%BA%A4%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AF%AD%E5%8F%A5%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%87%E4%BB%BD">1. 使用Gauss数据库，至少六张表，含ER图，范式证明，提交数据库语句与数据库备份</a>
+<ul>
+<li><a href="#1-consumers-%E8%A1%A8">1. Consumers 表</a></li>
+<li><a href="#2-merchants-%E8%A1%A8">2. Merchants 表</a></li>
+<li><a href="#3-products-%E8%A1%A8">3. Products 表</a></li>
+<li><a href="#4-orders-%E8%A1%A8">4. Orders 表</a></li>
+<li><a href="#5-addresses-%E8%A1%A8">5. Addresses 表</a></li>
+<li><a href="#6-payments-%E8%A1%A8">6. Payments 表</a></li>
+<li><a href="#bcnf%E8%AF%81%E6%98%8E">BCNF证明</a></li>
+</ul>
+</li>
+<li><a href="#2-%E5%AE%9E%E7%8E%B0%E8%A1%A8%E7%9A%84%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%E6%8F%90%E4%BA%A4%E4%BA%86%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82%E5%92%8C%E8%AE%BE%E8%AE%A1%E8%AF%B4%E6%98%8E%E6%8F%90%E4%BA%A4%E4%BA%86%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6%E6%BA%90%E4%BB%A3%E7%A0%81%E5%92%8C%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6">2. 实现表的增删改查，提交了功能需求和设计说明，提交了使用说明书、源代码和可执行文件</a></li>
+<li><a href="#3-%E6%9C%89%E7%95%8C%E9%9D%A2%E8%A1%A8%E7%BA%A7%E8%81%94%E6%93%8D%E4%BD%9C">3. 有界面表级联操作</a>
+<ul>
+<li><a href="#%E8%A1%A8%E7%BA%A7%E8%81%94%E6%93%8D%E4%BD%9C%E8%AF%81%E6%98%8E">表级联操作证明</a></li>
+<li><a href="#1-%E5%88%A0%E9%99%A4%E5%95%86%E5%AE%B6%E5%8F%8A%E5%85%B6%E4%BA%A7%E5%93%81">1. 删除商家及其产品</a></li>
+<li><a href="#2%E5%88%A0%E9%99%A4%E6%B6%88%E8%B4%B9%E8%80%85%E5%8F%8A%E5%85%B6%E8%AE%A2%E5%8D%95%E5%92%8C%E5%9C%B0%E5%9D%80">2.删除消费者及其订单和地址</a></li>
+<li><a href="#3%E5%88%A0%E9%99%A4%E8%AE%A2%E5%8D%95%E5%8F%8A%E5%85%B6%E4%BB%98%E6%AC%BE%E8%AE%B0%E5%BD%95">3.删除订单及其付款记录</a></li>
+</ul>
+</li>
+<li><a href="#4%E6%9C%89%E5%A4%9A%E4%B8%AA%E7%94%A8%E6%88%B7%E5%8F%8A%E9%93%BE%E6%8E%A5">4.有多个用户及链接</a></li>
+<li><a href="#5-%E5%BA%94%E7%94%A8%E7%94%A8%E6%88%B7%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86">5. 应用用户权限管理</a>
+<ul>
+<li><a href="#%E6%B6%88%E8%B4%B9%E8%80%85%E6%9D%83%E9%99%90">消费者权限</a></li>
+<li><a href="#%E5%95%86%E5%AE%B6%E6%9D%83%E9%99%90">商家权限</a></li>
+<li><a href="#%E5%AE%9E%E7%8E%B0%E6%9D%83%E9%99%90%E6%A3%80%E6%9F%A5%E7%9A%84%E9%80%BB%E8%BE%91">实现权限检查的逻辑</a></li>
+</ul>
+</li>
+<li><a href="#6-%E8%A7%86%E5%9B%BE%E5%92%8C%E5%8A%A8%E6%80%81-sql">6. 视图和动态 SQL</a>
+<ul>
+<li><a href="#%E8%A7%86%E5%9B%BE">视图</a></li>
+<li><a href="#%E5%8A%A8%E6%80%81sql">动态SQL</a></li>
+<li><a href="#%E8%A7%86%E5%9B%BE%E5%92%8C%E5%8A%A8%E6%80%81-sql-%E7%9A%84%E7%BB%93%E5%90%88">视图和动态 SQL 的结合</a></li>
+</ul>
+</li>
+<li><a href="#7%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B-%E5%87%BD%E6%95%B0-%E8%A7%A6%E5%8F%91%E5%99%A8">7.存储过程-函数-触发器</a>
+<ul>
+<li><a href="#%E5%82%A8%E5%AD%98%E8%BF%87%E7%A8%8B">储存过程</a></li>
+<li><a href="#%E8%A7%A6%E5%8F%91%E5%99%A8-trigger">触发器 (Trigger)</a>
+<ul>
+<li><a href="#%E7%A4%BA%E4%BE%8B%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E8%A7%A6%E5%8F%91%E5%99%A8%E5%9C%A8%E8%AE%A2%E5%8D%95%E6%8F%92%E5%85%A5%E6%97%B6%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0%E4%BA%A7%E5%93%81%E5%BA%93%E5%AD%98">示例：创建一个触发器在订单插入时自动更新产品库存</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#8%E5%BE%85%E7%94%A8delphi%E4%B8%AD%E8%87%B3%E5%B0%91%E4%BA%94%E4%B8%AA%E7%BB%84%E4%BB%B6">8.待用delphi中至少五个组件</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="该项目完成了全部的任务">该项目完成了全部的任务 </h2>
+<h3 id="1-使用gauss数据库至少六张表含er图范式证明提交数据库语句与数据库备份">1. 使用Gauss数据库，至少六张表，含ER图，范式证明，提交数据库语句与数据库备份 </h3>
+<p>使用了至少六张表</p>
+<p><img src="%E5%85%AD%E5%BC%A0%E8%A1%A8.png" alt="六张表"></p>
+<p>ER图</p>
+<p><img src="ERD.png" alt="ERD"></p>
+<p>范式证明在<a href="Design%20documents.pdf">Design documents.pdf</a>中</p>
+<p>以下是对数据库表进行第三范式（3NF）和BCNF（Boyce-Codd范式）规范化的证明。</p>
+<h4 id="1-consumers-表">1. Consumers 表 </h4>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-CREATE">CREATE</span> <span class="token keyword keyword-TABLE">TABLE</span> Consumers <span class="token punctuation">(</span>
+    ConsumerID <span class="token keyword keyword-INT">INT</span> <span class="token keyword keyword-PRIMARY">PRIMARY</span> <span class="token keyword keyword-KEY">KEY</span><span class="token punctuation">,</span>
+    Password <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><ul>
+<li><strong>第一范式 (1NF)</strong>: 所有列的值都是原子的，没有重复的列。</li>
+<li><strong>第二范式 (2NF)</strong>: 只有一个候选键，即 <code>ConsumerID</code>，所以不存在部分依赖。</li>
+<li><strong>第三范式 (3NF)</strong>: <code>Password</code> 仅依赖于 <code>ConsumerID</code>（主键），没有传递依赖。</li>
+</ul>
+<h4 id="2-merchants-表">2. Merchants 表 </h4>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-CREATE">CREATE</span> <span class="token keyword keyword-TABLE">TABLE</span> Merchants <span class="token punctuation">(</span>
+    MerchantID <span class="token keyword keyword-INT">INT</span> <span class="token keyword keyword-PRIMARY">PRIMARY</span> <span class="token keyword keyword-KEY">KEY</span><span class="token punctuation">,</span>
+    Password <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre><ul>
+<li><strong>第一范式 (1NF)</strong>: 所有列的值都是原子的，没有重复的列。</li>
+<li><strong>第二范式 (2NF)</strong>: 只有一个候选键，即 <code>MerchantID</code>，所以不存在部分依赖。</li>
+<li><strong>第三范式 (3NF)</strong>: <code>Password</code> 仅依赖于 <code>MerchantID</code>（主键），没有传递依赖。</li>
+</ul>
+<h4 id="3-products-表">3. Products 表 </h4>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-CREATE">CREATE</span> <span class="token keyword keyword-TABLE">TABLE</span> Products <span class="token punctuation">(</span>
+    ProductID <span class="token keyword keyword-INT">INT</span> <span class="token keyword keyword-PRIMARY">PRIMARY</span> <span class="token keyword keyword-KEY">KEY</span><span class="token punctuation">,</span>
+    ProductName <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    Price <span class="token keyword keyword-DECIMAL">DECIMAL</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    Stock <span class="token keyword keyword-INT">INT</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    MerchantID <span class="token keyword keyword-INT">INT</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    <span class="token keyword keyword-FOREIGN">FOREIGN</span> <span class="token keyword keyword-KEY">KEY</span> <span class="token punctuation">(</span>MerchantID<span class="token punctuation">)</span> <span class="token keyword keyword-REFERENCES">REFERENCES</span> Merchants<span class="token punctuation">(</span>MerchantID<span class="token punctuation">)</span> <span class="token keyword keyword-ON">ON</span> <span class="token keyword keyword-DELETE">DELETE</span> <span class="token keyword keyword-CASCADE">CASCADE</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre><ul>
+<li><strong>第一范式 (1NF)</strong>: 所有列的值都是原子的，没有重复的列。</li>
+<li><strong>第二范式 (2NF)</strong>: <code>ProductID</code> 是主键，所有非主键列 (<code>ProductName</code>, <code>Price</code>, <code>Stock</code>, <code>MerchantID</code>) 完全依赖于主键。</li>
+<li><strong>第三范式 (3NF)</strong>: 所有非主键列直接依赖于主键，没有传递依赖。</li>
+</ul>
+<h4 id="4-orders-表">4. Orders 表 </h4>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-CREATE">CREATE</span> <span class="token keyword keyword-TABLE">TABLE</span> Orders <span class="token punctuation">(</span>
+    OrderID <span class="token keyword keyword-INT">INT</span> <span class="token keyword keyword-PRIMARY">PRIMARY</span> <span class="token keyword keyword-KEY">KEY</span><span class="token punctuation">,</span>
+    ConsumerID <span class="token keyword keyword-INT">INT</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    ProductID <span class="token keyword keyword-INT">INT</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    Quantity <span class="token keyword keyword-INT">INT</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    TotalAmount <span class="token keyword keyword-DECIMAL">DECIMAL</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    <span class="token keyword keyword-Status">Status</span> <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    <span class="token keyword keyword-FOREIGN">FOREIGN</span> <span class="token keyword keyword-KEY">KEY</span> <span class="token punctuation">(</span>ConsumerID<span class="token punctuation">)</span> <span class="token keyword keyword-REFERENCES">REFERENCES</span> Consumers<span class="token punctuation">(</span>ConsumerID<span class="token punctuation">)</span> <span class="token keyword keyword-ON">ON</span> <span class="token keyword keyword-DELETE">DELETE</span> <span class="token keyword keyword-CASCADE">CASCADE</span><span class="token punctuation">,</span>
+    <span class="token keyword keyword-FOREIGN">FOREIGN</span> <span class="token keyword keyword-KEY">KEY</span> <span class="token punctuation">(</span>ProductID<span class="token punctuation">)</span> <span class="token keyword keyword-REFERENCES">REFERENCES</span> Products<span class="token punctuation">(</span>ProductID<span class="token punctuation">)</span> <span class="token keyword keyword-ON">ON</span> <span class="token keyword keyword-DELETE">DELETE</span> <span class="token keyword keyword-CASCADE">CASCADE</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre><ul>
+<li><strong>第一范式 (1NF)</strong>: 所有列的值都是原子的，没有重复的列。</li>
+<li><strong>第二范式 (2NF)</strong>: <code>OrderID</code> 是主键，所有非主键列 (<code>ConsumerID</code>, <code>ProductID</code>, <code>Quantity</code>, <code>TotalAmount</code>, <code>Status</code>) 完全依赖于主键。</li>
+<li><strong>第三范式 (3NF)</strong>: 所有非主键列直接依赖于主键，没有传递依赖。</li>
+</ul>
+<h4 id="5-addresses-表">5. Addresses 表 </h4>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-CREATE">CREATE</span> <span class="token keyword keyword-TABLE">TABLE</span> Addresses <span class="token punctuation">(</span>
+    AddressID <span class="token keyword keyword-INT">INT</span> <span class="token keyword keyword-PRIMARY">PRIMARY</span> <span class="token keyword keyword-KEY">KEY</span><span class="token punctuation">,</span>
+    ConsumerID <span class="token keyword keyword-INT">INT</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    Address <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    <span class="token keyword keyword-FOREIGN">FOREIGN</span> <span class="token keyword keyword-KEY">KEY</span> <span class="token punctuation">(</span>ConsumerID<span class="token punctuation">)</span> <span class="token keyword keyword-REFERENCES">REFERENCES</span> Consumers<span class="token punctuation">(</span>ConsumerID<span class="token punctuation">)</span> <span class="token keyword keyword-ON">ON</span> <span class="token keyword keyword-DELETE">DELETE</span> <span class="token keyword keyword-CASCADE">CASCADE</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><ul>
+<li><strong>第一范式 (1NF)</strong>: 所有列的值都是原子的，没有重复的列。</li>
+<li><strong>第二范式 (2NF)</strong>: <code>AddressID</code> 是主键，所有非主键列 (<code>ConsumerID</code>, <code>Address</code>) 完全依赖于主键。</li>
+<li><strong>第三范式 (3NF)</strong>: 所有非主键列直接依赖于主键，没有传递依赖。</li>
+</ul>
+<h4 id="6-payments-表">6. Payments 表 </h4>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token keyword keyword-CREATE">CREATE</span> <span class="token keyword keyword-TABLE">TABLE</span> Payments <span class="token punctuation">(</span>
+    PaymentID <span class="token keyword keyword-INT">INT</span> <span class="token keyword keyword-PRIMARY">PRIMARY</span> <span class="token keyword keyword-KEY">KEY</span><span class="token punctuation">,</span>
+    OrderID <span class="token keyword keyword-INT">INT</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    Amount <span class="token keyword keyword-DECIMAL">DECIMAL</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    PaymentMethod <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    <span class="token keyword keyword-FOREIGN">FOREIGN</span> <span class="token keyword keyword-KEY">KEY</span> <span class="token punctuation">(</span>OrderID<span class="token punctuation">)</span> <span class="token keyword keyword-REFERENCES">REFERENCES</span> Orders<span class="token punctuation">(</span>OrderID<span class="token punctuation">)</span> <span class="token keyword keyword-ON">ON</span> <span class="token keyword keyword-DELETE">DELETE</span> <span class="token keyword keyword-CASCADE">CASCADE</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><ul>
+<li><strong>第一范式 (1NF)</strong>: 所有列的值都是原子的，没有重复的列。</li>
+<li><strong>第二范式 (2NF)</strong>: <code>PaymentID</code> 是主键，所有非主键列 (<code>OrderID</code>, <code>Amount</code>, <code>PaymentMethod</code>) 完全依赖于主键。</li>
+<li><strong>第三范式 (3NF)</strong>: 所有非主键列直接依赖于主键，没有传递依赖。</li>
+</ul>
+<h4 id="bcnf证明">BCNF证明 </h4>
+<p>所有表都符合以下条件：</p>
+<ul>
+<li>每个表中的所有属性都是原子的，没有重复的列，符合第一范式 (1NF)。</li>
+<li>每个表的非主键属性完全依赖于主键，符合第二范式 (2NF)。</li>
+<li>每个表的非主键属性没有传递依赖，直接依赖于主键，符合第三范式 (3NF)。</li>
+</ul>
+<p>此外，由于所有表的候选键都只有一个，因此这些表也符合BCNF（Boyce-Codd范式）。</p>
+<h3 id="2-实现表的增删改查提交了功能需求和设计说明提交了使用说明书-源代码和可执行文件">2. 实现表的增删改查，提交了功能需求和设计说明，提交了使用说明书、源代码和可执行文件 </h3>
+<p><a href="Design%20documents.pdf">功能需求与设计说明Design documents.pdf</a><br>
+<a href="UserManual.pdf">使用说明书UserManual.pdf</a><br>
+<a href="%E6%BA%90%E4%BB%A3%E7%A0%81">源代码</a><br>
+<a href="%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6">可执行文件</a></p>
+<h3 id="3-有界面表级联操作">3. 有界面表级联操作 </h3>
+<h4 id="表级联操作证明">表级联操作证明 </h4>
+<p>为了证明数据库表具有级联操作，我们展示了以下场景：</p>
+<h4 id="1-删除商家及其产品">1. 删除商家及其产品 </h4>
+<p>当删除 <code>Merchants</code> 表中的记录时，相关的 <code>Products</code> 表中的记录也会被删除。</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- 插入示例数据</span>
+<span class="token keyword keyword-INSERT">INSERT</span> <span class="token keyword keyword-INTO">INTO</span> Merchants <span class="token punctuation">(</span>MerchantID<span class="token punctuation">,</span> Password<span class="token punctuation">)</span> <span class="token keyword keyword-VALUES">VALUES</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'merchantpass'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-INSERT">INSERT</span> <span class="token keyword keyword-INTO">INTO</span> Products <span class="token punctuation">(</span>ProductID<span class="token punctuation">,</span> ProductName<span class="token punctuation">,</span> Price<span class="token punctuation">,</span> Stock<span class="token punctuation">,</span> MerchantID<span class="token punctuation">)</span> <span class="token keyword keyword-VALUES">VALUES</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'Product A'</span><span class="token punctuation">,</span> <span class="token number">100.00</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 删除商家记录</span>
+<span class="token keyword keyword-DELETE">DELETE</span> <span class="token keyword keyword-FROM">FROM</span> Merchants <span class="token keyword keyword-WHERE">WHERE</span> MerchantID <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 级联删除后的结果</span>
+<span class="token keyword keyword-SELECT">SELECT</span> <span class="token operator">*</span> <span class="token keyword keyword-FROM">FROM</span> Products<span class="token punctuation">;</span> <span class="token comment">-- 结果为空，因为相关的产品记录已被删除</span>
+</code></pre><h4 id="2删除消费者及其订单和地址">2.删除消费者及其订单和地址 </h4>
+<p>当删除 Consumers 表中的记录时，相关的 Orders 和 Addresses 表中的记录也会被删除。</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- 插入示例数据</span>
+<span class="token keyword keyword-INSERT">INSERT</span> <span class="token keyword keyword-INTO">INTO</span> Consumers <span class="token punctuation">(</span>ConsumerID<span class="token punctuation">,</span> Password<span class="token punctuation">)</span> <span class="token keyword keyword-VALUES">VALUES</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'consumerpass'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-INSERT">INSERT</span> <span class="token keyword keyword-INTO">INTO</span> Orders <span class="token punctuation">(</span>OrderID<span class="token punctuation">,</span> ConsumerID<span class="token punctuation">,</span> ProductID<span class="token punctuation">,</span> Quantity<span class="token punctuation">,</span> TotalAmount<span class="token punctuation">,</span> <span class="token keyword keyword-Status">Status</span><span class="token punctuation">)</span> <span class="token keyword keyword-VALUES">VALUES</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">100.00</span><span class="token punctuation">,</span> <span class="token string">'Pending'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-INSERT">INSERT</span> <span class="token keyword keyword-INTO">INTO</span> Addresses <span class="token punctuation">(</span>AddressID<span class="token punctuation">,</span> ConsumerID<span class="token punctuation">,</span> Address<span class="token punctuation">)</span> <span class="token keyword keyword-VALUES">VALUES</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'123 Main St'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 删除消费者记录</span>
+<span class="token keyword keyword-DELETE">DELETE</span> <span class="token keyword keyword-FROM">FROM</span> Consumers <span class="token keyword keyword-WHERE">WHERE</span> ConsumerID <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 级联删除后的结果</span>
+<span class="token keyword keyword-SELECT">SELECT</span> <span class="token operator">*</span> <span class="token keyword keyword-FROM">FROM</span> Orders<span class="token punctuation">;</span>   <span class="token comment">-- 结果为空，因为相关的订单记录已被删除</span>
+<span class="token keyword keyword-SELECT">SELECT</span> <span class="token operator">*</span> <span class="token keyword keyword-FROM">FROM</span> Addresses<span class="token punctuation">;</span> <span class="token comment">-- 结果为空，因为相关的地址记录已被删除</span>
+
+</code></pre><h4 id="3删除订单及其付款记录">3.删除订单及其付款记录 </h4>
+<p>当删除 Orders 表中的记录时，相关的 Payments 表中的记录也会被删除。</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- 插入示例数据</span>
+<span class="token keyword keyword-INSERT">INSERT</span> <span class="token keyword keyword-INTO">INTO</span> Orders <span class="token punctuation">(</span>OrderID<span class="token punctuation">,</span> ConsumerID<span class="token punctuation">,</span> ProductID<span class="token punctuation">,</span> Quantity<span class="token punctuation">,</span> TotalAmount<span class="token punctuation">,</span> <span class="token keyword keyword-Status">Status</span><span class="token punctuation">)</span> <span class="token keyword keyword-VALUES">VALUES</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">100.00</span><span class="token punctuation">,</span> <span class="token string">'Pending'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-INSERT">INSERT</span> <span class="token keyword keyword-INTO">INTO</span> Payments <span class="token punctuation">(</span>PaymentID<span class="token punctuation">,</span> OrderID<span class="token punctuation">,</span> Amount<span class="token punctuation">,</span> PaymentMethod<span class="token punctuation">)</span> <span class="token keyword keyword-VALUES">VALUES</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">100.00</span><span class="token punctuation">,</span> <span class="token string">'Credit Card'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 删除订单记录</span>
+<span class="token keyword keyword-DELETE">DELETE</span> <span class="token keyword keyword-FROM">FROM</span> Orders <span class="token keyword keyword-WHERE">WHERE</span> OrderID <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 级联删除后的结果</span>
+<span class="token keyword keyword-SELECT">SELECT</span> <span class="token operator">*</span> <span class="token keyword keyword-FROM">FROM</span> Payments<span class="token punctuation">;</span> <span class="token comment">-- 结果为空，因为相关的付款记录已被删除</span>
+
+
+</code></pre><p>通过这些操作，证明了数据库表具有级联操作（表级联）的能力。当父表的记录被删除时，相关的子表记录会自动被删除，保持数据的一致性和完整性。</p>
+<h3 id="4有多个用户及链接">4.有多个用户及链接 </h3>
+<p><img src="MultyUser.png" alt="Multy User"><br>
+<img src="TestCase1.png" alt="Multy User1"><br>
+<img src="TestCase2.png" alt="Multy User2"></p>
+<h3 id="5-应用用户权限管理">5. 应用用户权限管理 </h3>
+<p>为了实现应用的用户权限管理，我们设计了以下两个角色：</p>
+<ul>
+<li>消费者 (Consumer)</li>
+<li>商家 (Merchant)</li>
+</ul>
+<p>每个角色有不同的权限和功能：</p>
+<h4 id="消费者权限">消费者权限 </h4>
+<ol>
+<li>查看产品</li>
+<li>添加地址</li>
+<li>购买产品</li>
+<li>查看订单</li>
+<li>支付订单</li>
+<li>接收订单</li>
+</ol>
+<h4 id="商家权限">商家权限 </h4>
+<ol>
+<li>查看自己的产品</li>
+<li>添加产品</li>
+<li>查看订单</li>
+<li>发货订单</li>
+</ol>
+<p>通过以下SQL示例，我们展示了如何为不同角色的用户分配权限：</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- 示例用户表结构</span>
+<span class="token keyword keyword-CREATE">CREATE</span> <span class="token keyword keyword-TABLE">TABLE</span> Users <span class="token punctuation">(</span>
+    UserID <span class="token keyword keyword-INT">INT</span> <span class="token keyword keyword-PRIMARY">PRIMARY</span> <span class="token keyword keyword-KEY">KEY</span><span class="token punctuation">,</span>
+    Username <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    Password <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    Role <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token comment">-- 角色：'Consumer' 或 'Merchant'</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 插入示例用户</span>
+<span class="token keyword keyword-INSERT">INSERT</span> <span class="token keyword keyword-INTO">INTO</span> Users <span class="token punctuation">(</span>UserID<span class="token punctuation">,</span> Username<span class="token punctuation">,</span> Password<span class="token punctuation">,</span> Role<span class="token punctuation">)</span> <span class="token keyword keyword-VALUES">VALUES</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'consumer1'</span><span class="token punctuation">,</span> <span class="token string">'password1'</span><span class="token punctuation">,</span> <span class="token string">'Consumer'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-INSERT">INSERT</span> <span class="token keyword keyword-INTO">INTO</span> Users <span class="token punctuation">(</span>UserID<span class="token punctuation">,</span> Username<span class="token punctuation">,</span> Password<span class="token punctuation">,</span> Role<span class="token punctuation">)</span> <span class="token keyword keyword-VALUES">VALUES</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'merchant1'</span><span class="token punctuation">,</span> <span class="token string">'password1'</span><span class="token punctuation">,</span> <span class="token string">'Merchant'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 根据角色分配权限的存储过程</span>
+<span class="token keyword keyword-CREATE">CREATE</span> <span class="token keyword keyword-PROCEDURE">PROCEDURE</span> AssignRolePermissions<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword keyword-BEGIN">BEGIN</span>
+    <span class="token comment">-- 为消费者分配权限</span>
+    <span class="token keyword keyword-INSERT">INSERT</span> <span class="token keyword keyword-INTO">INTO</span> ConsumerPermissions <span class="token punctuation">(</span>ConsumerID<span class="token punctuation">)</span>
+    <span class="token keyword keyword-SELECT">SELECT</span> UserID <span class="token keyword keyword-FROM">FROM</span> Users <span class="token keyword keyword-WHERE">WHERE</span> Role <span class="token operator">=</span> <span class="token string">'Consumer'</span><span class="token punctuation">;</span>
+
+    <span class="token comment">-- 为商家分配权限</span>
+    <span class="token keyword keyword-INSERT">INSERT</span> <span class="token keyword keyword-INTO">INTO</span> MerchantPermissions <span class="token punctuation">(</span>MerchantID<span class="token punctuation">)</span>
+    <span class="token keyword keyword-SELECT">SELECT</span> UserID <span class="token keyword keyword-FROM">FROM</span> Users <span class="token keyword keyword-WHERE">WHERE</span> Role <span class="token operator">=</span> <span class="token string">'Merchant'</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-END">END</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 调用存储过程</span>
+<span class="token keyword keyword-CALL">CALL</span> AssignRolePermissions<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><h4 id="实现权限检查的逻辑">实现权限检查的逻辑 </h4>
+<p>在应用程序中，可以通过检查用户的角色来决定是否授予特定操作的权限。例如：</p>
+<pre data-role="codeBlock" data-info="pascal" class="language-pascal pascal"><code><span class="token keyword keyword-procedure">procedure</span> TConsumerMenuForm<span class="token punctuation">.</span>CheckUserPermissions<span class="token punctuation">(</span>UserID<span class="token punctuation">:</span> Integer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-var">var</span>
+  UserRole<span class="token punctuation">:</span> <span class="token keyword keyword-string">string</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-begin">begin</span>
+  <span class="token comment">// 查询用户角色</span>
+  ADOQuery1<span class="token punctuation">.</span>Close<span class="token punctuation">;</span>
+  ADOQuery1<span class="token punctuation">.</span>SQL<span class="token punctuation">.</span>Text <span class="token operator">:=</span> Format<span class="token punctuation">(</span><span class="token string">'SELECT Role FROM Users WHERE UserID = %d'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>UserID<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  ADOQuery1<span class="token punctuation">.</span>Open<span class="token punctuation">;</span>
+
+  <span class="token keyword keyword-if">if</span> <span class="token operator">not</span> ADOQuery1<span class="token punctuation">.</span>IsEmpty <span class="token keyword keyword-then">then</span>
+  <span class="token keyword keyword-begin">begin</span>
+    UserRole <span class="token operator">:=</span> ADOQuery1<span class="token punctuation">.</span>FieldByName<span class="token punctuation">(</span><span class="token string">'Role'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>AsString<span class="token punctuation">;</span>
+
+    <span class="token keyword keyword-if">if</span> UserRole <span class="token operator">=</span> <span class="token string">'Consumer'</span> <span class="token keyword keyword-then">then</span>
+    <span class="token keyword keyword-begin">begin</span>
+      <span class="token comment">// 显示消费者菜单</span>
+      ConsumerMenuForm<span class="token punctuation">.</span>Show<span class="token punctuation">;</span>
+    <span class="token keyword keyword-end">end</span>
+    <span class="token keyword keyword-else">else</span> <span class="token keyword keyword-if">if</span> UserRole <span class="token operator">=</span> <span class="token string">'Merchant'</span> <span class="token keyword keyword-then">then</span>
+    <span class="token keyword keyword-begin">begin</span>
+      <span class="token comment">// 显示商家菜单</span>
+      MerchantMenuForm<span class="token punctuation">.</span>Show<span class="token punctuation">;</span>
+    <span class="token keyword keyword-end">end</span>
+    <span class="token keyword keyword-else">else</span>
+    <span class="token keyword keyword-begin">begin</span>
+      ShowMessage<span class="token punctuation">(</span><span class="token string">'Unknown role.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword keyword-end">end</span><span class="token punctuation">;</span>
+  <span class="token keyword keyword-end">end</span>
+  <span class="token keyword keyword-else">else</span>
+  <span class="token keyword keyword-begin">begin</span>
+    ShowMessage<span class="token punctuation">(</span><span class="token string">'User not found.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword keyword-end">end</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-end">end</span><span class="token punctuation">;</span>
+</code></pre><p>通过这种方式，我们确保了不同角色的用户只能访问和操作其权限范围内的功能，从而实现了应用用户权限管理。</p>
+<h3 id="6-视图和动态-sql">6. 视图和动态 SQL </h3>
+<h4 id="视图">视图 </h4>
+<p>为了简化查询并提高安全性，我们可以使用视图。视图可以将复杂的查询封装起来，用户可以像访问表一样访问视图，从而实现数据的抽象和隐藏。以下是两个视图的示例，一个用于消费者查看产品信息，另一个用于商家查看订单信息。</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- 消费者查看产品信息视图</span>
+<span class="token comment">-- 如果视图已经存在，则删除它</span>
+<span class="token keyword keyword-DROP">DROP</span> <span class="token keyword keyword-VIEW">VIEW</span> <span class="token keyword keyword-IF">IF</span> <span class="token keyword keyword-EXISTS">EXISTS</span> ConsumerOrdersView<span class="token punctuation">;</span>
+
+<span class="token comment">-- 创建消费者查看订单的视图</span>
+<span class="token keyword keyword-CREATE">CREATE</span> <span class="token keyword keyword-VIEW">VIEW</span> ConsumerOrdersView <span class="token keyword keyword-AS">AS</span>
+<span class="token keyword keyword-SELECT">SELECT</span>
+    o<span class="token punctuation">.</span>OrderID<span class="token punctuation">,</span>
+    o<span class="token punctuation">.</span>ConsumerID<span class="token punctuation">,</span>
+    c<span class="token punctuation">.</span>Password <span class="token keyword keyword-AS">AS</span> ConsumerPassword<span class="token punctuation">,</span>
+    o<span class="token punctuation">.</span>ProductID<span class="token punctuation">,</span>
+    p<span class="token punctuation">.</span>ProductName<span class="token punctuation">,</span>
+    o<span class="token punctuation">.</span>Quantity<span class="token punctuation">,</span>
+    o<span class="token punctuation">.</span>TotalAmount<span class="token punctuation">,</span>
+    o<span class="token punctuation">.</span><span class="token keyword keyword-Status">Status</span><span class="token punctuation">,</span>
+    p<span class="token punctuation">.</span>MerchantID<span class="token punctuation">,</span>
+    m<span class="token punctuation">.</span>Password <span class="token keyword keyword-AS">AS</span> MerchantPassword
+<span class="token keyword keyword-FROM">FROM</span>
+    Orders o
+<span class="token keyword keyword-JOIN">JOIN</span>
+    Consumers c <span class="token keyword keyword-ON">ON</span> o<span class="token punctuation">.</span>ConsumerID <span class="token operator">=</span> c<span class="token punctuation">.</span>ConsumerID
+<span class="token keyword keyword-JOIN">JOIN</span>
+    Products p <span class="token keyword keyword-ON">ON</span> o<span class="token punctuation">.</span>ProductID <span class="token operator">=</span> p<span class="token punctuation">.</span>ProductID
+<span class="token keyword keyword-JOIN">JOIN</span>
+    Merchants m <span class="token keyword keyword-ON">ON</span> p<span class="token punctuation">.</span>MerchantID <span class="token operator">=</span> m<span class="token punctuation">.</span>MerchantID<span class="token punctuation">;</span>
+
+<span class="token comment">-- 查询视图以验证其内容</span>
+<span class="token keyword keyword-SELECT">SELECT</span> <span class="token operator">*</span> <span class="token keyword keyword-FROM">FROM</span> ConsumerOrdersView<span class="token punctuation">;</span>
+
+</code></pre><h4 id="动态sql">动态SQL </h4>
+<p>动态 SQL 是指在程序运行时生成和执行的 SQL 语句，适用于需要根据不同条件生成不同 SQL 查询的场景。以下示例展示了如何使用动态 SQL 查询产品信息。</p>
+<pre data-role="codeBlock" data-info="pascal" class="language-pascal pascal"><code>    <span class="token comment">// 检查ID是否已存在</span>
+    <span class="token keyword keyword-if">if</span> UserType <span class="token operator">=</span> <span class="token string">'Consumer'</span> <span class="token keyword keyword-then">then</span>
+      Query<span class="token punctuation">.</span>SQL<span class="token punctuation">.</span>Text <span class="token operator">:=</span> Format<span class="token punctuation">(</span><span class="token string">'SELECT COUNT(*) AS UserCount FROM Consumers WHERE ConsumerID = %s'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>QuotedStr<span class="token punctuation">(</span>UserID<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword keyword-else">else</span> <span class="token keyword keyword-if">if</span> UserType <span class="token operator">=</span> <span class="token string">'Merchant'</span> <span class="token keyword keyword-then">then</span>
+      Query<span class="token punctuation">.</span>SQL<span class="token punctuation">.</span>Text <span class="token operator">:=</span> Format<span class="token punctuation">(</span><span class="token string">'SELECT COUNT(*) AS UserCount FROM Merchants WHERE MerchantID = %s'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>QuotedStr<span class="token punctuation">(</span>UserID<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    Query<span class="token punctuation">.</span>Open<span class="token punctuation">;</span>
+</code></pre><p>例如上文中我的代码就使用了动态sql。通过这种方式，可以根据用户的不同需求灵活地查询数据。</p>
+<h4 id="视图和动态-sql-的结合">视图和动态 SQL 的结合 </h4>
+<p>结合视图和动态 SQL，可以进一步提高查询的灵活性和安全性。例如，可以在视图的基础上使用动态 SQL 来查询特定条件的数据。通过这种方式，可以充分利用视图和动态 SQL 的优势，实现灵活、高效、安全的数据查询。</p>
+<h3 id="7存储过程-函数-触发器">7.存储过程-函数-触发器 </h3>
+<h4 id="储存过程">储存过程 </h4>
+<p>下面的语句中使用了储存过程</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- 如果存储过程 AddProduct 已存在，则将其删除</span>
+<span class="token keyword keyword-DROP">DROP</span> <span class="token keyword keyword-PROCEDURE">PROCEDURE</span> <span class="token keyword keyword-IF">IF</span> <span class="token keyword keyword-EXISTS">EXISTS</span> AddProduct<span class="token punctuation">;</span>
+
+<span class="token comment">-- 创建新的存储过程 AddProduct</span>
+<span class="token keyword keyword-CREATE">CREATE</span> <span class="token operator">OR</span> <span class="token keyword keyword-REPLACE">REPLACE</span> <span class="token keyword keyword-PROCEDURE">PROCEDURE</span> AddProduct<span class="token punctuation">(</span>
+    <span class="token operator">IN</span> p_ProductID <span class="token keyword keyword-INT">INT</span><span class="token punctuation">,</span>
+    <span class="token operator">IN</span> p_ProductName <span class="token keyword keyword-VARCHAR">VARCHAR</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token operator">IN</span> p_Price <span class="token keyword keyword-DECIMAL">DECIMAL</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token operator">IN</span> p_Stock <span class="token keyword keyword-INT">INT</span><span class="token punctuation">,</span>
+    <span class="token operator">IN</span> p_MerchantID <span class="token keyword keyword-INT">INT</span>
+<span class="token punctuation">)</span>
+<span class="token keyword keyword-AS">AS</span>
+<span class="token keyword keyword-BEGIN">BEGIN</span>
+    <span class="token comment">-- 插入新产品到 Products 表中</span>
+    <span class="token keyword keyword-INSERT">INSERT</span> <span class="token keyword keyword-INTO">INTO</span> Products <span class="token punctuation">(</span>ProductID<span class="token punctuation">,</span> ProductName<span class="token punctuation">,</span> Price<span class="token punctuation">,</span> Stock<span class="token punctuation">,</span> MerchantID<span class="token punctuation">)</span>
+    <span class="token keyword keyword-VALUES">VALUES</span> <span class="token punctuation">(</span>p_ProductID<span class="token punctuation">,</span> p_ProductName<span class="token punctuation">,</span> p_Price<span class="token punctuation">,</span> p_Stock<span class="token punctuation">,</span> p_MerchantID<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token comment">-- 输出一条消息，指示插入成功</span>
+    RAISE NOTICE <span class="token string">'Product % has been added successfully.'</span><span class="token punctuation">,</span> p_ProductName<span class="token punctuation">;</span>
+<span class="token keyword keyword-END">END</span><span class="token punctuation">;</span>
+
+</code></pre><p>可以看出我创建了储存过程</p>
+<p><img src="%E5%82%A8%E5%AD%98%E8%BF%87%E7%A8%8B.png" alt="储存过程"></p>
+<h4 id="触发器-trigger">触发器 (Trigger) </h4>
+<p>执行这些SQL命令后，每当向 Orders 表插入新记录时，Products 表中的库存将自动减少相应数量。</p>
+<h5 id="示例创建一个触发器在订单插入时自动更新产品库存">示例：创建一个触发器在订单插入时自动更新产品库存 </h5>
+<pre data-role="codeBlock" data-info="sql" class="language-sql sql"><code><span class="token comment">-- 删除已有的触发器函数</span>
+<span class="token keyword keyword-DROP">DROP</span> <span class="token keyword keyword-FUNCTION">FUNCTION</span> <span class="token keyword keyword-IF">IF</span> <span class="token keyword keyword-EXISTS">EXISTS</span> UpdateProductStock<span class="token punctuation">;</span>
+
+<span class="token comment">-- 创建新的触发器函数</span>
+<span class="token keyword keyword-CREATE">CREATE</span> <span class="token operator">OR</span> <span class="token keyword keyword-REPLACE">REPLACE</span> <span class="token keyword keyword-FUNCTION">FUNCTION</span> UpdateProductStock<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword keyword-RETURNS">RETURNS</span> <span class="token keyword keyword-TRIGGER">TRIGGER</span>
+<span class="token keyword keyword-AS">AS</span> $$
+<span class="token keyword keyword-BEGIN">BEGIN</span>
+    <span class="token comment">-- 减少产品库存</span>
+    <span class="token keyword keyword-UPDATE">UPDATE</span> Products
+    <span class="token keyword keyword-SET">SET</span> Stock <span class="token operator">=</span> Stock <span class="token operator">-</span> NEW<span class="token punctuation">.</span>Quantity
+    <span class="token keyword keyword-WHERE">WHERE</span> ProductID <span class="token operator">=</span> NEW<span class="token punctuation">.</span>ProductID<span class="token punctuation">;</span>
+    
+    <span class="token keyword keyword-RETURN">RETURN</span> NEW<span class="token punctuation">;</span>
+<span class="token keyword keyword-END">END</span><span class="token punctuation">;</span>
+$$ <span class="token keyword keyword-LANGUAGE">LANGUAGE</span> plpgsql<span class="token punctuation">;</span>
+
+</code></pre><p>可以看到我成功创建使用了触发器</p>
+<p><img src="%E8%A7%A6%E5%8F%91%E5%99%A8.png" alt="触发器"></p>
+<p>不过也可以在delphi中手动更改。</p>
+<h3 id="8待用delphi中至少五个组件">8.待用delphi中至少五个组件 </h3>
+<p>我主要使用了以下组件</p>
+<ul>
+<li>TADOConnection：用于与数据库建立连接。</li>
+<li>TADOQuery：用于执行SQL查询语句，并获取查询结果。</li>
+<li>TDataSource：数据源组件，用于提供数据给数据控件。</li>
+<li>TDBGrid：数据表格组件，用于显示数据库查询结果。</li>
+<li>TDBNavigator：数据导航栏组件，用于浏览数据记录。</li>
+<li>TEdit：文本框组件，用于输入文本信息。</li>
+<li>TLabel：标签组件，用于显示静态文本信息。</li>
+<li>TButton：按钮组件，用于触发事件。</li>
+<li>TComboBox：下拉框组件，用于选择项。</li>
+</ul>
+<p>通过对象层次列表，可以看到我用了十余种组件<br>
+<img src="%E7%BB%84%E4%BB%B61.png" alt="组件1"><br>
+<img src="%E7%BB%84%E4%BB%B62.png" alt="组件2"><br>
+<img src="%E7%BB%84%E4%BB%B63.png" alt="组件3"></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

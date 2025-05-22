@@ -1,0 +1,19 @@
+{
+    "taskID": "19980110-08-002 309",
+    "0": {
+        "id": "19980110-08-002-008",
+        "indexFront": 48,
+        "indexBehind": 50
+    },
+    "pronoun": {
+        "id": "19980110-08-002-009",
+        "indexFront": 0,
+        "indexBehind": 0
+    },
+    "antecedentNum": 1,
+    "contributor": [
+        "汪馨怡",
+        "王三帅",
+        "杨元元"
+    ]
+}

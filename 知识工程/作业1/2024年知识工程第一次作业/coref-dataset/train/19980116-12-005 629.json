@@ -1,0 +1,19 @@
+{
+    "taskID": "19980116-12-005 629",
+    "0": {
+        "id": "19980116-12-005-008",
+        "indexFront": 57,
+        "indexBehind": 57
+    },
+    "pronoun": {
+        "id": "19980116-12-005-008",
+        "indexFront": 101,
+        "indexBehind": 101
+    },
+    "antecedentNum": 1,
+    "contributor": [
+        "李函书",
+        "李博阳",
+        "林宇星"
+    ]
+}

@@ -1,0 +1,303 @@
+[
+    {
+        "name": "中国科学技术馆",
+        "location": {
+            "lat": 40.012384,
+            "lng": 116.40504
+        },
+        "address": "北京市朝阳区北辰东路5号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "7fa88931e2fe485835b06c0b",
+        "telephone": "(010)59041000",
+        "detail": 1,
+        "uid": "7fa88931e2fe485835b06c0b",
+        "type": "scope"
+    },
+    {
+        "name": "北京798艺术中心",
+        "location": {
+            "lat": 39.991088,
+            "lng": 116.502072
+        },
+        "address": "北京市朝阳区酒仙桥路4号798艺术区内",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "",
+        "telephone": "(010)57626398",
+        "detail": 1,
+        "uid": "934e1fcc10ee0881eedfca5b",
+        "type": "scope"
+    },
+    {
+        "name": "日坛公园",
+        "location": {
+            "lat": 39.921342,
+            "lng": 116.450437
+        },
+        "address": "北京市朝阳区朝阳门外日坛北路6号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "3dc9befd7c6f810fbea240fe",
+        "telephone": "(010)85616301",
+        "detail": 1,
+        "uid": "3dc9befd7c6f810fbea240fe",
+        "type": "scope"
+    },
+    {
+        "name": "北京欢乐谷",
+        "location": {
+            "lat": 39.873927,
+            "lng": 116.500997
+        },
+        "address": "北京市朝阳区东四环小武基北路",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "91c13f93bcdcccfa20f0179a",
+        "telephone": "(010)67383333,(010)67389898",
+        "detail": 1,
+        "uid": "91c13f93bcdcccfa20f0179a",
+        "type": "scope"
+    },
+    {
+        "name": "北京中华民族博物院",
+        "location": {
+            "lat": 39.989379,
+            "lng": 116.397809
+        },
+        "address": "北京市朝阳区民族园路1号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "",
+        "detail": 1,
+        "uid": "8eb48fa13ed25abff22d83eb",
+        "type": "scope"
+    },
+    {
+        "name": "元大都城垣遗址公园",
+        "location": {
+            "lat": 39.98241,
+            "lng": 116.41595
+        },
+        "address": "北京市朝阳区惠新东街对外经济贸易大学南门对面",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "6314798edcd445d3c72ba11f",
+        "telephone": "(010)84647381,(010)84648252",
+        "detail": 1,
+        "uid": "3a0fbba8e9bb1a419fe321ad",
+        "type": "scope"
+    },
+    {
+        "name": "红砖美术馆(展览场馆)",
+        "location": {
+            "lat": 40.04854,
+            "lng": 116.506323
+        },
+        "address": "北京市朝阳区崔各庄乡何各庄村(顺白路与马泉营西路交叉口西北侧)",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "abdf529477ef4d3dc3364405",
+        "telephone": "(010)84576669",
+        "detail": 1,
+        "uid": "abdf529477ef4d3dc3364405",
+        "type": "scope"
+    },
+    {
+        "name": "中国电影博物馆",
+        "location": {
+            "lat": 40.002671,
+            "lng": 116.527178
+        },
+        "address": "北京市朝阳区南影路9号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "492833248b0228a643024537",
+        "detail": 1,
+        "uid": "492833248b0228a643024537",
+        "type": "scope"
+    },
+    {
+        "name": "北京工体富国海底世界",
+        "location": {
+            "lat": 39.933782,
+            "lng": 116.453228
+        },
+        "address": "北京市朝阳区工人体育场南路1号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "05ffe57ce36641c031f71dce",
+        "telephone": "(010)65913398",
+        "detail": 1,
+        "uid": "05ffe57ce36641c031f71dce",
+        "type": "scope"
+    },
+    {
+        "name": "观复博物馆",
+        "location": {
+            "lat": 40.013309,
+            "lng": 116.540397
+        },
+        "address": "北京市朝阳区大山子张万坟金南路18号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "",
+        "telephone": "(010)64362308,010-64338887",
+        "detail": 1,
+        "uid": "f29fb5d80cc2c51259bbbc58",
+        "type": "scope"
+    },
+    {
+        "name": "中国铁道博物馆(东郊展馆)",
+        "location": {
+            "lat": 40.003628,
+            "lng": 116.522415
+        },
+        "address": "北京市朝阳区南春路4号院",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "58dab29e6dd4c8e74d776ef9",
+        "telephone": "(010)64381317,(010)64381517",
+        "detail": 1,
+        "uid": "58dab29e6dd4c8e74d776ef9",
+        "type": "scope"
+    },
+    {
+        "name": "朝阳公园",
+        "location": {
+            "lat": 39.949861,
+            "lng": 116.489233
+        },
+        "address": "北京市朝阳区朝阳公园南路1号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "5cf5d3b0bf74a8f6f82d6110",
+        "telephone": "(010)65065409",
+        "detail": 1,
+        "uid": "5cf5d3b0bf74a8f6f82d6110",
+        "type": "scope"
+    },
+    {
+        "name": "蓝调薰衣草庄园",
+        "location": {
+            "lat": 39.971582,
+            "lng": 116.614759
+        },
+        "address": "北京市朝阳区金盏乡楼梓庄村南1号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "b102a2c7d87209c89cec2b7c",
+        "telephone": "(010)67563962",
+        "detail": 1,
+        "uid": "b102a2c7d87209c89cec2b7c",
+        "type": "scope"
+    },
+    {
+        "name": "北京奥林匹克森林公园",
+        "location": {
+            "lat": 40.025231,
+            "lng": 116.396797
+        },
+        "address": "北京市朝阳区科荟路33号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "03d7e5971f3675483c9a5e9e",
+        "telephone": "(010)64529060",
+        "detail": 1,
+        "uid": "03d7e5971f3675483c9a5e9e",
+        "type": "scope"
+    },
+    {
+        "name": "中国紫檀博物馆",
+        "location": {
+            "lat": 39.916834,
+            "lng": 116.532527
+        },
+        "address": "北京市朝阳区建国路23号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "",
+        "telephone": "(010)85752818,(8610)85752818",
+        "detail": 1,
+        "uid": "8a50a67babaf84f40f0e6b2c",
+        "type": "scope"
+    },
+    {
+        "name": "红领巾公园",
+        "location": {
+            "lat": 39.932019,
+            "lng": 116.498857
+        },
+        "address": "北京市朝阳区后八里庄5号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "f3bb67513c92745c9d95deb8",
+        "telephone": "(010)85817037,(010)85824746,010-85810901,010-85819548",
+        "detail": 1,
+        "uid": "f3bb67513c92745c9d95deb8",
+        "type": "scope"
+    },
+    {
+        "name": "北京今日美术馆",
+        "location": {
+            "lat": 39.905621,
+            "lng": 116.474333
+        },
+        "address": "百子湾路32号苹果社区4号楼",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "a3e8341c709c8b8c4bfd3fba",
+        "telephone": "(010)58760500",
+        "detail": 1,
+        "uid": "a3e8341c709c8b8c4bfd3fba",
+        "type": "scope"
+    },
+    {
+        "name": "北京奥林匹克公园",
+        "location": {
+            "lat": 40.007228,
+            "lng": 116.399576
+        },
+        "address": "北京市朝阳区北辰东路15号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "70b1a02aae7f384c97ec8491",
+        "detail": 1,
+        "uid": "70b1a02aae7f384c97ec8491",
+        "type": "scope"
+    },
+    {
+        "name": "郎园Vintage",
+        "location": {
+            "lat": 39.912081,
+            "lng": 116.476959
+        },
+        "address": "北京市朝阳区通惠河北路郎家园6号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "朝阳区",
+        "street_id": "",
+        "telephone": "(010)51660015",
+        "detail": 1,
+        "uid": "63b99d92ac215ea54107c136",
+        "type": "scope"
+    }
+]

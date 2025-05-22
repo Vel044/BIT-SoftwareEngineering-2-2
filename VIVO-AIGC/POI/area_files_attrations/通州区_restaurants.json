@@ -1,0 +1,81 @@
+[
+    {
+        "name": "通州大运河森林公园",
+        "location": {
+            "lat": 39.8824,
+            "lng": 116.748887
+        },
+        "address": "北京市通州区通怀路",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "通州区",
+        "street_id": "b3f6f9b15dbf37754c6d46e2",
+        "telephone": "(010)61569200",
+        "detail": 1,
+        "uid": "b3f6f9b15dbf37754c6d46e2",
+        "type": "scope"
+    },
+    {
+        "name": "宋庄美术馆",
+        "location": {
+            "lat": 39.970005,
+            "lng": 116.720259
+        },
+        "address": "北京市通州区宋庄小堡艺术园区甲2号(美术馆路)",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "通州区",
+        "street_id": "be1ea5ef6e7273bf14948e64",
+        "telephone": "(010)69594127,010-80856950",
+        "detail": 1,
+        "uid": "be1ea5ef6e7273bf14948e64",
+        "type": "scope"
+    },
+    {
+        "name": "梨园主题公园",
+        "location": {
+            "lat": 39.880778,
+            "lng": 116.684007
+        },
+        "address": "北京市通州区梨园镇临河里地铁站南侧",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "通州区",
+        "street_id": "",
+        "detail": 1,
+        "uid": "175603966ba67aa9b4265515",
+        "type": "scope"
+    },
+    {
+        "name": "北京环球度假区",
+        "location": {
+            "lat": 39.86099,
+            "lng": 116.68782
+        },
+        "address": "北京市通州区京哈高速与东六环路交汇处西北角",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "通州区",
+        "street_id": "36fa65cdfe9dabd79fec2b62",
+        "telephone": "4000688688",
+        "detail": 1,
+        "uid": "36fa65cdfe9dabd79fec2b62",
+        "type": "scope"
+    },
+    {
+        "name": "韩美林艺术馆",
+        "location": {
+            "lat": 39.881486,
+            "lng": 116.683478
+        },
+        "address": "北京市通州区九棵树东路68号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "通州区",
+        "street_id": "18165334570fc407fb2d61f1",
+        "telephone": "(010)59751888",
+        "detail": 1,
+        "uid": "18165334570fc407fb2d61f1",
+        "type": "scope"
+    }
+]

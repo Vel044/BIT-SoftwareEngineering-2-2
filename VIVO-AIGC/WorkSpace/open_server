@@ -1,0 +1,4 @@
+nohup uvicorn get_plan:app --reload --host 0.0.0.0 --port 7780 > plan.log 2>&1 &
+
+tail -f plan.log
+

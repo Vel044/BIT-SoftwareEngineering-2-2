@@ -1,0 +1,1092 @@
+<!DOCTYPE html><html><head>
+      <title>User Manual</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\Vel\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.13\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="产品使用说明书">产品使用说明书 </h1>
+<h2 id="目录">目录 </h2>
+<ul>
+<li><a href="#%E4%BA%A7%E5%93%81%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6">产品使用说明书</a>
+<ul>
+<li><a href="#%E7%9B%AE%E5%BD%95">目录</a></li>
+<li><a href="#%E7%AE%80%E4%BB%8B">简介</a></li>
+<li><a href="#%E7%B3%BB%E7%BB%9F%E8%A6%81%E6%B1%82">系统要求</a></li>
+<li><a href="#%E5%90%AF%E5%8A%A8%E5%92%8C%E7%99%BB%E5%BD%95">启动和登录</a></li>
+<li><a href="#%E4%B8%BB%E8%A6%81%E5%8A%9F%E8%83%BD">主要功能</a>
+<ul>
+<li><a href="#%E6%B3%A8%E5%86%8C%E7%94%A8%E6%88%B7">注册用户</a>
+<ul>
+<li><a href="#%E8%AF%A6%E7%BB%86%E6%AD%A5%E9%AA%A4">详细步骤</a></li>
+<li><a href="#%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C%E7%95%8C%E9%9D%A2%E7%9A%84%E5%8A%9F%E8%83%BD%E4%B8%8E%E8%AF%A6%E7%BB%86%E6%8F%8F%E8%BF%B0">用户注册界面的功能与详细描述</a>
+<ul>
+<li><a href="#1-%E5%9C%A8%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2%E9%80%89%E6%8B%A9register%E6%8C%89%E9%92%AE">1. 在登录界面选择“Register”按钮</a></li>
+<li><a href="#2-%E9%80%89%E6%8B%A9%E7%94%A8%E6%88%B7%E7%B1%BB%E5%9E%8Bconsumer-%E6%88%96-merchant">2. 选择用户类型（Consumer 或 Merchant）</a></li>
+<li><a href="#3-%E8%BE%93%E5%85%A5%E7%94%A8%E6%88%B7-id-%E5%92%8C%E5%AF%86%E7%A0%81%E8%BF%9B%E8%A1%8C%E6%B3%A8%E5%86%8C">3. 输入用户 ID 和密码进行注册</a></li>
+<li><a href="#4-%E5%A4%84%E7%90%86%E6%B3%A8%E5%86%8C%E9%94%99%E8%AF%AF%E7%9A%84%E5%8F%8D%E9%A6%88">4. 处理注册错误的反馈</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B3%A8%E5%86%8C%E6%B5%81%E7%A8%8B%E7%9A%84%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C">注册流程的用户体验</a></li>
+<li><a href="#%E7%A4%BA%E4%BE%8B%E6%B3%A8%E5%86%8C%E6%B5%81%E7%A8%8B%E5%9B%BE">示例注册流程图</a></li>
+<li><a href="#%E6%B3%A8%E5%86%8C%E5%8A%9F%E8%83%BD%E6%80%BB%E7%BB%93">注册功能总结</a></li>
+</ul>
+</li>
+<li><a href="#%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D">用户登录功能介绍</a>
+<ul>
+<li><a href="#%E7%99%BB%E5%BD%95%E8%AF%A6%E7%BB%86%E6%AD%A5%E9%AA%A4">登录详细步骤</a></li>
+<li><a href="#%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2%E7%9A%84%E5%8A%9F%E8%83%BD%E4%B8%8E%E8%AF%A6%E7%BB%86%E6%8F%8F%E8%BF%B0">用户登录界面的功能与详细描述</a>
+<ul>
+<li><a href="#1-%E5%9C%A8%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2%E9%80%89%E6%8B%A9%E7%94%A8%E6%88%B7%E7%B1%BB%E5%9E%8B">1. 在登录界面选择用户类型</a></li>
+<li><a href="#2-%E8%BE%93%E5%85%A5%E7%94%A8%E6%88%B7-id-%E5%92%8C%E5%AF%86%E7%A0%81%E8%BF%9B%E8%A1%8C%E7%99%BB%E5%BD%95">2. 输入用户 ID 和密码进行登录</a></li>
+<li><a href="#3-%E7%82%B9%E5%87%BB%E7%99%BB%E5%BD%95%E6%8C%89%E9%92%AE">3. 点击“登录”按钮</a></li>
+<li><a href="#4-%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E5%90%8E%E8%BF%9B%E5%85%A5%E5%AF%B9%E5%BA%94%E7%9A%84%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2">4. 登录成功后进入对应的用户界面</a></li>
+</ul>
+</li>
+<li><a href="#%E9%94%99%E8%AF%AF%E5%8F%8D%E9%A6%88%E7%A4%BA%E4%BE%8B">错误反馈示例</a>
+<ul>
+<li><a href="#1%E7%94%A8%E6%88%B7%E7%B1%BB%E5%9E%8B%E9%80%89%E6%8B%A9%E9%94%99%E8%AF%AF">1.用户类型选择错误</a></li>
+<li><a href="#2%E7%94%A8%E6%88%B7%E6%88%96%E8%80%85%E5%AF%86%E7%A0%81%E9%94%99%E8%AF%AF">2.用户或者密码错误</a></li>
+<li><a href="#3%E6%9C%89%E9%A1%B9%E7%9B%AE%E7%A9%BA%E7%9D%80">3.有项目空着</a></li>
+</ul>
+</li>
+<li><a href="#%E7%A4%BA%E4%BE%8B%E7%99%BB%E5%BD%95%E6%B5%81%E7%A8%8B%E5%9B%BE">示例登录流程图</a></li>
+<li><a href="#%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD%E6%80%BB%E7%BB%93">用户登录功能总结</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B6%88%E8%B4%B9%E8%80%85%E5%8A%9F%E8%83%BD">消费者功能</a>
+<ul>
+<li><a href="#%E6%AC%A2%E8%BF%8E%E7%94%A8%E6%88%B7">欢迎用户</a></li>
+<li><a href="#%E6%9F%A5%E7%9C%8B%E4%BA%A7%E5%93%81">查看产品</a></li>
+<li><a href="#%E6%B7%BB%E5%8A%A0%E5%9C%B0%E5%9D%80">添加地址</a>
+<ul>
+<li><a href="#%E6%B7%BB%E5%8A%A0%E5%9C%B0%E5%9D%80%E8%AF%A6%E7%BB%86%E6%AD%A5%E9%AA%A4">添加地址详细步骤</a></li>
+<li><a href="#%E6%B7%BB%E5%8A%A0%E5%9C%B0%E5%9D%80%E7%95%8C%E9%9D%A2%E7%9A%84%E5%8A%9F%E8%83%BD%E4%B8%8E%E8%AF%A6%E7%BB%86%E6%8F%8F%E8%BF%B0">添加地址界面的功能与详细描述</a>
+<ul>
+<li><a href="#1-%E8%BE%93%E5%85%A5%E5%9C%B0%E5%9D%80-id-%E5%92%8C%E8%AF%A6%E7%BB%86%E5%9C%B0%E5%9D%80">1. 输入地址 ID 和详细地址</a></li>
+<li><a href="#2-%E7%82%B9%E5%87%BB%E6%B7%BB%E5%8A%A0%E5%9C%B0%E5%9D%80%E6%8C%89%E9%92%AE">2. 点击“添加地址”按钮</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B7%BB%E5%8A%A0%E5%9C%B0%E5%9D%80%E5%90%88%E6%B3%95%E6%80%A7%E6%A3%80%E6%B5%8B">添加地址合法性检测</a></li>
+<li><a href="#%E7%A4%BA%E4%BE%8B%E6%B7%BB%E5%8A%A0%E5%9C%B0%E5%9D%80%E6%B5%81%E7%A8%8B%E5%9B%BE">示例添加地址流程图</a></li>
+<li><a href="#%E6%B7%BB%E5%8A%A0%E5%9C%B0%E5%9D%80%E5%8A%9F%E8%83%BD%E6%80%BB%E7%BB%93">添加地址功能总结</a></li>
+</ul>
+</li>
+<li><a href="#%E8%B4%AD%E4%B9%B0%E4%BA%A7%E5%93%81">购买产品</a>
+<ul>
+<li><a href="#%E8%B4%AD%E4%B9%B0%E4%BA%A7%E5%93%81%E8%AF%A6%E7%BB%86%E6%AD%A5%E9%AA%A4">购买产品详细步骤</a></li>
+<li><a href="#%E8%B4%AD%E4%B9%B0%E4%BA%A7%E5%93%81%E7%95%8C%E9%9D%A2%E7%9A%84%E5%8A%9F%E8%83%BD%E4%B8%8E%E8%AF%A6%E7%BB%86%E6%8F%8F%E8%BF%B0">购买产品界面的功能与详细描述</a>
+<ul>
+<li><a href="#1-%E8%BE%93%E5%85%A5%E8%AE%A2%E5%8D%95-id%E4%BA%A7%E5%93%81-id-%E5%92%8C%E8%B4%AD%E4%B9%B0%E6%95%B0%E9%87%8F">1. 输入订单 ID、产品 ID 和购买数量</a></li>
+<li><a href="#2-%E7%82%B9%E5%87%BB%E8%B4%AD%E4%B9%B0%E4%BA%A7%E5%93%81%E6%8C%89%E9%92%AE">2. 点击“购买产品”按钮</a></li>
+</ul>
+</li>
+<li><a href="#%E5%90%88%E6%B3%95%E6%80%A7%E6%A3%80%E6%B5%8B">合法性检测</a></li>
+<li><a href="#%E7%A4%BA%E4%BE%8B%E8%B4%AD%E4%B9%B0%E4%BA%A7%E5%93%81%E6%B5%81%E7%A8%8B%E5%9B%BE">示例购买产品流程图</a></li>
+<li><a href="#%E8%B4%AD%E4%B9%B0%E4%BA%A7%E5%93%81%E5%8A%9F%E8%83%BD%E6%80%BB%E7%BB%93">购买产品功能总结</a></li>
+</ul>
+</li>
+<li><a href="#%E6%9F%A5%E8%AF%A2%E8%AE%A2%E5%8D%95">查询订单</a>
+<ul>
+<li><a href="#%E6%9F%A5%E8%AF%A2%E8%AE%A2%E5%8D%95%E8%AF%A6%E7%BB%86%E6%AD%A5%E9%AA%A4">查询订单详细步骤</a></li>
+<li><a href="#%E6%9F%A5%E8%AF%A2%E8%AE%A2%E5%8D%95%E7%95%8C%E9%9D%A2%E7%9A%84%E5%8A%9F%E8%83%BD%E4%B8%8E%E8%AF%A6%E7%BB%86%E6%8F%8F%E8%BF%B0">查询订单界面的功能与详细描述</a>
+<ul>
+<li><a href="#1-%E7%82%B9%E5%87%BB%E6%9F%A5%E8%AF%A2%E8%AE%A2%E5%8D%95%E6%8C%89%E9%92%AE">1. 点击“查询订单”按钮</a></li>
+<li><a href="#2-%E6%9F%A5%E7%9C%8B%E7%94%A8%E6%88%B7%E7%9A%84%E6%89%80%E6%9C%89%E8%AE%A2%E5%8D%95">2. 查看用户的所有订单</a></li>
+</ul>
+</li>
+<li><a href="#%E7%A4%BA%E4%BE%8B%E6%9F%A5%E8%AF%A2%E8%AE%A2%E5%8D%95%E6%B5%81%E7%A8%8B%E5%9B%BE">示例查询订单流程图</a></li>
+<li><a href="#%E6%9F%A5%E8%AF%A2%E8%AE%A2%E5%8D%95%E5%8A%9F%E8%83%BD%E6%80%BB%E7%BB%93">查询订单功能总结</a></li>
+</ul>
+</li>
+<li><a href="#%E6%94%AF%E4%BB%98%E8%AE%A2%E5%8D%95">支付订单</a>
+<ul>
+<li><a href="#%E6%94%AF%E4%BB%98%E8%AE%A2%E5%8D%95%E8%AF%A6%E7%BB%86%E6%AD%A5%E9%AA%A4">支付订单详细步骤</a></li>
+<li><a href="#%E6%94%AF%E4%BB%98%E8%AE%A2%E5%8D%95%E7%95%8C%E9%9D%A2%E7%9A%84%E5%8A%9F%E8%83%BD%E4%B8%8E%E8%AF%A6%E7%BB%86%E6%8F%8F%E8%BF%B0">支付订单界面的功能与详细描述</a>
+<ul>
+<li><a href="#1-%E8%BE%93%E5%85%A5%E6%94%AF%E4%BB%98-id%E8%AE%A2%E5%8D%95-id-%E5%92%8C%E6%94%AF%E4%BB%98%E6%96%B9%E5%BC%8F">1. 输入支付 ID、订单 ID 和支付方式</a></li>
+<li><a href="#2-%E7%82%B9%E5%87%BB%E6%94%AF%E4%BB%98%E6%8C%89%E9%92%AE">2. 点击“支付”按钮</a></li>
+<li><a href="#3-%E5%AE%8C%E6%88%90%E6%94%AF%E4%BB%98%E5%B9%B6%E6%9B%B4%E6%96%B0%E8%AE%A2%E5%8D%95%E7%8A%B6%E6%80%81">3. 完成支付并更新订单状态</a></li>
+</ul>
+</li>
+<li><a href="#%E9%9D%9E%E6%B3%95%E8%BE%93%E5%85%A5%E5%A4%84%E7%90%86">非法输入处理</a></li>
+<li><a href="#%E7%A4%BA%E4%BE%8B%E6%94%AF%E4%BB%98%E8%AE%A2%E5%8D%95%E6%B5%81%E7%A8%8B%E5%9B%BE">示例支付订单流程图</a></li>
+<li><a href="#%E6%94%AF%E4%BB%98%E8%AE%A2%E5%8D%95%E5%8A%9F%E8%83%BD%E6%80%BB%E7%BB%93">支付订单功能总结</a></li>
+</ul>
+</li>
+<li><a href="#%E7%A1%AE%E8%AE%A4%E6%94%B6%E8%B4%A7">确认收货</a>
+<ul>
+<li><a href="#%E7%A1%AE%E8%AE%A4%E6%94%B6%E8%B4%A7%E8%AF%A6%E7%BB%86%E6%AD%A5%E9%AA%A4">确认收货详细步骤</a></li>
+<li><a href="#%E7%A1%AE%E8%AE%A4%E6%94%B6%E8%B4%A7%E7%95%8C%E9%9D%A2%E7%9A%84%E5%8A%9F%E8%83%BD%E4%B8%8E%E8%AF%A6%E7%BB%86%E6%8F%8F%E8%BF%B0">确认收货界面的功能与详细描述</a>
+<ul>
+<li><a href="#1-%E8%BE%93%E5%85%A5%E8%AE%A2%E5%8D%95-id">1. 输入订单 ID</a></li>
+<li><a href="#2-%E7%82%B9%E5%87%BB%E7%A1%AE%E8%AE%A4%E6%94%B6%E8%B4%A7%E6%8C%89%E9%92%AE">2. 点击“确认收货”按钮</a></li>
+</ul>
+</li>
+<li><a href="#%E8%AE%A2%E5%8D%95id%E9%9D%9E%E6%B3%95%E8%BE%93%E5%85%A5%E5%A4%84%E7%90%86">订单ID非法输入处理</a></li>
+<li><a href="#%E7%A4%BA%E4%BE%8B%E7%A1%AE%E8%AE%A4%E6%94%B6%E8%B4%A7%E6%B5%81%E7%A8%8B%E5%9B%BE">示例确认收货流程图</a></li>
+<li><a href="#%E7%A1%AE%E8%AE%A4%E6%94%B6%E8%B4%A7%E5%8A%9F%E8%83%BD%E6%80%BB%E7%BB%93">确认收货功能总结</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E5%95%86%E5%AE%B6%E5%8A%9F%E8%83%BD">商家功能</a>
+<ul>
+<li><a href="#%E6%9F%A5%E7%9C%8B%E5%95%86%E5%93%81">查看商品</a>
+<ul>
+<li><a href="#%E6%9F%A5%E7%9C%8B%E5%95%86%E5%93%81%E8%AF%A6%E7%BB%86%E6%AD%A5%E9%AA%A4">查看商品详细步骤</a></li>
+<li><a href="#%E6%9F%A5%E7%9C%8B%E5%95%86%E5%93%81%E7%95%8C%E9%9D%A2%E7%9A%84%E5%8A%9F%E8%83%BD%E4%B8%8E%E8%AF%A6%E7%BB%86%E6%8F%8F%E8%BF%B0">查看商品界面的功能与详细描述</a>
+<ul>
+<li><a href="#1-%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F%E5%90%8E%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B%E4%BA%A7%E5%93%81%E6%8C%89%E9%92%AE">1. 登录成功后，点击“查看产品”按钮</a></li>
+<li><a href="#2-%E6%9F%A5%E8%AF%A2%E5%B9%B6%E6%98%BE%E7%A4%BA%E5%95%86%E5%AE%B6%E7%9B%B8%E5%85%B3%E7%9A%84%E4%BA%A7%E5%93%81">2. 查询并显示商家相关的产品</a></li>
+</ul>
+</li>
+<li><a href="#%E7%A4%BA%E4%BE%8B%E6%9F%A5%E7%9C%8B%E5%95%86%E5%93%81%E6%B5%81%E7%A8%8B%E5%9B%BE">示例查看商品流程图</a></li>
+<li><a href="#%E6%9F%A5%E7%9C%8B%E5%95%86%E5%93%81%E5%8A%9F%E8%83%BD%E6%80%BB%E7%BB%93">查看商品功能总结</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B7%BB%E5%8A%A0%E4%BA%A7%E5%93%81">添加产品</a>
+<ul>
+<li><a href="#%E6%B7%BB%E5%8A%A0%E4%BA%A7%E5%93%81%E8%AF%A6%E7%BB%86%E6%AD%A5%E9%AA%A4">添加产品详细步骤</a></li>
+<li><a href="#%E6%B7%BB%E5%8A%A0%E4%BA%A7%E5%93%81%E7%95%8C%E9%9D%A2%E7%9A%84%E5%8A%9F%E8%83%BD%E4%B8%8E%E8%AF%A6%E7%BB%86%E6%8F%8F%E8%BF%B0">添加产品界面的功能与详细描述</a>
+<ul>
+<li><a href="#1-%E8%BE%93%E5%85%A5%E4%BA%A7%E5%93%81-id%E4%BA%A7%E5%93%81%E5%90%8D%E7%A7%B0%E4%BB%B7%E6%A0%BC%E5%92%8C%E5%BA%93%E5%AD%98">1. 输入产品 ID、产品名称、价格和库存</a></li>
+<li><a href="#2-%E7%82%B9%E5%87%BB%E6%B7%BB%E5%8A%A0%E4%BA%A7%E5%93%81%E6%8C%89%E9%92%AE">2. 点击“添加产品”按钮</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B7%BB%E5%8A%A0%E4%BA%A7%E5%93%81%E5%90%88%E6%B3%95%E6%80%A7%E6%A3%80%E6%B5%8B">添加产品合法性检测</a></li>
+<li><a href="#%E7%A4%BA%E4%BE%8B%E6%B7%BB%E5%8A%A0%E4%BA%A7%E5%93%81%E6%B5%81%E7%A8%8B%E5%9B%BE">示例添加产品流程图</a></li>
+<li><a href="#%E6%B7%BB%E5%8A%A0%E4%BA%A7%E5%93%81%E5%8A%9F%E8%83%BD%E6%80%BB%E7%BB%93">添加产品功能总结</a></li>
+</ul>
+</li>
+<li><a href="#%E6%9F%A5%E8%AF%A2%E5%95%86%E5%8D%95">查询商单</a>
+<ul>
+<li><a href="#%E6%9F%A5%E8%AF%A2%E5%95%86%E5%8D%95%E8%AF%A6%E7%BB%86%E6%AD%A5%E9%AA%A4">查询商单详细步骤</a></li>
+<li><a href="#%E6%9F%A5%E8%AF%A2%E5%95%86%E5%8D%95%E7%95%8C%E9%9D%A2%E7%9A%84%E5%8A%9F%E8%83%BD%E4%B8%8E%E8%AF%A6%E7%BB%86%E6%8F%8F%E8%BF%B0">查询商单界面的功能与详细描述</a>
+<ul>
+<li><a href="#1-%E7%82%B9%E5%87%BB%E6%9F%A5%E8%AF%A2%E8%AE%A2%E5%8D%95%E6%8C%89%E9%92%AE-1">1. 点击查询订单按钮</a></li>
+<li><a href="#2-%E6%9F%A5%E8%AF%A2%E5%B9%B6%E6%98%BE%E7%A4%BA%E5%95%86%E5%AE%B6%E6%89%80%E6%9C%89%E8%AE%A2%E5%8D%95">2. 查询并显示商家所有订单</a></li>
+</ul>
+</li>
+<li><a href="#%E7%A4%BA%E4%BE%8B%E6%9F%A5%E8%AF%A2%E5%95%86%E5%8D%95%E6%B5%81%E7%A8%8B%E5%9B%BE">示例查询商单流程图</a></li>
+<li><a href="#%E6%9F%A5%E8%AF%A2%E5%95%86%E5%8D%95%E5%8A%9F%E8%83%BD%E6%80%BB%E7%BB%93">查询商单功能总结</a></li>
+</ul>
+</li>
+<li><a href="#%E8%AE%A2%E5%8D%95%E5%8F%91%E8%B4%A7">订单发货</a>
+<ul>
+<li><a href="#%E8%AE%A2%E5%8D%95%E5%8F%91%E8%B4%A7%E8%AF%A6%E7%BB%86%E6%AD%A5%E9%AA%A4">订单发货详细步骤</a></li>
+<li><a href="#%E8%AE%A2%E5%8D%95%E5%8F%91%E8%B4%A7%E7%95%8C%E9%9D%A2%E7%9A%84%E5%8A%9F%E8%83%BD%E4%B8%8E%E8%AF%A6%E7%BB%86%E6%8F%8F%E8%BF%B0">订单发货界面的功能与详细描述</a>
+<ul>
+<li><a href="#1-%E8%BE%93%E5%85%A5%E8%AE%A2%E5%8D%95id">1. 输入订单ID</a></li>
+<li><a href="#2-%E7%82%B9%E5%87%BB%E5%8F%91%E8%B4%A7%E6%8C%89%E9%92%AE">2. 点击“发货”按钮</a></li>
+<li><a href="#3-%E6%9B%B4%E6%96%B0%E8%AE%A2%E5%8D%95%E7%8A%B6%E6%80%81%E4%B8%BA%E5%B7%B2%E5%8F%91%E8%B4%A7">3. 更新订单状态为“已发货”</a></li>
+</ul>
+</li>
+<li><a href="#%E8%AE%A2%E5%8D%95%E5%8F%91%E8%B4%A7%E5%90%88%E6%B3%95%E6%80%A7%E6%A3%80%E6%B5%8B">订单发货合法性检测</a></li>
+<li><a href="#%E7%A4%BA%E4%BE%8B%E8%AE%A2%E5%8D%95%E5%8F%91%E8%B4%A7%E6%B5%81%E7%A8%8B%E5%9B%BE">示例订单发货流程图</a></li>
+<li><a href="#%E8%AE%A2%E5%8D%95%E5%8F%91%E8%B4%A7%E5%8A%9F%E8%83%BD%E6%80%BB%E7%BB%93">订单发货功能总结</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4">故障排除</a>
+<ul>
+<li><a href="#1-%E7%99%BB%E5%BD%95%E9%97%AE%E9%A2%98">1. <strong>登录问题</strong></a></li>
+<li><a href="#2-%E6%B3%A8%E5%86%8C%E9%97%AE%E9%A2%98">2. <strong>注册问题</strong></a></li>
+<li><a href="#3-%E8%B4%AD%E4%B9%B0%E4%BA%A7%E5%93%81%E9%97%AE%E9%A2%98">3. <strong>购买产品问题</strong></a></li>
+<li><a href="#4-%E6%9F%A5%E8%AF%A2%E8%AE%A2%E5%8D%95%E9%97%AE%E9%A2%98">4. <strong>查询订单问题</strong></a></li>
+<li><a href="#5-%E5%9C%B0%E5%9D%80%E7%AE%A1%E7%90%86%E9%97%AE%E9%A2%98">5. <strong>地址管理问题</strong></a></li>
+<li><a href="#6-%E6%94%AF%E4%BB%98%E8%AE%A2%E5%8D%95%E9%97%AE%E9%A2%98">6. <strong>支付订单问题</strong></a></li>
+<li><a href="#7-%E7%A1%AE%E8%AE%A4%E6%94%B6%E8%B4%A7%E9%97%AE%E9%A2%98">7. <strong>确认收货问题</strong></a></li>
+<li><a href="#8-%E6%B7%BB%E5%8A%A0%E4%BA%A7%E5%93%81%E9%97%AE%E9%A2%98">8. <strong>添加产品问题</strong></a></li>
+<li><a href="#9-%E6%9F%A5%E8%AF%A2%E5%95%86%E5%8D%95%E9%97%AE%E9%A2%98">9. <strong>查询商单问题</strong></a></li>
+<li><a href="#10-%E8%AE%A2%E5%8D%95%E5%8F%91%E8%B4%A7%E9%97%AE%E9%A2%98">10. <strong>订单发货问题</strong></a></li>
+</ul>
+</li>
+<li><a href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98">常见问题</a>
+<ul>
+<li><a href="#1-%E7%99%BB%E5%BD%95%E9%97%AE%E9%A2%98-1">1. <strong>登录问题</strong></a></li>
+<li><a href="#2-%E6%B3%A8%E5%86%8C%E9%97%AE%E9%A2%98-1">2. <strong>注册问题</strong></a></li>
+<li><a href="#3-%E8%B4%AD%E4%B9%B0%E4%BA%A7%E5%93%81%E9%97%AE%E9%A2%98-1">3. <strong>购买产品问题</strong></a></li>
+<li><a href="#4-%E6%9F%A5%E8%AF%A2%E8%AE%A2%E5%8D%95%E9%97%AE%E9%A2%98-1">4. <strong>查询订单问题</strong></a></li>
+<li><a href="#5-%E5%9C%B0%E5%9D%80%E7%AE%A1%E7%90%86%E9%97%AE%E9%A2%98-1">5. <strong>地址管理问题</strong></a></li>
+<li><a href="#6-%E6%94%AF%E4%BB%98%E8%AE%A2%E5%8D%95%E9%97%AE%E9%A2%98-1">6. <strong>支付订单问题</strong></a></li>
+<li><a href="#7-%E7%A1%AE%E8%AE%A4%E6%94%B6%E8%B4%A7%E9%97%AE%E9%A2%98-1">7. <strong>确认收货问题</strong></a></li>
+<li><a href="#8-%E6%B7%BB%E5%8A%A0%E4%BA%A7%E5%93%81%E9%97%AE%E9%A2%98-1">8. <strong>添加产品问题</strong></a></li>
+<li><a href="#9-%E6%9F%A5%E8%AF%A2%E5%95%86%E5%8D%95%E9%97%AE%E9%A2%98-1">9. <strong>查询商单问题</strong></a></li>
+<li><a href="#10-%E8%AE%A2%E5%8D%95%E5%8F%91%E8%B4%A7%E9%97%AE%E9%A2%98-1">10. <strong>订单发货问题</strong></a></li>
+</ul>
+</li>
+<li><a href="#%E8%81%94%E7%B3%BB%E6%94%AF%E6%8C%81">联系支持</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="简介">简介 </h2>
+<p>本软件是一款为消费者和商家提供交易平台的综合解决方案。用户可以通过该平台进行注册、登录，并访问不同的功能模块。消费者可以查看和购买产品，管理订单并确认收货。商家可以添加和管理产品，处理订单发货等操作。平台的主要功能包括：</p>
+<ul>
+<li><strong>注册和登录</strong>：用户可以注册成为消费者或商家，并通过登录访问相应的功能模块。</li>
+<li><strong>产品查看</strong>：消费者可以浏览商家提供的各类产品，并选择购买。</li>
+<li><strong>订单管理</strong>：消费者可以查看和管理自己的订单状态，商家可以查看所有订单并进行发货操作。</li>
+<li><strong>支付功能</strong>：消费者可以通过平台完成订单支付，支付成功后订单状态将更新为“待发货”。</li>
+<li><strong>地址管理</strong>：消费者可以添加和管理自己的收货地址，确保订单的准确送达。</li>
+</ul>
+<p>本软件通过简洁直观的用户界面和完善的功能设计，致力于提升消费者和商家的交易体验，促进双方的高效互动和交易。</p>
+<h2 id="系统要求">系统要求 </h2>
+<p>为了保证本软件的正常运行和最佳性能，请确保您的系统满足以下要求：</p>
+<ul>
+<li><strong>操作系统</strong>：Windows XP 或更高版本</li>
+<li><strong>内存</strong>：至少 2 GB</li>
+<li><strong>硬盘空间</strong>：至少 200 MB</li>
+<li><strong>其他软件</strong>：需要安装 ADO 数据库组件</li>
+</ul>
+<p>确保您的系统符合上述要求，可以有效提升软件的运行效率和用户体验。</p>
+<h2 id="启动和登录">启动和登录 </h2>
+<ol>
+<li><strong>启动软件</strong>：双击软件图标或通过开始菜单启动程序。</li>
+<li><strong>选择用户类型</strong>：在登录界面选择用户类型（消费者或商家）。</li>
+<li><strong>输入用户 ID 和密码进行登录</strong>：在相应的输入框中输入您的用户 ID 和密码，然后点击“登录”按钮。</li>
+<li><strong>初次使用请先注册账号</strong>：如果您是第一次使用本软件，请先点击“注册”按钮，选择用户类型并填写注册信息完成账号注册。</li>
+</ol>
+<h2 id="主要功能">主要功能 </h2>
+<h3 id="注册用户">注册用户 </h3>
+<p>在你的应用程序中，用户可以通过注册界面创建新的用户账户。注册过程包括选择用户类型（Consumer 或 Merchant）、输入用户 ID 和密码，并处理各种可能的错误反馈。</p>
+<h4 id="详细步骤">详细步骤 </h4>
+<ol>
+<li><strong>在登录界面选择“Register”按钮</strong></li>
+<li><strong>选择用户类型（Consumer 或 Merchant）</strong></li>
+<li><strong>输入用户 ID 和密码进行注册</strong></li>
+<li><strong>处理注册错误的反馈</strong></li>
+</ol>
+<h4 id="用户注册界面的功能与详细描述">用户注册界面的功能与详细描述 </h4>
+<h5 id="1-在登录界面选择register按钮">1. 在登录界面选择“Register”按钮 </h5>
+<ul>
+<li>用户在登录界面点击“Register”按钮来开始注册流程。</li>
+</ul>
+<h5 id="2-选择用户类型consumer-或-merchant">2. 选择用户类型（Consumer 或 Merchant） </h5>
+<ul>
+<li>在注册表单中，用户可以选择他们的用户类型。</li>
+<li>用户类型选择框通常是一个下拉菜单，用户可以选择“Consumer”或“Merchant”。</li>
+</ul>
+<h5 id="3-输入用户-id-和密码进行注册">3. 输入用户 ID 和密码进行注册 </h5>
+<ul>
+<li>用户需要在注册表单中输入他们的用户 ID 和密码。</li>
+<li>用户 ID 和密码需要满足一定的格式和要求，例如：
+<ul>
+<li>用户 ID 不能为空，并且应该是唯一的。</li>
+<li>密码不能为空，并且应该满足一定的复杂度要求，例如包含大小写字母、数字和特殊字符。</li>
+</ul>
+</li>
+</ul>
+<h5 id="4-处理注册错误的反馈">4. 处理注册错误的反馈 </h5>
+<ul>
+<li>如果用户输入无效，系统会显示相应的错误信息，并提示用户修改输入。常见的错误反馈包括：
+<ul>
+<li>用户 ID 或密码为空：显示“UserID 和密码不能为空。”<br>
+<img src="PleaseFill.png" alt="PleaseFill.png"></li>
+<li>用户 ID 已存在：显示“该 UserID 已被注册，请选择其他 UserID。”<br>
+<img src="IDAlreadyExists.png" alt="IDAlreadyExists"></li>
+</ul>
+</li>
+</ul>
+<h4 id="注册流程的用户体验">注册流程的用户体验 </h4>
+<ul>
+<li><strong>注册成功</strong>：当用户成功注册后，系统会显示“注册成功”消息，并引导用户返回登录界面或直接登录。<br>
+<img src="Registration.png" alt="Registration"></li>
+<li><strong>注册失败</strong>：当用户注册失败时，系统会显示具体的错误信息，提示用户需要修改的内容。</li>
+</ul>
+<h4 id="示例注册流程图">示例注册流程图 </h4>
+<ol>
+<li><strong>注册界面</strong>
+<ul>
+<li>用户选择用户类型（Consumer 或 Merchant）</li>
+<li>用户输入用户 ID 和密码</li>
+<li>用户点击“Register”按钮</li>
+</ul>
+</li>
+<li><strong>验证输入</strong>
+<ul>
+<li>系统检查用户输入的合法性</li>
+<li>如果输入无效，显示错误信息</li>
+<li>如果输入有效，将用户信息保存到数据库</li>
+</ul>
+</li>
+<li><strong>反馈用户</strong>
+<ul>
+<li>注册成功：显示“注册成功”消息</li>
+<li>注册失败：显示具体的错误信息，提示用户修改输入</li>
+</ul>
+</li>
+</ol>
+<h4 id="注册功能总结">注册功能总结 </h4>
+<p>注册功能是用户首次使用应用程序时的第一步，通过详细的输入验证和错误反馈，确保用户注册流程顺畅，同时提高系统的安全性和用户体验。</p>
+<h3 id="用户登录功能介绍">用户登录功能介绍 </h3>
+<p>在你的应用程序中，用户可以通过登录界面选择用户类型，输入用户 ID 和密码，然后点击“登录”按钮进行登录。登录成功后，用户将被导航到对应的用户界面。</p>
+<h4 id="登录详细步骤">登录详细步骤 </h4>
+<ol>
+<li><strong>在登录界面选择用户类型</strong></li>
+<li><strong>输入用户 ID 和密码进行登录</strong></li>
+<li><strong>点击“登录”按钮</strong></li>
+<li><strong>登录成功后进入对应的用户界面</strong></li>
+</ol>
+<h4 id="用户登录界面的功能与详细描述">用户登录界面的功能与详细描述 </h4>
+<h5 id="1-在登录界面选择用户类型">1. 在登录界面选择用户类型 </h5>
+<ul>
+<li>用户在登录界面通过下拉菜单选择他们的用户类型。</li>
+<li>用户类型通常包括 Consumer 和 Merchant。</li>
+</ul>
+<h5 id="2-输入用户-id-和密码进行登录">2. 输入用户 ID 和密码进行登录 </h5>
+<ul>
+<li>用户需要在登录界面输入他们的用户 ID 和密码。</li>
+<li>用户 ID 和密码必须与其账户信息匹配，否则登录将失败。</li>
+</ul>
+<h5 id="3-点击登录按钮">3. 点击“登录”按钮 </h5>
+<ul>
+<li>用户输入完用户 ID 和密码后，点击“登录”按钮以提交登录请求。</li>
+<li>系统会验证用户提供的凭据并决定是否允许用户登录。</li>
+</ul>
+<h5 id="4-登录成功后进入对应的用户界面">4. 登录成功后进入对应的用户界面 </h5>
+<ul>
+<li>如果用户提供的凭据是有效的，系统会登录用户并将其导航到相应的用户界面。</li>
+<li>Consumer 用户将被导航到 Consumer 界面，Merchant 用户将被导航到 Merchant 界面。</li>
+</ul>
+<h4 id="错误反馈示例">错误反馈示例 </h4>
+<h5 id="1用户类型选择错误">1.用户类型选择错误 </h5>
+<p>当用户选择错了用户类型时，会反馈“invalid user type”<br>
+<img src="InvalidUserType.png" alt="Invalid User Type"></p>
+<h5 id="2用户或者密码错误">2.用户或者密码错误 </h5>
+<p><img src="InvalidPassword.png" alt="Invalid Password"></p>
+<h5 id="3有项目空着">3.有项目空着 </h5>
+<p><img src="NotEnter.png" alt="Not Enter"></p>
+<h4 id="示例登录流程图">示例登录流程图 </h4>
+<ol>
+<li><strong>登录界面</strong>
+<ul>
+<li>用户选择用户类型（Consumer 或 Merchant）</li>
+<li>用户输入用户 ID 和密码</li>
+<li>用户点击“登录”按钮</li>
+</ul>
+</li>
+<li><strong>验证输入</strong>
+<ul>
+<li>系统检查用户输入的凭据是否有效</li>
+<li>如果凭据有效，系统允许用户登录；否则，登录失败</li>
+</ul>
+</li>
+<li><strong>导航用户</strong>
+<ul>
+<li>登录成功：系统导航用户到相应的用户界面</li>
+<li>登录失败：系统显示错误消息并要求用户重试</li>
+</ul>
+</li>
+</ol>
+<p><img src="LoginSuccessful.png" alt="Login Successful"></p>
+<h4 id="用户登录功能总结">用户登录功能总结 </h4>
+<p>用户登录功能是用户进入应用程序的门户，通过详细的输入验证和导航用户到正确的界面，确保用户能够顺利地访问其所需的功能，并提高系统的安全性和用户体验。</p>
+<h3 id="消费者功能">消费者功能 </h3>
+<h4 id="欢迎用户">欢迎用户 </h4>
+<p>当登陆成功进入消费者界面后，首页上会有大字欢迎消费者，而且包括了消费者的名称。当消费者ID为<strong>123</strong>的时候，会显示<strong>Hello，consumer123</strong>。</p>
+<p><img src="HelloConsumer.png" alt="Hello Consumer"></p>
+<h4 id="查看产品">查看产品 </h4>
+<ul>
+<li>登录成功后，点击“查看产品”按钮。</li>
+</ul>
+<p><img src="Search.png" alt="Search"></p>
+<ul>
+<li>查询并显示所有产品及其对应的商家信息。</li>
+</ul>
+<p><img src="SearchProductSuccess.png" alt="Search Product Success"></p>
+<h4 id="添加地址">添加地址 </h4>
+<p>在你的应用程序中，用户可以添加新的地址信息。添加地址的过程包括输入地址 ID 和详细地址，然后点击“添加地址”按钮将新地址保存到数据库中。</p>
+<h5 id="添加地址详细步骤">添加地址详细步骤 </h5>
+<ol>
+<li><strong>输入地址 ID 和详细地址</strong></li>
+<li><strong>点击“添加地址”按钮</strong></li>
+<li><strong>将新地址添加到数据库</strong></li>
+</ol>
+<h5 id="添加地址界面的功能与详细描述">添加地址界面的功能与详细描述 </h5>
+<p><img src="AddAddress.png" alt="Add Address"></p>
+<h6 id="1-输入地址-id-和详细地址">1. 输入地址 ID 和详细地址 </h6>
+<ul>
+<li>用户在添加地址界面输入新地址的地址 ID 和详细地址。</li>
+<li>地址 ID 通常是一个唯一的标识符，用于在数据库中标识地址。</li>
+<li>详细地址包括用户的具体位置信息，如街道名称、门牌号等。</li>
+</ul>
+<h6 id="2-点击添加地址按钮">2. 点击“添加地址”按钮 </h6>
+<ul>
+<li>用户在输入完地址信息后，点击“添加地址”按钮以提交新地址的添加请求。</li>
+<li>系统会将用户输入的地址信息保存到数据库中，并反馈给用户添加地址是否成功的消息。</li>
+</ul>
+<h5 id="添加地址合法性检测">添加地址合法性检测 </h5>
+<ul>
+<li>
+<ol>
+<li>当地址ID已经存在时，会返回<strong>Address ID Already Exists</strong>。</li>
+</ol>
+</li>
+</ul>
+<p><img src="AddressExist.png" alt="Address Exist"></p>
+<ul>
+<li>
+<ol start="2">
+<li>当地址ID非法时，会返回<strong>Invalid Address ID</strong>。</li>
+</ol>
+</li>
+</ul>
+<p><img src="InvalidAddressID.png" alt="Invalid Address ID"></p>
+<h5 id="示例添加地址流程图">示例添加地址流程图 </h5>
+<ol>
+<li><strong>添加地址界面</strong>
+<ul>
+<li>用户输入地址 ID 和详细地址</li>
+<li>用户点击“添加地址”按钮</li>
+</ul>
+</li>
+<li><strong>保存地址到数据库</strong>
+<ul>
+<li>系统将用户输入的地址信息保存到数据库中</li>
+<li>系统显示添加地址成功或失败的消息给用户</li>
+</ul>
+</li>
+<li><strong>添加地址成功</strong>
+<ul>
+<li>添加地址成功后，会显示<strong>Add Adress Successfully</strong></li>
+</ul>
+</li>
+</ol>
+<p><img src="AddAdressSuccessfully.png" alt="Add Adress Successfully"></p>
+<h5 id="添加地址功能总结">添加地址功能总结 </h5>
+<p>添加地址功能为用户提供了方便快捷地添加新地址的方式，通过详细的输入验证和反馈用户地址添加结果，确保用户能够顺利地管理其地址信息。</p>
+<h4 id="购买产品">购买产品 </h4>
+<p>在你的应用程序中，用户可以购买产品并生成订单。购买产品的过程包括输入订单 ID、产品 ID 和购买数量，然后点击“购买产品”按钮生成订单。</p>
+<h5 id="购买产品详细步骤">购买产品详细步骤 </h5>
+<p><img src="PurchaseInterface.png" alt="Purchase Interface"></p>
+<ol>
+<li><strong>输入订单 ID、产品 ID 和购买数量</strong></li>
+<li><strong>选择地址</strong><br>
+<img src="ChooseAddress.png" alt="Choose Address"></li>
+<li><strong>点击“购买产品”按钮</strong></li>
+<li><strong>生成订单</strong></li>
+</ol>
+<h5 id="购买产品界面的功能与详细描述">购买产品界面的功能与详细描述 </h5>
+<h6 id="1-输入订单-id-产品-id-和购买数量">1. 输入订单 ID、产品 ID 和购买数量 </h6>
+<ul>
+<li>用户在购买产品界面输入订单 ID、产品 ID 和购买数量。</li>
+<li>订单 ID 通常是一个唯一的标识符，用于在数据库中标识订单。</li>
+<li>产品 ID 是用户想要购买的产品的唯一标识符。</li>
+<li>购买数量表示用户想要购买的产品数量。</li>
+</ul>
+<h6 id="2-点击购买产品按钮">2. 点击“购买产品”按钮 </h6>
+<ul>
+<li>用户在输入完订单信息后，点击“购买产品”按钮以提交购买请求。</li>
+<li>系统会根据用户提供的订单信息生成订单，并反馈给用户订单生成是否成功的消息。</li>
+</ul>
+<h5 id="合法性检测">合法性检测 </h5>
+<ol>
+<li>当产品不存在的时候，会返回<strong>未找到产品</strong>。<br>
+<img src="NotFound.png" alt="Not Found"></li>
+<li>当输入不合法时，会返回<strong>输入无效</strong><br>
+<img src="InvalidInput.png" alt="Invalid Input"></li>
+<li>当订单ID存在时，会返回<strong>ID已存在</strong><br>
+<img src="IDExists.png" alt="ID Exists"></li>
+</ol>
+<h5 id="示例购买产品流程图">示例购买产品流程图 </h5>
+<ol>
+<li><strong>购买产品界面</strong>
+<ul>
+<li>用户输入订单 ID、产品 ID 和购买数量</li>
+<li>用户点击“购买产品”按钮</li>
+</ul>
+</li>
+<li><strong>生成订单</strong>
+<ul>
+<li>系统根据用户输入的订单信息生成订单</li>
+<li>系统显示订单生成成功或失败的消息给用户</li>
+</ul>
+</li>
+<li><strong>订单下达</strong>
+<ul>
+<li>当订单成功下达的时候，会返回<strong>订单成功下达</strong></li>
+</ul>
+</li>
+</ol>
+<p><img src="SuccessfullyIssued.png" alt="Successfully Issued"></p>
+<p>此时查询订单状态，订单状态为<strong>待支付</strong>。</p>
+<p><img src="ToBeShipped.png" alt="To Be Paid"></p>
+<h5 id="购买产品功能总结">购买产品功能总结 </h5>
+<p>购买产品功能为用户提供了方便快捷地购买产品并生成订单的方式，通过详细的输入验证和反馈用户订单生成结果，确保用户能够顺利地完成购买流程。</p>
+<h4 id="查询订单">查询订单 </h4>
+<p>在你的应用程序中，用户可以查询他们的所有订单。查询订单的过程包括点击“查询订单”按钮，然后系统显示用户的所有订单。</p>
+<h5 id="查询订单详细步骤">查询订单详细步骤 </h5>
+<p><img src="SearchInterface.png" alt="Search Interface"></p>
+<ol>
+<li><strong>点击“查询订单”按钮</strong></li>
+<li><strong>查看用户的所有订单</strong></li>
+</ol>
+<h5 id="查询订单界面的功能与详细描述">查询订单界面的功能与详细描述 </h5>
+<h6 id="1-点击查询订单按钮">1. 点击“查询订单”按钮 </h6>
+<ul>
+<li>用户在查询订单界面点击“查询订单”按钮以请求查看所有订单。</li>
+<li>系统会接收用户的请求并从数据库中获取用户的所有订单信息。</li>
+</ul>
+<h6 id="2-查看用户的所有订单">2. 查看用户的所有订单 </h6>
+<ul>
+<li>系统从数据库中获取用户的所有订单信息后，显示在用户界面上。</li>
+<li>用户可以浏览所有订单的详细信息，包括订单 ID、产品 ID、购买数量、订单状态等。</li>
+</ul>
+<h5 id="示例查询订单流程图">示例查询订单流程图 </h5>
+<ol>
+<li><strong>查询订单界面</strong>
+<ul>
+<li>用户点击“查询订单”按钮</li>
+</ul>
+</li>
+<li><strong>获取订单信息</strong>
+<ul>
+<li>系统从数据库中获取用户的所有订单信息</li>
+</ul>
+</li>
+<li><strong>显示订单信息</strong>
+<ul>
+<li>系统显示用户的所有订单信息</li>
+</ul>
+</li>
+</ol>
+<p><img src="SearchSuccessfully.png" alt="Search Successfully"></p>
+<h5 id="查询订单功能总结">查询订单功能总结 </h5>
+<p>查询订单功能为用户提供了方便快捷地查看其所有订单的方式，通过简单的操作步骤和详细的信息展示，确保用户能够轻松地管理和查看其订单信息。</p>
+<h4 id="支付订单">支付订单 </h4>
+<p>在你的应用程序中，用户可以通过输入支付信息来支付订单。支付订单的过程包括输入支付 ID、订单 ID 和支付方式，然后点击“支付”按钮完成支付，并更新订单状态为“待发货”。</p>
+<h5 id="支付订单详细步骤">支付订单详细步骤 </h5>
+<p><img src="PaymentInterface.png" alt="Payment Interface"></p>
+<ol>
+<li><strong>输入支付 ID、订单 ID 和支付方式</strong></li>
+<li><strong>点击“支付”按钮</strong></li>
+<li><strong>完成支付并更新订单状态</strong></li>
+</ol>
+<h5 id="支付订单界面的功能与详细描述">支付订单界面的功能与详细描述 </h5>
+<h6 id="1-输入支付-id-订单-id-和支付方式">1. 输入支付 ID、订单 ID 和支付方式 </h6>
+<ul>
+<li>用户在支付订单界面输入支付 ID、订单 ID 和支付方式。</li>
+<li>支付 ID 通常是一个唯一的标识符，用于在数据库中标识支付记录。</li>
+<li>订单 ID 是用户想要支付的订单的唯一标识符。</li>
+<li>支付方式可以是多种选项，如信用卡、借记卡、在线支付等。</li>
+</ul>
+<p><img src="PaymentMethodChoose.png" alt="Payment Method Choose"></p>
+<h6 id="2-点击支付按钮">2. 点击“支付”按钮 </h6>
+<ul>
+<li>用户在输入完支付信息后，点击“支付”按钮以提交支付请求。</li>
+<li>系统会处理支付请求，并验证支付信息的有效性。</li>
+</ul>
+<h6 id="3-完成支付并更新订单状态">3. 完成支付并更新订单状态 </h6>
+<ul>
+<li>如果支付成功，系统会将订单状态更新为“待发货”。</li>
+<li>系统会显示支付成功的消息给用户。</li>
+</ul>
+<h5 id="非法输入处理">非法输入处理 </h5>
+<ul>
+<li>
+<ol>
+<li>当输入订单空或者无效的时候，会返回<strong>订单无效</strong>。</li>
+</ol>
+</li>
+</ul>
+<p><img src="InvalidOrder.png" alt="Invalid Order"></p>
+<ul>
+<li>
+<ol start="2">
+<li>当输入的PaymentID重复的时候，会返回<strong>支付ID已存在</strong>。</li>
+</ol>
+</li>
+</ul>
+<p><img src="PaymentIDExists.png" alt="PaymentID Exists"></p>
+<ul>
+<li>
+<ol start="3">
+<li>当订单状态不可支付时，会返回<strong>该订单状态不可支付</strong>。</li>
+</ol>
+</li>
+</ul>
+<p><img src="CannotPay.png" alt="Cannot Pay"></p>
+<h5 id="示例支付订单流程图">示例支付订单流程图 </h5>
+<ol>
+<li><strong>支付订单界面</strong>
+<ul>
+<li>用户输入支付 ID、订单 ID 和支付方式</li>
+<li>用户点击“支付”按钮</li>
+</ul>
+</li>
+<li><strong>处理支付请求</strong>
+<ul>
+<li>系统处理支付请求并验证支付信息</li>
+</ul>
+</li>
+<li><strong>更新订单状态</strong>
+<ul>
+<li>如果支付成功，系统将订单状态更新为“待发货”</li>
+<li>系统显示支付成功或失败的消息给用户</li>
+</ul>
+</li>
+</ol>
+<p><img src="PaySuccessfully.png" alt="Pay Successfully"></p>
+<p>此时查询订单状态，订单状态为<strong>待发货</strong>。</p>
+<p><img src="ToBeShipped.png" alt="To Be Shipped"></p>
+<h5 id="支付订单功能总结">支付订单功能总结 </h5>
+<p>支付订单功能为用户提供了方便快捷地完成订单支付的方式，通过详细的输入验证和订单状态更新，确保用户能够顺利地完成支付流程，并实时了解订单状态。</p>
+<h4 id="确认收货">确认收货 </h4>
+<p>在你的应用程序中，用户可以确认收货并更新订单状态为“已收货”。确认收货的过程包括输入订单 ID，然后点击“确认收货”按钮将订单状态更新为“已收货”。</p>
+<h5 id="确认收货详细步骤">确认收货详细步骤 </h5>
+<ol>
+<li><strong>输入订单 ID</strong></li>
+<li><strong>点击“确认收货”按钮</strong></li>
+<li><strong>更新订单状态为“已收货”</strong></li>
+</ol>
+<h5 id="确认收货界面的功能与详细描述">确认收货界面的功能与详细描述 </h5>
+<p><img src="ConfirmReceiptInterface.png" alt="Confirm Receipt Interface"></p>
+<h6 id="1-输入订单-id">1. 输入订单 ID </h6>
+<ul>
+<li>用户在确认收货界面输入待确认收货的订单 ID。</li>
+</ul>
+<h6 id="2-点击确认收货按钮">2. 点击“确认收货”按钮 </h6>
+<ul>
+<li>用户在输入完订单 ID 后，点击“确认收货”按钮以提交确认收货请求。</li>
+<li>系统会将订单状态更新为“已收货”。</li>
+</ul>
+<h5 id="订单id非法输入处理">订单ID非法输入处理 </h5>
+<ul>
+<li>
+<ol>
+<li>当输入订单空或者无效的时候，会返回<strong>Invalid Order ID</strong>。</li>
+</ol>
+</li>
+</ul>
+<p><img src="InvalidOrderID.png" alt="Invalid OrderID"></p>
+<ul>
+<li>
+<ol start="2">
+<li>当输入的订单不存在的时候，会返回<strong>Order Not Found</strong>。</li>
+</ol>
+</li>
+</ul>
+<p><img src="OrderNotFound.png" alt="Order Not Found"></p>
+<ul>
+<li>
+<ol start="3">
+<li>当订单状态不可收货时，会返回<strong>Only orders with status "Delivered" can be received.</strong>。</li>
+</ol>
+</li>
+</ul>
+<p><img src="CannotReceive.png" alt="Cannot Receive"></p>
+<h5 id="示例确认收货流程图">示例确认收货流程图 </h5>
+<ol>
+<li><strong>确认收货界面</strong>
+<ul>
+<li>用户输入订单 ID</li>
+<li>用户点击“确认收货”按钮</li>
+</ul>
+</li>
+<li><strong>更新订单状态</strong>
+<ul>
+<li>系统将订单状态更新为“已收货”</li>
+</ul>
+</li>
+</ol>
+<p><img src="MarkedReceived.png" alt="Marked Received"></p>
+<p>此时查询订单状态，订单状态为<strong>已收货</strong>。</p>
+<p><img src="ToBeShipped.png" alt="Received"></p>
+<h5 id="确认收货功能总结">确认收货功能总结 </h5>
+<p>确认收货功能为用户提供了确认收到商品并更新订单状态的方式，通过简单的输入操作和订单状态更新，确保用户能够方便地完成确认收货的流程，并及时更新订单状态。</p>
+<h3 id="商家功能">商家功能 </h3>
+<h4 id="查看商品">查看商品 </h4>
+<p>在你的应用程序中，用户可以通过点击“查看产品”按钮来浏览商家相关的产品。查看商品的过程包括登录成功后，点击“查看产品”按钮，然后系统会查询并显示商家相关的产品信息。</p>
+<h5 id="查看商品详细步骤">查看商品详细步骤 </h5>
+<ol>
+<li><strong>登录成功后，点击“查看产品”按钮</strong></li>
+<li><strong>查询并显示商家相关的产品</strong></li>
+</ol>
+<h5 id="查看商品界面的功能与详细描述">查看商品界面的功能与详细描述 </h5>
+<p><img src="SearchProductInterface.png" alt="Search Product Interface"></p>
+<h6 id="1-登录成功后点击查看产品按钮">1. 登录成功后，点击“查看产品”按钮 </h6>
+<ul>
+<li>用户在登录成功后，可以点击界面上的“查看产品”按钮以浏览商家相关的产品。</li>
+<li>系统会接收用户的请求并进行相应的查询。</li>
+</ul>
+<h6 id="2-查询并显示商家相关的产品">2. 查询并显示商家相关的产品 </h6>
+<ul>
+<li>系统会从数据库中查询商家相关的产品信息，并在界面上显示出来。</li>
+<li>用户可以浏览所有产品的详细信息，如产品名称、价格、描述等。</li>
+</ul>
+<h5 id="示例查看商品流程图">示例查看商品流程图 </h5>
+<ol>
+<li><strong>查看商品界面</strong>
+<ul>
+<li>用户登录成功后，点击“查看产品”按钮</li>
+</ul>
+</li>
+<li><strong>查询商品信息</strong>
+<ul>
+<li>系统从数据库中获取商家相关的产品信息</li>
+</ul>
+</li>
+<li><strong>显示商品信息</strong>
+<ul>
+<li>系统显示商家相关的产品信息给用户</li>
+</ul>
+</li>
+</ol>
+<p><img src="SecrchProductSuccessfully.png" alt="Secrch Product Successfully"></p>
+<h5 id="查看商品功能总结">查看商品功能总结 </h5>
+<p>查看商品功能为用户提供了方便快捷地浏览商家相关产品的方式，通过简单的操作步骤和详细的信息展示，确保用户能够轻松地了解商家提供的产品信息。</p>
+<h4 id="添加产品">添加产品 </h4>
+<p>在你的应用程序中，商家可以通过添加产品界面将新产品添加到数据库中。添加产品的过程包括输入产品 ID、产品名称、价格和库存，然后点击“添加产品”按钮提交信息。</p>
+<h5 id="添加产品详细步骤">添加产品详细步骤 </h5>
+<ol>
+<li><strong>输入产品 ID、产品名称、价格和库存</strong></li>
+<li><strong>点击“添加产品”按钮</strong></li>
+<li><strong>将新产品添加到数据库</strong></li>
+</ol>
+<h5 id="添加产品界面的功能与详细描述">添加产品界面的功能与详细描述 </h5>
+<p><img src="AddProductInterface.png" alt="Add Product Interface"></p>
+<h6 id="1-输入产品-id-产品名称-价格和库存">1. 输入产品 ID、产品名称、价格和库存 </h6>
+<ul>
+<li>商家在添加产品界面输入新产品的相关信息。
+<ul>
+<li>产品 ID：唯一标识一个产品的标识符。</li>
+<li>产品名称：产品的名称。</li>
+<li>价格：产品的价格。</li>
+<li>库存：产品的库存数量。</li>
+</ul>
+</li>
+</ul>
+<h6 id="2-点击添加产品按钮">2. 点击“添加产品”按钮 </h6>
+<ul>
+<li>商家在输入完所有产品信息后，点击“添加产品”按钮以提交新产品的添加请求。</li>
+<li>系统会验证输入的合法性，并将新产品信息保存到数据库中。</li>
+</ul>
+<h5 id="添加产品合法性检测">添加产品合法性检测 </h5>
+<ul>
+<li>
+<ol>
+<li>当有一部分为空的时候，会显示<strong>cannot be empty</strong></li>
+</ol>
+</li>
+</ul>
+<p><img src="ProductIDEmpty.png" alt="ProductID Empty"></p>
+<p><img src="ProductNameEmpty.png" alt="Product Name Empty"></p>
+<ul>
+<li>
+<ol start="2">
+<li>当price的输入为非法的时候，会显示<strong>Invalid Price</strong>。</li>
+</ol>
+</li>
+</ul>
+<p><img src="InvalidPrice.png" alt="Invalid Price"></p>
+<ul>
+<li>
+<ol start="3">
+<li>当Stock的输入为非法的时候，会显示<strong>Invalid Stock</strong>。</li>
+</ol>
+</li>
+</ul>
+<p><img src="InvalidStock.png" alt="Invalid Stock"></p>
+<ul>
+<li>
+<ol start="4">
+<li>当输入的产品ID已经存在时，系统会返回相应的错误信息，例如 <strong>ProductID Already Exists</strong>。</li>
+</ol>
+</li>
+</ul>
+<p><img src="ProductIDAlreadyExists.png" alt="ProductID Already Exists"></p>
+<h5 id="示例添加产品流程图">示例添加产品流程图 </h5>
+<ol>
+<li><strong>添加产品界面</strong>
+<ul>
+<li>商家输入产品 ID、产品名称、价格和库存</li>
+<li>商家点击“添加产品”按钮</li>
+</ul>
+</li>
+<li><strong>保存产品到数据库</strong>
+<ul>
+<li>系统验证输入信息的合法性</li>
+<li>系统将新产品信息保存到数据库中</li>
+</ul>
+</li>
+<li><strong>反馈商家</strong>
+<ul>
+<li>添加成功：显示“添加产品成功”消息</li>
+<li>添加失败：显示具体的错误信息，提示商家需要修改的内容</li>
+</ul>
+</li>
+</ol>
+<p>当成功添加新产品的时候，就会反馈<strong>Product Added Successfully</strong></p>
+<p><img src="ProductAddedSuccessfully.png" alt="Product Added Successfully"></p>
+<p>与此同时，右侧显示部分同时也会显示包括新的商品的商品清单。</p>
+<p><img src="NewProduct.png" alt="New Product"></p>
+<h5 id="添加产品功能总结">添加产品功能总结 </h5>
+<p>添加产品功能为商家提供了方便快捷地添加新产品的方式，通过详细的输入验证和反馈商家添加结果，确保商家能够顺利地管理其产品信息，并提高系统的安全性和用户体验。</p>
+<h4 id="查询商单">查询商单 </h4>
+<p>在你的应用程序中，商家可以通过点击“查询订单”按钮来查看所有订单。查询商单的过程包括点击“查询订单”按钮，系统查询商家所有的订单，并在界面上显示订单信息。</p>
+<h5 id="查询商单详细步骤">查询商单详细步骤 </h5>
+<ol>
+<li><strong>点击“查询订单”按钮</strong></li>
+<li><strong>查询并显示商家所有订单</strong></li>
+</ol>
+<h5 id="查询商单界面的功能与详细描述">查询商单界面的功能与详细描述 </h5>
+<p><img src="SearchOrderInterface.png" alt="Search Order Interface"></p>
+<h6 id="1-点击查询订单按钮-1">1. 点击查询订单按钮 </h6>
+<ul>
+<li>商家在界面上点击“查询订单”按钮以查看所有订单。</li>
+<li>系统接收到请求后，开始查询订单信息。</li>
+</ul>
+<h6 id="2-查询并显示商家所有订单">2. 查询并显示商家所有订单 </h6>
+<ul>
+<li>系统从数据库中查询该商家所有的订单信息。</li>
+<li>查询结果会显示在界面上，包括订单 ID、订单状态、产品信息、购买数量等详细信息。</li>
+</ul>
+<p><img src="SearchOrderSuccessfully.png" alt="Search Order Successfully"></p>
+<h5 id="示例查询商单流程图">示例查询商单流程图 </h5>
+<ol>
+<li><strong>查询订单界面</strong>
+<ul>
+<li>商家点击“查询订单”按钮</li>
+</ul>
+</li>
+<li><strong>获取订单信息</strong>
+<ul>
+<li>系统从数据库中查询商家的所有订单信息</li>
+</ul>
+</li>
+<li><strong>显示订单信息</strong>
+<ul>
+<li>系统显示订单信息给商家</li>
+</ul>
+</li>
+</ol>
+<h5 id="查询商单功能总结">查询商单功能总结 </h5>
+<p>查询商单功能为商家提供了便捷地查看所有订单信息的方式，通过简单的操作步骤和详细的信息展示，确保商家能够轻松地管理和查看所有订单。</p>
+<h4 id="订单发货">订单发货 </h4>
+<p>在你的应用程序中，商家可以通过订单发货界面更新订单的状态。发货过程包括输入订单 ID，点击“发货”按钮，然后系统将订单状态更新为“已发货”。</p>
+<h5 id="订单发货详细步骤">订单发货详细步骤 </h5>
+<ol>
+<li><strong>输入订单 ID</strong></li>
+<li><strong>点击“发货”按钮</strong></li>
+<li><strong>更新订单状态为“已发货”</strong></li>
+</ol>
+<h5 id="订单发货界面的功能与详细描述">订单发货界面的功能与详细描述 </h5>
+<p><img src="DeliveryInterface.png" alt="Delivery Interface"></p>
+<h6 id="1-输入订单id">1. 输入订单ID </h6>
+<ul>
+<li>商家在订单发货界面输入需要发货的订单 ID。</li>
+<li>订单 ID 是唯一标识一个订单的标识符。</li>
+</ul>
+<h6 id="2-点击发货按钮">2. 点击“发货”按钮 </h6>
+<ul>
+<li>商家在输入订单 ID 后，点击“发货”按钮提交订单发货请求。</li>
+<li>系统会验证输入的订单 ID，并检查订单状态是否允许发货。</li>
+</ul>
+<h6 id="3-更新订单状态为已发货">3. 更新订单状态为“已发货” </h6>
+<ul>
+<li>系统将符合条件的订单状态更新为“已发货”。</li>
+<li>系统会显示订单状态更新成功或失败的消息。</li>
+</ul>
+<h5 id="订单发货合法性检测">订单发货合法性检测 </h5>
+<ul>
+<li>
+<ol>
+<li>当订单 ID 非法时，系统会返回 <strong>Invalid Order ID</strong> 错误。<br>
+<img src="InvalidOrderID2.png" alt="Invalid Order ID"></li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>当订单 ID 不存在时，系统会返回 <strong>Order ID Not Found</strong> 错误。</li>
+</ol>
+</li>
+</ul>
+<p><img src="OrderIDNotFound.png" alt="Order ID Not Found">!</p>
+<ul>
+<li>
+<ol start="3">
+<li>当订单状态不允许发货时，系统会返回 <strong>Order Cannot Be Shipped</strong> 错误。</li>
+</ol>
+</li>
+</ul>
+<p><img src="OrderCannotBeShipped.png" alt="Order Cannot Be Shipped"></p>
+<h5 id="示例订单发货流程图">示例订单发货流程图 </h5>
+<ol>
+<li><strong>订单发货界面</strong>
+<ul>
+<li>商家输入订单 ID</li>
+<li>商家点击“发货”按钮</li>
+</ul>
+</li>
+<li><strong>验证订单信息</strong>
+<ul>
+<li>系统检查订单 ID 是否存在</li>
+<li>系统检查订单状态是否允许发货</li>
+</ul>
+</li>
+<li><strong>更新订单状态</strong>
+<ul>
+<li>系统将订单状态更新为“已发货”</li>
+</ul>
+</li>
+<li><strong>反馈商家</strong>
+<ul>
+<li>发货成功：显示“订单已发货”消息</li>
+<li>发货失败：显示具体的错误信息，提示商家需要修改的内容</li>
+</ul>
+</li>
+</ol>
+<p><img src="DeliverSuccessfully.png" alt="Deliver Successfully"></p>
+<p>成功发货后，查询订单就能显示订单状态被标记为已发货</p>
+<p><img src="IsShipped.png" alt="Is Shipped"></p>
+<h5 id="订单发货功能总结">订单发货功能总结 </h5>
+<p>订单发货功能为商家提供了便捷地更新订单状态的方式，通过详细的输入验证和反馈商家订单状态更新结果，确保商家能够顺利地管理和更新订单信息。</p>
+<h2 id="故障排除">故障排除 </h2>
+<h3 id="1-登录问题">1. <strong>登录问题</strong> </h3>
+<ul>
+<li><strong>检查用户名和密码</strong>：确保输入的用户名和密码正确无误。</li>
+<li><strong>网络连接</strong>：确认您的设备已连接到互联网。</li>
+<li><strong>浏览器设置</strong>：尝试使用其他浏览器或清理浏览器缓存。</li>
+<li><strong>软件更新</strong>：确保您的应用程序是最新的版本。</li>
+</ul>
+<h3 id="2-注册问题">2. <strong>注册问题</strong> </h3>
+<ul>
+<li><strong>输入验证</strong>：确认所有必填字段都已填写，且格式正确。</li>
+<li><strong>唯一性检查</strong>：确保用户名和密码是唯一的。</li>
+<li><strong>用户类型选择</strong>：确认选择了正确的用户类型（Consumer 或 Merchant）。</li>
+</ul>
+<h3 id="3-购买产品问题">3. <strong>购买产品问题</strong> </h3>
+<ul>
+<li><strong>产品信息</strong>：确认产品ID和订单ID是正确的。</li>
+<li><strong>购买数量</strong>：确认购买数量输入正确。</li>
+<li><strong>支付信息</strong>：确认支付ID和支付方式正确无误。</li>
+</ul>
+<h3 id="4-查询订单问题">4. <strong>查询订单问题</strong> </h3>
+<ul>
+<li><strong>查询按钮</strong>：确认已点击“查询订单”按钮。</li>
+<li><strong>订单信息</strong>：确认订单ID输入正确。</li>
+</ul>
+<h3 id="5-地址管理问题">5. <strong>地址管理问题</strong> </h3>
+<ul>
+<li><strong>地址信息</strong>：确认地址ID和详细地址输入正确。</li>
+<li><strong>添加地址</strong>：确认已点击“添加地址”按钮。</li>
+</ul>
+<h3 id="6-支付订单问题">6. <strong>支付订单问题</strong> </h3>
+<ul>
+<li><strong>支付信息</strong>：确认支付ID、订单ID和支付方式输入正确。</li>
+<li><strong>支付按钮</strong>：确认已点击“支付”按钮。</li>
+</ul>
+<h3 id="7-确认收货问题">7. <strong>确认收货问题</strong> </h3>
+<ul>
+<li><strong>订单信息</strong>：确认订单ID输入正确。</li>
+<li><strong>确认收货</strong>：确认已点击“确认收货”按钮。</li>
+</ul>
+<h3 id="8-添加产品问题">8. <strong>添加产品问题</strong> </h3>
+<ul>
+<li><strong>产品信息</strong>：确认产品ID、名称、价格和库存输入正确。</li>
+<li><strong>添加按钮</strong>：确认已点击“添加产品”按钮。</li>
+</ul>
+<h3 id="9-查询商单问题">9. <strong>查询商单问题</strong> </h3>
+<ul>
+<li><strong>查询按钮</strong>：确认已点击“查询订单”按钮。</li>
+<li><strong>订单信息</strong>：确认订单ID输入正确。</li>
+</ul>
+<h3 id="10-订单发货问题">10. <strong>订单发货问题</strong> </h3>
+<pre class="language-text">- **订单信息**：确认订单ID输入正确。
+- **发货按钮**：确认已点击“发货”按钮。
+</pre>
+<p>以上是一些常见的故障排除步骤，如果遇到其他问题，可以参考用户手册中的相关章节，或联系我们的技术支持团队。</p>
+<h2 id="常见问题">常见问题 </h2>
+<h3 id="1-登录问题-1">1. <strong>登录问题</strong> </h3>
+<pre class="language-text">- 为什么我无法登录？
+  - 请检查您的用户名和密码是否正确无误，并确保它们符合规定的格式要求。
+  - 确认您的网络连接稳定，没有断开。
+  - 尝试清除浏览器缓存或使用其他浏览器登录。
+  - 检查您的账户是否被禁用或锁定。
+</pre>
+<h3 id="2-注册问题-1">2. <strong>注册问题</strong> </h3>
+<pre class="language-text">- 我无法注册新账户？
+  - 请确认所有必填字段都已填写，并且输入的格式正确。
+  - 用户名和密码必须唯一，并且符合复杂度要求。
+  - 选择正确的用户类型（Consumer 或 Merchant）。
+</pre>
+<h3 id="3-购买产品问题-1">3. <strong>购买产品问题</strong> </h3>
+<pre class="language-text">- 为什么我的订单没有成功？
+  - 请确认产品ID和订单ID输入正确，购买数量符合要求。
+  - 支付信息必须准确无误，包括支付ID和支付方式。
+</pre>
+<h3 id="4-查询订单问题-1">4. <strong>查询订单问题</strong> </h3>
+<pre class="language-text">- 我无法查询我的订单？
+  - 请确认已点击“查询订单”按钮，并且输入了正确的订单ID。
+</pre>
+<h3 id="5-地址管理问题-1">5. <strong>地址管理问题</strong> </h3>
+<pre class="language-text">    - 我无法添加新的地址？
+    - 请确认地址ID和详细地址输入正确，并且地址ID是唯一的。
+    - 尝试添加地址，并确保已点击“添加地址”按钮。
+</pre>
+<h3 id="6-支付订单问题-1">6. <strong>支付订单问题</strong> </h3>
+<pre class="language-text">- 我的支付失败了？
+  - 请确认支付ID、订单ID和支付方式输入正确。
+  - 尝试重新输入支付信息，并确保已点击“支付”按钮。
+</pre>
+<h3 id="7-确认收货问题-1">7. <strong>确认收货问题</strong> </h3>
+<pre class="language-text">- 我无法确认收货？
+  - 请确认订单ID输入正确。
+  - 尝试重新输入订单ID，并确保已点击“确认收货”按钮。
+</pre>
+<h3 id="8-添加产品问题-1">8. <strong>添加产品问题</strong> </h3>
+<pre class="language-text">- 我无法添加新产品？
+  - 请确认产品ID、名称、价格和库存输入正确。
+  - 尝试添加产品，并确保已点击“添加产品”按钮。
+</pre>
+<h3 id="9-查询商单问题-1">9. <strong>查询商单问题</strong> </h3>
+<pre class="language-text">- 我无法查询我的商单？
+  - 请确认已点击“查询订单”按钮，并且输入了正确的订单ID。
+</pre>
+<h3 id="10-订单发货问题-1">10. <strong>订单发货问题</strong> </h3>
+<pre class="language-text">- 我的订单没有发货？
+  - 请确认订单ID输入正确。
+  - 尝试重新输入订单ID，并确保已点击“发货”按钮。
+</pre>
+<p>以上是一些常见的用户问题，如果遇到其他问题，可以参考用户手册中的相关章节，或联系我们的技术支持团队。</p>
+<h2 id="联系支持">联系支持 </h2>
+<p>如果您在使用本软件过程中遇到任何问题或需要帮助，请通过以下方式联系我们的支持团队：</p>
+<ul>
+<li><strong>电话</strong>：198-8355-7844</li>
+<li><strong>邮箱</strong>：<a href="mailto:1120221303@bit.edu.cn">1120221303@bit.edu.cn</a></li>
+<li><strong>工作时间</strong>：周一至周五，9:00 - 18:00</li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

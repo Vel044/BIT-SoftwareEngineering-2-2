@@ -1,0 +1,18 @@
+{
+    "taskID": "19980110-07-005 331",
+    "0": {
+        "id": "19980110-07-005-003",
+        "indexFront": 3,
+        "indexBehind": 4
+    },
+    "pronoun": {
+        "id": "19980110-07-005-003",
+        "indexFront": 17,
+        "indexBehind": 17
+    },
+    "antecedentNum": 1,
+    "contributor": [
+        "王三帅",
+        "杨元元"
+    ]
+}

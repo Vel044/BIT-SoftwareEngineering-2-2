@@ -1,0 +1,284 @@
+[
+    {
+        "name": "恭王府博物馆",
+        "location": {
+            "lat": 39.942454,
+            "lng": 116.392911
+        },
+        "address": "北京市西城区前海西街17号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "",
+        "detail": 1,
+        "uid": "bb1d38e4ec95cc4d0c0a7002",
+        "type": "scope"
+    },
+    {
+        "name": "什刹海公园",
+        "location": {
+            "lat": 39.948054,
+            "lng": 116.391411
+        },
+        "address": "北京市西城区地安门西大街49号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "c21db9e5111538fe00ff2d32",
+        "telephone": "(010)66185806",
+        "detail": 1,
+        "uid": "c21db9e5111538fe00ff2d32",
+        "type": "scope"
+    },
+    {
+        "name": "北海公园",
+        "location": {
+            "lat": 39.932909,
+            "lng": 116.39548
+        },
+        "address": "北京市西城区文津街1号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "",
+        "telephone": "(010)64037972",
+        "detail": 1,
+        "uid": "49d959381b59a043c61e5102",
+        "type": "scope"
+    },
+    {
+        "name": "景山公园",
+        "location": {
+            "lat": 39.93227,
+            "lng": 116.402818
+        },
+        "address": "北京市西城区景山西街44号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "4b622bba5f9b4d2781a12e0a",
+        "telephone": "(010)64038098",
+        "detail": 1,
+        "uid": "4b622bba5f9b4d2781a12e0a",
+        "type": "scope"
+    },
+    {
+        "name": "北京动物园",
+        "location": {
+            "lat": 39.947735,
+            "lng": 116.343376
+        },
+        "address": "北京市西城区西直门外大街137号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "",
+        "telephone": "(010)68390274",
+        "detail": 1,
+        "uid": "4bb049d91598944799005000",
+        "type": "scope"
+    },
+    {
+        "name": "首都博物馆",
+        "location": {
+            "lat": 39.912174,
+            "lng": 116.348822
+        },
+        "address": "北京市西城区复兴门外大街16号(近白云路)",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "a5097bfa3a635763f03cba06",
+        "telephone": "(010)63370491,(010)63370492",
+        "detail": 1,
+        "uid": "a5097bfa3a635763f03cba06",
+        "type": "scope"
+    },
+    {
+        "name": "陶然亭公园",
+        "location": {
+            "lat": 39.88066,
+            "lng": 116.388442
+        },
+        "address": "北京市西城区太平街19号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "fa01e9378b06f14a774ff1f0",
+        "detail": 1,
+        "uid": "fa01e9378b06f14a774ff1f0",
+        "type": "scope"
+    },
+    {
+        "name": "白云观",
+        "location": {
+            "lat": 39.90652,
+            "lng": 116.350158
+        },
+        "address": "北京市西城区白云观街9号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "5c2dc21d178e6e046fc02c75",
+        "telephone": "(010)63463531",
+        "detail": 1,
+        "uid": "5c2dc21d178e6e046fc02c75",
+        "type": "scope"
+    },
+    {
+        "name": "北京天文馆",
+        "location": {
+            "lat": 39.943013,
+            "lng": 116.343638
+        },
+        "address": "北京市西城区西直门外大街138号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "c07eeb26458765a89ff77916",
+        "telephone": "(010)68312517",
+        "detail": 1,
+        "uid": "c07eeb26458765a89ff77916",
+        "type": "scope"
+    },
+    {
+        "name": "北京大观园",
+        "location": {
+            "lat": 39.87708,
+            "lng": 116.362431
+        },
+        "address": "北京市西城区南菜园街12号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "15a93810b646cea415c8f6b9",
+        "telephone": "(010)63582011",
+        "detail": 1,
+        "uid": "15a93810b646cea415c8f6b9",
+        "type": "scope"
+    },
+    {
+        "name": "后海公园",
+        "location": {
+            "lat": 39.948395,
+            "lng": 116.388809
+        },
+        "address": "北京市西城区后海北沿50号(近鼓楼西大街)",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "7aea43b721dd95e17d29bda4",
+        "detail": 1,
+        "uid": "7aea43b721dd95e17d29bda4",
+        "type": "scope"
+    },
+    {
+        "name": "法源寺",
+        "location": {
+            "lat": 39.890972,
+            "lng": 116.376434
+        },
+        "address": "北京市西城区法源寺前街7号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "",
+        "detail": 1,
+        "uid": "4587ac9adec6d2454251c0fa",
+        "type": "scope"
+    },
+    {
+        "name": "琉璃厂古文化街",
+        "location": {
+            "lat": 39.901621,
+            "lng": 116.39146
+        },
+        "address": "北京市西城区南新华街与小沙土园胡同交叉路口往北约100米(厂甸市场北侧约100米)",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "",
+        "detail": 1,
+        "uid": "844a750e243807a06268585e",
+        "type": "scope"
+    },
+    {
+        "name": "官园公园",
+        "location": {
+            "lat": 39.941576,
+            "lng": 116.367566
+        },
+        "address": "北京市西城区后广平胡同36号旁近市青年宫",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "",
+        "telephone": "(010)66164465",
+        "detail": 1,
+        "uid": "d7fd2ad30304a4550bccddd9",
+        "type": "scope"
+    },
+    {
+        "name": "勅建弘慈广济寺",
+        "location": {
+            "lat": 39.930786,
+            "lng": 116.378703
+        },
+        "address": "北京市西城区阜成门内大街25号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "",
+        "telephone": "(010)66171074",
+        "detail": 1,
+        "uid": "3a5edbc947f1d554d4851f3d",
+        "type": "scope"
+    },
+    {
+        "name": "北京鲁迅博物馆",
+        "location": {
+            "lat": 39.931673,
+            "lng": 116.365382
+        },
+        "address": "北京市西城区阜成门内宫门口二条19号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "",
+        "detail": 1,
+        "uid": "4cf8d24ea7a848fd9df779b4",
+        "type": "scope"
+    },
+    {
+        "name": "双秀公园",
+        "location": {
+            "lat": 39.972571,
+            "lng": 116.381298
+        },
+        "address": "北京市西城区北三环中路20号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "ac50d021a66d8ce503ff2d9c",
+        "telephone": "(010)62011695,(010)82089805",
+        "detail": 1,
+        "uid": "ac50d021a66d8ce503ff2d9c",
+        "type": "scope"
+    },
+    {
+        "name": "月坛公园",
+        "location": {
+            "lat": 39.922132,
+            "lng": 116.358874
+        },
+        "address": "北京市西城区月坛北街甲6号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "西城区",
+        "street_id": "06881d62cb48756c7069d3f4",
+        "telephone": "(010)68020940",
+        "detail": 1,
+        "uid": "06881d62cb48756c7069d3f4",
+        "type": "scope"
+    }
+]

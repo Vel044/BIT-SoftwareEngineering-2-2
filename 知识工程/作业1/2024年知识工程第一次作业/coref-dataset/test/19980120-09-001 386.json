@@ -1,0 +1,19 @@
+{
+    "taskID": "19980120-09-001 386",
+    "0": {
+        "id": "19980120-09-001-013",
+        "indexFront": 4,
+        "indexBehind": 4
+    },
+    "pronoun": {
+        "id": "19980120-09-001-013",
+        "indexFront": 13,
+        "indexBehind": 13
+    },
+    "antecedentNum": 1,
+    "contributor": [
+        "谭皓钰",
+        "王思懿",
+        "王一硕"
+    ]
+}

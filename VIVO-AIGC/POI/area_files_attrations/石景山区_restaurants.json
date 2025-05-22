@@ -1,0 +1,65 @@
+[
+    {
+        "name": "八大处公园",
+        "location": {
+            "lat": 39.968527,
+            "lng": 116.190196
+        },
+        "address": "北京市石景山区八大处路3号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "石景山区",
+        "street_id": "4edf9fbf7699998dcc06a44d",
+        "detail": 1,
+        "uid": "4edf9fbf7699998dcc06a44d",
+        "type": "scope"
+    },
+    {
+        "name": "北京石景山游乐园",
+        "location": {
+            "lat": 39.917811,
+            "lng": 116.215518
+        },
+        "address": "北京市石景山区石景山路25号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "石景山区",
+        "street_id": "",
+        "telephone": "4008003890",
+        "detail": 1,
+        "uid": "50569b92946486fb5cd4fe48",
+        "type": "scope"
+    },
+    {
+        "name": "首钢园",
+        "location": {
+            "lat": 39.921415,
+            "lng": 116.16061
+        },
+        "address": "北京市石景山区石景山路68号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "石景山区",
+        "street_id": "e64a222ec880db9728201a4a",
+        "telephone": "(010)88292172",
+        "detail": 1,
+        "uid": "e64a222ec880db9728201a4a",
+        "type": "scope"
+    },
+    {
+        "name": "鬼笑石",
+        "location": {
+            "lat": 39.985291,
+            "lng": 116.193966
+        },
+        "address": "北京市海淀区西山国家森林公园内",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "石景山区",
+        "street_id": "",
+        "telephone": "(010)62720251",
+        "detail": 1,
+        "uid": "e71c0b8fefe4063757bfffd0",
+        "type": "scope"
+    }
+]

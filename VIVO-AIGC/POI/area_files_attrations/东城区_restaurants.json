@@ -1,0 +1,377 @@
+[
+    {
+        "name": "故宫博物院",
+        "location": {
+            "lat": 39.924091,
+            "lng": 116.403414
+        },
+        "address": "北京市东城区景山前街4号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "06d2dffda107b0ef89f15db6",
+        "telephone": "4009501925",
+        "detail": 1,
+        "uid": "06d2dffda107b0ef89f15db6",
+        "type": "scope"
+    },
+    {
+        "name": "天安门",
+        "location": {
+            "lat": 39.915119,
+            "lng": 116.403963
+        },
+        "address": "北京市东城区长安街",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "65e1ee886c885190f60e77ff",
+        "detail": 1,
+        "uid": "65e1ee886c885190f60e77ff",
+        "type": "scope"
+    },
+    {
+        "name": "天坛公园",
+        "location": {
+            "lat": 39.888243,
+            "lng": 116.417246
+        },
+        "address": "北京市东城区天坛东里甲1号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "45ef9a2b5508cbfda2d230e6",
+        "telephone": "(010)67013036",
+        "detail": 1,
+        "uid": "45ef9a2b5508cbfda2d230e6",
+        "type": "scope"
+    },
+    {
+        "name": "天安门广场",
+        "location": {
+            "lat": 39.909652,
+            "lng": 116.404177
+        },
+        "address": "北京市东城区东长安街",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "c9b5fb91d49345bc5d0d0262",
+        "detail": 1,
+        "uid": "c9b5fb91d49345bc5d0d0262",
+        "type": "scope"
+    },
+    {
+        "name": "南锣鼓巷",
+        "location": {
+            "lat": 39.943562,
+            "lng": 116.408878
+        },
+        "address": "北京市东城区南锣鼓巷胡同",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "",
+        "detail": 1,
+        "uid": "bb3fd06fc7b47fba86420eac",
+        "type": "scope"
+    },
+    {
+        "name": "中国国家博物馆",
+        "location": {
+            "lat": 39.91146,
+            "lng": 116.408016
+        },
+        "address": "北京市东城区东长安街16号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "db1f39d42752aa6ff5c59cd1",
+        "telephone": "(010)65116400",
+        "detail": 1,
+        "uid": "db1f39d42752aa6ff5c59cd1",
+        "type": "scope"
+    },
+    {
+        "name": "地坛公园",
+        "location": {
+            "lat": 39.959903,
+            "lng": 116.421358
+        },
+        "address": "北京市东城区安定门外大街",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "",
+        "telephone": "(010)84257506",
+        "detail": 1,
+        "uid": "26d62eb4ba8e27176240a90d",
+        "type": "scope"
+    },
+    {
+        "name": "国家自然博物馆",
+        "location": {
+            "lat": 39.889525,
+            "lng": 116.406116
+        },
+        "address": "北京市东城区天桥南大街126号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "",
+        "telephone": "(010)67024431",
+        "detail": 1,
+        "uid": "17bb760f2e99a0e596ca07e2",
+        "type": "scope"
+    },
+    {
+        "name": "中山公园",
+        "location": {
+            "lat": 39.916702,
+            "lng": 116.400582
+        },
+        "address": "北京市东城区中华路4号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "",
+        "telephone": "(010)66055431",
+        "detail": 1,
+        "uid": "e2c734e489d8d15d15a190d1",
+        "type": "scope"
+    },
+    {
+        "name": "龙潭公园",
+        "location": {
+            "lat": 39.885848,
+            "lng": 116.444742
+        },
+        "address": "北京市东城区龙潭路16号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "090059e354c3dd9114b54b97",
+        "telephone": "(010)67119915",
+        "detail": 1,
+        "uid": "090059e354c3dd9114b54b97",
+        "type": "scope"
+    },
+    {
+        "name": "孔庙和国子监博物馆",
+        "location": {
+            "lat": 39.95288,
+            "lng": 116.420267
+        },
+        "address": "北京市东城区安定门内国子监街15号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "41572e00530f08b4b45f1ed2",
+        "telephone": "(010)64042407",
+        "detail": 1,
+        "uid": "41572e00530f08b4b45f1ed2",
+        "type": "scope"
+    },
+    {
+        "name": "明城墙遗址公园",
+        "location": {
+            "lat": 39.90732,
+            "lng": 116.434905
+        },
+        "address": "北京市东城区崇文门东大街9号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "6ee01020b9c09aef52e5c5d1",
+        "telephone": "(010)65270080",
+        "detail": 1,
+        "uid": "6ee01020b9c09aef52e5c5d1",
+        "type": "scope"
+    },
+    {
+        "name": "中国美术馆",
+        "location": {
+            "lat": 39.931473,
+            "lng": 116.415449
+        },
+        "address": "北京市东城区五四大街1号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "d6df91c1b141f36af7b916d2",
+        "telephone": "(010)64011816",
+        "detail": 1,
+        "uid": "d6df91c1b141f36af7b916d2",
+        "type": "scope"
+    },
+    {
+        "name": "前门",
+        "location": {
+            "lat": 39.905524,
+            "lng": 116.404589
+        },
+        "address": "北京市东城区前门大街",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "",
+        "detail": 1,
+        "uid": "dfe7d4e88ccc3f7f4e3a5974",
+        "type": "scope"
+    },
+    {
+        "name": "鼓楼",
+        "location": {
+            "lat": 39.94702,
+            "lng": 116.402378
+        },
+        "address": "北京市东城区钟楼湾胡同临字9号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "f633606a69b0e84e0b69d940",
+        "detail": 1,
+        "uid": "f633606a69b0e84e0b69d940",
+        "type": "scope"
+    },
+    {
+        "name": "北京孔庙",
+        "location": {
+            "lat": 39.952772,
+            "lng": 116.420854
+        },
+        "address": "北京市东城区国子监街13号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "50f7d1461f3508c472210bd2",
+        "telephone": "(010)64057214,(010)64063352,(010)64075259,(010)84043234",
+        "detail": 1,
+        "uid": "50f7d1461f3508c472210bd2",
+        "type": "scope"
+    },
+    {
+        "name": "雍和宫",
+        "location": {
+            "lat": 39.953628,
+            "lng": 116.423633
+        },
+        "address": "北京市东城区雍和宫大街28号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "92bc1f0a948a5c38a0acc418",
+        "telephone": "(010)84191907",
+        "detail": 1,
+        "uid": "92bc1f0a948a5c38a0acc418",
+        "type": "scope"
+    },
+    {
+        "name": "午门",
+        "location": {
+            "lat": 39.92011,
+            "lng": 116.403705
+        },
+        "address": "北京市东城区景山前街4号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "e85e2527153d842d94f08cb8",
+        "telephone": "010-85007421,010-85007519,010-85007938,4009501925",
+        "detail": 1,
+        "uid": "e85e2527153d842d94f08cb8",
+        "type": "scope"
+    },
+    {
+        "name": "三里河公园",
+        "location": {
+            "lat": 39.900952,
+            "lng": 116.411315
+        },
+        "address": "北京市东城区南芦草园胡同与群智胡同交叉口东50米",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "660c392abe08f032a8175a72",
+        "detail": 1,
+        "uid": "660c392abe08f032a8175a72",
+        "type": "scope"
+    },
+    {
+        "name": "毛主席纪念堂",
+        "location": {
+            "lat": 39.908868,
+            "lng": 116.404324
+        },
+        "address": "北京市东城区前门东大街",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "",
+        "detail": 1,
+        "uid": "46fb7cadd046b93229fc48f3",
+        "type": "scope"
+    },
+    {
+        "name": "东华门",
+        "location": {
+            "lat": 39.921421,
+            "lng": 116.407828
+        },
+        "address": "北京市东城区景山前街4号故宫博物院内",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "",
+        "telephone": "(010)85007421",
+        "detail": 1,
+        "uid": "41572e00fcb0edcab45f1e72",
+        "type": "scope"
+    },
+    {
+        "name": "天安门广场-国旗",
+        "location": {
+            "lat": 39.913324,
+            "lng": 116.404013
+        },
+        "address": "北京市东城区景山前街4号天安门广场内",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "4ae2adcf574bcd2b38221c66",
+        "detail": 1,
+        "uid": "4ae2adcf574bcd2b38221c66",
+        "type": "scope"
+    },
+    {
+        "name": "北京市规划展览馆",
+        "location": {
+            "lat": 39.906237,
+            "lng": 116.40774
+        },
+        "address": "北京市东城区东大街20号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "b8f048a515cf25583a04b1ec",
+        "detail": 1,
+        "uid": "b8f048a515cf25583a04b1ec",
+        "type": "scope"
+    },
+    {
+        "name": "前门大街",
+        "location": {
+            "lat": 39.899689,
+            "lng": 116.404699
+        },
+        "address": "北京市东城区云居胡同与珠宝市街交叉路口往东北约50米",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "东城区",
+        "street_id": "",
+        "telephone": "(010)65253176",
+        "detail": 1,
+        "uid": "1eddcaaa50c5e7490482c240",
+        "type": "scope"
+    }
+]

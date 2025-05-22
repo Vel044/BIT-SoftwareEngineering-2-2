@@ -1,0 +1,114 @@
+[
+    {
+        "name": "明十三陵",
+        "location": {
+            "lat": 40.263544,
+            "lng": 116.231846
+        },
+        "address": "北京市昌平区十三陵镇昌赤路",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "昌平区",
+        "street_id": "",
+        "telephone": "(010)60761005",
+        "detail": 1,
+        "uid": "0a46dc0f83a2265e30621266",
+        "type": "scope"
+    },
+    {
+        "name": "居庸关长城",
+        "location": {
+            "lat": 40.296972,
+            "lng": 116.079159
+        },
+        "address": "北京市昌平区S216(G6辅路)",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "昌平区",
+        "street_id": "7524cb4f2624812d04026f55",
+        "telephone": "(010)69771665",
+        "detail": 1,
+        "uid": "7524cb4f2624812d04026f55",
+        "type": "scope"
+    },
+    {
+        "name": "温都水城",
+        "location": {
+            "lat": 40.110264,
+            "lng": 116.377017
+        },
+        "address": "北京市昌平区北七家镇王府街55号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "昌平区",
+        "street_id": "",
+        "telephone": "(010)85817788",
+        "detail": 1,
+        "uid": "eb43f92cdf072e9e734b87cb",
+        "type": "scope"
+    },
+    {
+        "name": "中国航空博物馆",
+        "location": {
+            "lat": 40.192095,
+            "lng": 116.372885
+        },
+        "address": "北京市昌平区顺沙路御林汤泉度假村东北侧",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "昌平区",
+        "street_id": "108b1ceafad4fdac3586f467",
+        "telephone": "(010)66916919",
+        "detail": 1,
+        "uid": "108b1ceafad4fdac3586f467",
+        "type": "scope"
+    },
+    {
+        "name": "小汤山现代农业科技示范园",
+        "location": {
+            "lat": 40.161189,
+            "lng": 116.439621
+        },
+        "address": "北京市昌平区立汤路马坊",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "昌平区",
+        "street_id": "",
+        "telephone": "(010)61787260",
+        "detail": 1,
+        "uid": "606289fd2fd1314ca204646d",
+        "type": "scope"
+    },
+    {
+        "name": "昭陵",
+        "location": {
+            "lat": 40.296831,
+            "lng": 116.224533
+        },
+        "address": "北京市昌平区十三陵景区内",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "昌平区",
+        "street_id": "",
+        "telephone": "(010)60763104",
+        "detail": 1,
+        "uid": "f4460918e83f536ab11e367b",
+        "type": "scope"
+    },
+    {
+        "name": "银山塔林",
+        "location": {
+            "lat": 40.327528,
+            "lng": 116.33173
+        },
+        "address": "北京市昌平区延寿镇西湖村",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "昌平区",
+        "street_id": "",
+        "telephone": "(010)89726426",
+        "detail": 1,
+        "uid": "8548e873f818c0edf03cbabc",
+        "type": "scope"
+    }
+]

@@ -1,0 +1,19 @@
+{
+    "taskID": "19980109-09-002 197",
+    "0": {
+        "id": "19980109-09-002-005",
+        "indexFront": 50,
+        "indexBehind": 53
+    },
+    "pronoun": {
+        "id": "19980109-09-002-005",
+        "indexFront": 57,
+        "indexBehind": 57
+    },
+    "antecedentNum": 1,
+    "contributor": [
+        "龚方南",
+        "王菁",
+        "李宇硕"
+    ]
+}

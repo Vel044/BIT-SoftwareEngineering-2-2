@@ -1,0 +1,23 @@
+{
+    "taskID": "19980117-04-005 391",
+    "0": {
+        "id": "19980117-04-005-006",
+        "indexFront": 76,
+        "indexBehind": 76
+    },
+    "1": {
+        "id": "19980117-04-005-006",
+        "indexFront": 78,
+        "indexBehind": 78
+    },
+    "pronoun": {
+        "id": "19980117-04-005-006",
+        "indexFront": 83,
+        "indexBehind": 83
+    },
+    "antecedentNum": 2,
+    "contributor": [
+        "李函书",
+        "张书豪"
+    ]
+}

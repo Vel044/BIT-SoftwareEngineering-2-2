@@ -1,0 +1,306 @@
+[
+    {
+        "name": "玉渊潭公园",
+        "location": {
+            "lat": 39.922422,
+            "lng": 116.326469
+        },
+        "address": "北京市海淀区西三环中路10号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "3810c87916332c8b9d09f7b2",
+        "telephone": "(010)88653775,(010)88653800,(010)88653804",
+        "detail": 1,
+        "uid": "3810c87916332c8b9d09f7b2",
+        "type": "scope"
+    },
+    {
+        "name": "颐和园",
+        "location": {
+            "lat": 40.004869,
+            "lng": 116.278749
+        },
+        "address": "北京市海淀区新建宫门路19号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "2a7a25ecf9cf13636d3e1bad",
+        "telephone": "(010)62881144",
+        "detail": 1,
+        "uid": "2a7a25ecf9cf13636d3e1bad",
+        "type": "scope"
+    },
+    {
+        "name": "圆明园遗址公园",
+        "location": {
+            "lat": 40.012658,
+            "lng": 116.309804
+        },
+        "address": "北京市海淀区清华西路28号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "62d852adf09e449a2fb17ef5",
+        "telephone": "(010)62543673",
+        "detail": 1,
+        "uid": "62d852adf09e449a2fb17ef5",
+        "type": "scope"
+    },
+    {
+        "name": "香山公园",
+        "location": {
+            "lat": 39.996194,
+            "lng": 116.195044
+        },
+        "address": "北京市海淀区买卖街40号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "",
+        "telephone": "(010)62591222",
+        "detail": 1,
+        "uid": "6d282c407a4ef37a1676434f",
+        "type": "scope"
+    },
+    {
+        "name": "中国人民革命军事博物馆",
+        "location": {
+            "lat": 39.914976,
+            "lng": 116.330207
+        },
+        "address": "北京市海淀区复兴路9号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "5ce2637d2824d051af31e5b6",
+        "telephone": "(010)66866186",
+        "detail": 1,
+        "uid": "5ce2637d2824d051af31e5b6",
+        "type": "scope"
+    },
+    {
+        "name": "国家植物园北园",
+        "location": {
+            "lat": 40.007561,
+            "lng": 116.216186
+        },
+        "address": "北京市海淀区香山路与卧佛寺路交叉口",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "550fd5f9c8d53478931fc9c4",
+        "telephone": "(010)82598771",
+        "detail": 1,
+        "uid": "550fd5f9c8d53478931fc9c4",
+        "type": "scope"
+    },
+    {
+        "name": "中央电视塔",
+        "location": {
+            "lat": 39.925278,
+            "lng": 116.313408
+        },
+        "address": "北京市海淀区西三环中路11号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "",
+        "telephone": "01068450715",
+        "detail": 1,
+        "uid": "2949a58c58499370a1d230e5",
+        "type": "scope"
+    },
+    {
+        "name": "北京凤凰岭景区",
+        "location": {
+            "lat": 40.112884,
+            "lng": 116.091588
+        },
+        "address": "北京市海淀区苏家坨镇凤凰岭路19号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "fe488656344d24f859bbbc63",
+        "telephone": "(010)62455933,(010)62459492",
+        "detail": 1,
+        "uid": "fe488656344d24f859bbbc63",
+        "type": "scope"
+    },
+    {
+        "name": "紫竹院公园",
+        "location": {
+            "lat": 39.948437,
+            "lng": 116.32483
+        },
+        "address": "北京市海淀区中关村南大街35号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "49c6ce91c412a12c8d772700",
+        "telephone": "(010)88412801,(010)88412894",
+        "detail": 1,
+        "uid": "49c6ce91c412a12c8d772700",
+        "type": "scope"
+    },
+    {
+        "name": "北京西山国家森林公园",
+        "location": {
+            "lat": 39.978535,
+            "lng": 116.209193
+        },
+        "address": "北京市海淀区闵庄路与香山南路交叉口西行100米",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "",
+        "telephone": "(010)62720251",
+        "detail": 1,
+        "uid": "1d4bc84384a3c926eedfca70",
+        "type": "scope"
+    },
+    {
+        "name": "百望山",
+        "location": {
+            "lat": 40.036088,
+            "lng": 116.262167
+        },
+        "address": "北京市海淀区黑山扈北口19号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "77d9a96b1125d0e37dc87626",
+        "telephone": "(010)62584356,(010)62884508",
+        "detail": 1,
+        "uid": "77d9a96b1125d0e37dc87626",
+        "type": "scope"
+    },
+    {
+        "name": "中华世纪坛",
+        "location": {
+            "lat": 39.917282,
+            "lng": 116.327936
+        },
+        "address": "复兴路甲9号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "ca0a5de32ff30868a7c7566c",
+        "telephone": "(010)84187900",
+        "detail": 1,
+        "uid": "ca0a5de32ff30868a7c7566c",
+        "type": "scope"
+    },
+    {
+        "name": "北京海洋馆",
+        "location": {
+            "lat": 39.950277,
+            "lng": 116.347542
+        },
+        "address": "北京市海淀区高粱桥斜街乙18号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "f446091859ff806bb11e363b",
+        "telephone": "(010)62176655",
+        "detail": 1,
+        "uid": "f446091859ff806bb11e363b",
+        "type": "scope"
+    },
+    {
+        "name": "清华大学-艺术博物馆",
+        "location": {
+            "lat": 40.00764,
+            "lng": 116.342213
+        },
+        "address": "北京市海淀区双清路30号清华大学",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "98b68e6b8b3944e00c0a7007",
+        "telephone": "(010)62781012",
+        "detail": 1,
+        "uid": "98b68e6b8b3944e00c0a7007",
+        "type": "scope"
+    },
+    {
+        "name": "万寿山",
+        "location": {
+            "lat": 40.006067,
+            "lng": 116.281049
+        },
+        "address": "北京市海淀区新建宫门路19号颐和园内",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "394ae4adffe3b133018972ba",
+        "telephone": "(010)62881144",
+        "detail": 1,
+        "uid": "394ae4adffe3b133018972ba",
+        "type": "scope"
+    },
+    {
+        "name": "中国地质大学(北京)博物馆",
+        "location": {
+            "lat": 39.996667,
+            "lng": 116.358683
+        },
+        "address": "北京市海淀区学院路29号中国地质大学(北京)逸夫楼10~12层",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "fed5ec441ebfcf29a8175a5a",
+        "telephone": "(010)82322204",
+        "detail": 1,
+        "uid": "fed5ec441ebfcf29a8175a5a",
+        "type": "scope"
+    },
+    {
+        "name": "太平洋海底世界博览馆",
+        "location": {
+            "lat": 39.924803,
+            "lng": 116.312678
+        },
+        "address": "北京市海淀区西三环中路11号中央电视塔下面",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "",
+        "telephone": "(010)68714695",
+        "detail": 1,
+        "uid": "e0845493c50389c921f017f6",
+        "type": "scope"
+    },
+    {
+        "name": "大觉寺",
+        "location": {
+            "lat": 40.058631,
+            "lng": 116.113289
+        },
+        "address": "北京市海淀区苏家坨镇大觉寺路9号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "465d2bc55c987ed7102935a0",
+        "telephone": "(010)62456163,010-62456162",
+        "detail": 1,
+        "uid": "465d2bc55c987ed7102935a0",
+        "type": "scope"
+    },
+    {
+        "name": "香山革命纪念馆",
+        "location": {
+            "lat": 39.998571,
+            "lng": 116.211859
+        },
+        "address": "北京市海淀区红枫路1号院1号楼(香山地铁站入口步行240米)",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "海淀区",
+        "street_id": "",
+        "telephone": "(010)62720073,0875-8869888,0875-8895888",
+        "detail": 1,
+        "uid": "e77141528bf97f1db1077d2b",
+        "type": "scope"
+    }
+]

@@ -1,0 +1,19 @@
+{
+    "taskID": "19980119-09-001 739",
+    "0": {
+        "id": "19980119-09-001-017",
+        "indexFront": 5,
+        "indexBehind": 5
+    },
+    "pronoun": {
+        "id": "19980119-09-001-017",
+        "indexFront": 38,
+        "indexBehind": 38
+    },
+    "antecedentNum": 1,
+    "contributor": [
+        "何京徽",
+        "见莹",
+        "李泽卿"
+    ]
+}

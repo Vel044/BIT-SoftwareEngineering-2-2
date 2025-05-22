@@ -1,0 +1,19 @@
+{
+    "taskID": "19980114-04-003 131",
+    "0": {
+        "id": "19980114-04-003-005",
+        "indexFront": 14,
+        "indexBehind": 14
+    },
+    "pronoun": {
+        "id": "19980114-04-003-005",
+        "indexFront": 22,
+        "indexBehind": 22
+    },
+    "antecedentNum": 1,
+    "contributor": [
+        "徐浩然",
+        "范力文",
+        "王思博"
+    ]
+}

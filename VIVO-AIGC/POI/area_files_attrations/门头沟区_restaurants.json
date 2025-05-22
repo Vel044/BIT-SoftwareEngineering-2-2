@@ -1,0 +1,95 @@
+[
+    {
+        "name": "斋堂水库",
+        "location": {
+            "lat": 39.966019,
+            "lng": 115.67853
+        },
+        "address": "北京市门头沟区斋堂水库(109国道南300米)",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "门头沟区",
+        "telephone": "010-64823746",
+        "detail": 1,
+        "uid": "d5f93c0e976c385feddfca35",
+        "type": "scope"
+    },
+    {
+        "name": "潭柘寺",
+        "location": {
+            "lat": 39.911876,
+            "lng": 116.037356
+        },
+        "address": "北京市门头沟区潭柘寺镇",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "门头沟区",
+        "street_id": "",
+        "telephone": "(010)60861699,(010)60863929,010-60851999",
+        "detail": 1,
+        "uid": "b7021bf8eab230faf4e73b09",
+        "type": "scope"
+    },
+    {
+        "name": "戒台寺",
+        "location": {
+            "lat": 39.875637,
+            "lng": 116.0927
+        },
+        "address": "北京市门头沟区永定镇京昆路",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "门头沟区",
+        "street_id": "df7c2341136f2e92841541b7",
+        "telephone": "(010)69805942,010-69806611",
+        "detail": 1,
+        "uid": "df7c2341136f2e92841541b7",
+        "type": "scope"
+    },
+    {
+        "name": "神泉峡风景区",
+        "location": {
+            "lat": 40.053569,
+            "lng": 115.981179
+        },
+        "address": "北京市门头沟区妙峰山镇炭厂村",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "门头沟区",
+        "telephone": "(010)61882284",
+        "detail": 1,
+        "uid": "e85e2527199b802d95f08c1a",
+        "type": "scope"
+    },
+    {
+        "name": "妙峰山风景区",
+        "location": {
+            "lat": 40.07123,
+            "lng": 116.033186
+        },
+        "address": "北京市门头沟区妙峰山镇涧沟村",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "门头沟区",
+        "street_id": "",
+        "telephone": "(010)61882936",
+        "detail": 1,
+        "uid": "9e2dbbf6bf959e9e16a19044",
+        "type": "scope"
+    },
+    {
+        "name": "白瀑寺",
+        "location": {
+            "lat": 40.124144,
+            "lng": 115.927283
+        },
+        "address": "北京市门头沟区雁翅镇淤白村",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "门头沟区",
+        "street_id": "",
+        "detail": 1,
+        "uid": "0523a141e700d91eb23c812e",
+        "type": "scope"
+    }
+]

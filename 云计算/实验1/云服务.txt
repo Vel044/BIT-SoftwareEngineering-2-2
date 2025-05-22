@@ -1,0 +1,4 @@
+ssh ubuntu@120.53.244.79
+输入yes
+password部分
+Liu11290058

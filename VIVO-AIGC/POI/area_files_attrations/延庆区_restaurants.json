@@ -1,0 +1,113 @@
+[
+    {
+        "name": "八达岭长城",
+        "location": {
+            "lat": 40.362639,
+            "lng": 116.024067
+        },
+        "address": "北京市延庆区G6京藏高速58号出口",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "延庆区",
+        "street_id": "2fd2beabe34a80517adbd220",
+        "telephone": "(010)61118002,(010)69121474,(010)69122222",
+        "detail": 1,
+        "uid": "2fd2beabe34a80517adbd220",
+        "type": "scope"
+    },
+    {
+        "name": "百里山水画廊",
+        "location": {
+            "lat": 40.70653,
+            "lng": 116.326242
+        },
+        "address": "北京市延庆区千家店镇",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "延庆区",
+        "street_id": "5fa7fcd0c086e8d67069d3d6",
+        "telephone": "(010)60188003",
+        "detail": 1,
+        "uid": "5fa7fcd0c086e8d67069d3d6",
+        "type": "scope"
+    },
+    {
+        "name": "龙庆峡风景区",
+        "location": {
+            "lat": 40.557002,
+            "lng": 116.009964
+        },
+        "address": "北京市延庆区古城村",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "延庆区",
+        "street_id": "9f97b1c506534806b64f5425",
+        "telephone": "(010)69191020",
+        "detail": 1,
+        "uid": "9f97b1c506534806b64f5425",
+        "type": "scope"
+    },
+    {
+        "name": "野鸭湖湿地公园",
+        "location": {
+            "lat": 40.416672,
+            "lng": 115.864188
+        },
+        "address": "北京市延庆区康野路",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "延庆区",
+        "street_id": "",
+        "telephone": "(010)69131226,(010)69131458",
+        "detail": 1,
+        "uid": "f757e6eee36b7a17260bd02b",
+        "type": "scope"
+    },
+    {
+        "name": "松山森林景区",
+        "location": {
+            "lat": 40.515289,
+            "lng": 115.836964
+        },
+        "address": "北京市延庆区张山营镇京礼高速",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "延庆区",
+        "street_id": "",
+        "detail": 1,
+        "uid": "fa01e9378a4cf04a774ff12a",
+        "type": "scope"
+    },
+    {
+        "name": "北京世园妫河国际旅游度假区",
+        "location": {
+            "lat": 40.450315,
+            "lng": 115.957449
+        },
+        "address": "北京市延庆区220省道西侧",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "延庆区",
+        "street_id": "97906fe80de1bf2cfaf0cb87",
+        "telephone": "(010)50858888",
+        "detail": 1,
+        "uid": "97906fe80de1bf2cfaf0cb87",
+        "type": "scope"
+    },
+    {
+        "name": "八达岭水关长城",
+        "location": {
+            "lat": 40.344692,
+            "lng": 116.044509
+        },
+        "address": "北京市延庆区八达岭镇石佛寺村",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "延庆区",
+        "street_id": "beabdbf4e155d19b7069d327",
+        "telephone": "(010)61118002",
+        "detail": 1,
+        "uid": "beabdbf4e155d19b7069d327",
+        "type": "scope"
+    }
+]

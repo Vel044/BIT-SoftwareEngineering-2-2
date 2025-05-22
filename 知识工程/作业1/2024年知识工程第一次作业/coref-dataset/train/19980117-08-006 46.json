@@ -1,0 +1,19 @@
+{
+    "taskID": "19980117-08-006 46",
+    "0": {
+        "id": "19980117-08-006-002",
+        "indexFront": 22,
+        "indexBehind": 25
+    },
+    "pronoun": {
+        "id": "19980117-08-006-002",
+        "indexFront": 36,
+        "indexBehind": 36
+    },
+    "antecedentNum": 1,
+    "contributor": [
+        "李旭田",
+        "张书豪",
+        "许嘉榆"
+    ]
+}

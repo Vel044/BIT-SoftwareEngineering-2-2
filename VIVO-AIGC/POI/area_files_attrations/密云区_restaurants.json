@@ -1,0 +1,66 @@
+[
+    {
+        "name": "古北水镇",
+        "location": {
+            "lat": 40.661046,
+            "lng": 117.284632
+        },
+        "address": "北京市密云区古北口镇司马台村",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "密云区",
+        "street_id": "",
+        "telephone": "(010)81009999",
+        "detail": 1,
+        "uid": "bab5afea082a15f15fbe8634",
+        "type": "scope"
+    },
+    {
+        "name": "密云水库",
+        "location": {
+            "lat": 40.523289,
+            "lng": 116.92017
+        },
+        "address": "北京市密云区恒河西山",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "密云区",
+        "street_id": "",
+        "telephone": "010-69012552",
+        "detail": 1,
+        "uid": "988a4c46ce45f7758b2fb579",
+        "type": "scope"
+    },
+    {
+        "name": "黑龙潭自然风景区",
+        "location": {
+            "lat": 40.569357,
+            "lng": 116.793732
+        },
+        "address": "北京市密云区石城镇大关桥",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "密云区",
+        "street_id": "",
+        "telephone": "(010)61016289,(010)61016295",
+        "detail": 1,
+        "uid": "cb4fd146d0833c419c9d6895",
+        "type": "scope"
+    },
+    {
+        "name": "司马台长城游览区",
+        "location": {
+            "lat": 40.663649,
+            "lng": 117.292856
+        },
+        "address": "北京市密云区古北水镇司马台村北",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "密云区",
+        "street_id": "",
+        "telephone": "(010)69031057,(010)81008009,(010)81008010,(010)81009999",
+        "detail": 1,
+        "uid": "bff8fa7d15e3f1a0c9213d95",
+        "type": "scope"
+    }
+]

@@ -1,0 +1,19 @@
+{
+    "taskID": "19980118-03-001 655",
+    "0": {
+        "id": "19980118-03-001-007",
+        "indexFront": 259,
+        "indexBehind": 259
+    },
+    "pronoun": {
+        "id": "19980118-03-001-007",
+        "indexFront": 271,
+        "indexBehind": 271
+    },
+    "antecedentNum": 1,
+    "contributor": [
+        "陈思远",
+        "张书豪",
+        "许嘉榆"
+    ]
+}

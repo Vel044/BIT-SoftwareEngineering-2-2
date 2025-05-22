@@ -1,0 +1,19 @@
+{
+    "taskID": "19980110-08-001 182",
+    "0": {
+        "id": "19980110-08-001-003",
+        "indexFront": 160,
+        "indexBehind": 160
+    },
+    "pronoun": {
+        "id": "19980110-08-001-003",
+        "indexFront": 176,
+        "indexBehind": 176
+    },
+    "antecedentNum": 1,
+    "contributor": [
+        "贾振言",
+        "王三帅",
+        "杨元元"
+    ]
+}

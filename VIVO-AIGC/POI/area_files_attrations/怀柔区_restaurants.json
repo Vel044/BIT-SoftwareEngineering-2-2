@@ -1,0 +1,98 @@
+[
+    {
+        "name": "雁栖湖景区",
+        "location": {
+            "lat": 40.403587,
+            "lng": 116.690837
+        },
+        "address": "北京市怀柔区雁水路3号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "怀柔区",
+        "street_id": "",
+        "telephone": "(010)69661194,(010)69661696",
+        "detail": 1,
+        "uid": "5c2dc21daf5986076fc02c26",
+        "type": "scope"
+    },
+    {
+        "name": "慕田峪长城国家级旅游景区",
+        "location": {
+            "lat": 40.437442,
+            "lng": 116.571611
+        },
+        "address": "北京市怀柔区渤海镇慕田峪村",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "怀柔区",
+        "street_id": "",
+        "telephone": "(010)61626537",
+        "detail": 1,
+        "uid": "2fd2beabe34980517adbd221",
+        "type": "scope"
+    },
+    {
+        "name": "黄花城水长城",
+        "location": {
+            "lat": 40.419287,
+            "lng": 116.307167
+        },
+        "address": "北京市怀柔区353乡道九渡河镇西水峪村",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "怀柔区",
+        "street_id": "",
+        "telephone": "(010)61651818",
+        "detail": 1,
+        "uid": "d7fd2ad3fbaf0c540bccdd74",
+        "type": "scope"
+    },
+    {
+        "name": "九谷口自然风景区",
+        "location": {
+            "lat": 40.450379,
+            "lng": 116.668525
+        },
+        "address": "北京市怀柔区怀北镇河防口村548号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "怀柔区",
+        "street_id": "",
+        "telephone": "(010)89696677",
+        "detail": 1,
+        "uid": "bf29b702a9959f9909b93a77",
+        "type": "scope"
+    },
+    {
+        "name": "北京青龙峡风景区",
+        "location": {
+            "lat": 40.467871,
+            "lng": 116.689259
+        },
+        "address": "北京市怀柔区怀北镇大水峪村北500米",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "怀柔区",
+        "street_id": "",
+        "telephone": "(010)89696694,(010)89696781",
+        "detail": 1,
+        "uid": "eac84be756d2ba49d12dd64f",
+        "type": "scope"
+    },
+    {
+        "name": "红螺寺",
+        "location": {
+            "lat": 40.390454,
+            "lng": 116.632411
+        },
+        "address": "北京市怀柔区红螺东路2号",
+        "province": "北京市",
+        "city": "北京市",
+        "area": "怀柔区",
+        "street_id": "",
+        "telephone": "(010)60681175,(010)60681639,(010)60682984",
+        "detail": 1,
+        "uid": "605884e7c61e3573871541a3",
+        "type": "scope"
+    }
+]

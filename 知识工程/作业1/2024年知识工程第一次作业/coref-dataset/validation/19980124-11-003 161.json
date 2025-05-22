@@ -1,0 +1,64 @@
+{
+    "taskID": "19980124-11-003 161",
+    "0": {
+        "id": "19980124-11-003-003",
+        "indexFront": 8,
+        "indexBehind": 9
+    },
+    "1": {
+        "id": "19980124-11-003-003",
+        "indexFront": 11,
+        "indexBehind": 12
+    },
+    "2": {
+        "id": "19980124-11-003-003",
+        "indexFront": 14,
+        "indexBehind": 15
+    },
+    "3": {
+        "id": "19980124-11-003-003",
+        "indexFront": 17,
+        "indexBehind": 18
+    },
+    "4": {
+        "id": "19980124-11-003-003",
+        "indexFront": 20,
+        "indexBehind": 21
+    },
+    "5": {
+        "id": "19980124-11-003-003",
+        "indexFront": 23,
+        "indexBehind": 24
+    },
+    "6": {
+        "id": "19980124-11-003-003",
+        "indexFront": 26,
+        "indexBehind": 27
+    },
+    "7": {
+        "id": "19980124-11-003-003",
+        "indexFront": 29,
+        "indexBehind": 30
+    },
+    "8": {
+        "id": "19980124-11-003-003",
+        "indexFront": 32,
+        "indexBehind": 33
+    },
+    "9": {
+        "id": "19980124-11-003-003",
+        "indexFront": 35,
+        "indexBehind": 36
+    },
+    "pronoun": {
+        "id": "19980124-11-003-003",
+        "indexFront": 39,
+        "indexBehind": 39
+    },
+    "antecedentNum": 10,
+    "contributor": [
+        "ïñï£",
+        "Çñ×ÓÇç",
+        "µÂÃ×"
+    ]
+}
